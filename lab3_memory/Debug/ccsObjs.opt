@@ -1,0 +1,1 @@
+"./flash-operations.obj" "./interrupts.obj" "./lab3_memory.obj" "./lab3_memory_startup_ccs.obj" "./ports.obj" "./switch.obj" "./time-delays.obj" "./watchdog-timer.obj" "../msp432p401r_MODIFIED_SRAM.cmd" "../msp432p4xx_driverlib.lib" -l"libc.a" 

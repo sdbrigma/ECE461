@@ -1,0 +1,25 @@
+/*
+ * functions.h
+ *
+ *  Created on: Feb 5, 2016
+ *      Author: marybiggs
+ */
+
+#ifndef FUNCTIONS_H_
+#define FUNCTIONS_H_
+
+
+void ProgramFlash(void);
+void EraseFlash(void);
+void TestSRAMBankEnable(void);
+
+void delay_200ms(void);
+void delay_1sec(void);
+
+void Init_Ports(void);
+
+void clear_watchdog_timer(void);
+
+void Init_Timers(void);
+
+#endif /* FUNCTIONS_H_ */

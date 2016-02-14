@@ -1,0 +1,66 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../msp432p401r_MODIFIED_SRAM.cmd 
+
+LIB_SRCS += \
+../msp432p4xx_driverlib.lib 
+
+C_SRCS += \
+../flash-operations.c \
+../interrupts.c \
+../lab3_memory.c \
+../lab3_memory_startup_ccs.c \
+../ports.c \
+../time-delays.c \
+../watchdog-timer.c 
+
+C_DEPS += \
+./flash-operations.pp \
+./interrupts.pp \
+./lab3_memory.pp \
+./lab3_memory_startup_ccs.pp \
+./ports.pp \
+./time-delays.pp \
+./watchdog-timer.pp 
+
+OBJS += \
+./flash-operations.obj \
+./interrupts.obj \
+./lab3_memory.obj \
+./lab3_memory_startup_ccs.obj \
+./ports.obj \
+./time-delays.obj \
+./watchdog-timer.obj 
+
+OBJS__QUOTED += \
+"flash-operations.obj" \
+"interrupts.obj" \
+"lab3_memory.obj" \
+"lab3_memory_startup_ccs.obj" \
+"ports.obj" \
+"time-delays.obj" \
+"watchdog-timer.obj" 
+
+C_DEPS__QUOTED += \
+"flash-operations.pp" \
+"interrupts.pp" \
+"lab3_memory.pp" \
+"lab3_memory_startup_ccs.pp" \
+"ports.pp" \
+"time-delays.pp" \
+"watchdog-timer.pp" 
+
+C_SRCS__QUOTED += \
+"../flash-operations.c" \
+"../interrupts.c" \
+"../lab3_memory.c" \
+"../lab3_memory_startup_ccs.c" \
+"../ports.c" \
+"../time-delays.c" \
+"../watchdog-timer.c" 
+
+

@@ -1,0 +1,19 @@
+/*
+ * watchdog-timer.c
+ *
+ *  Created on: Feb 5, 2016
+ *      Author: Steffon Brigman
+ */
+
+#include "msp432.h"
+#include "driverlib.h"
+
+#include "string.h"
+#include "macros.h"
+#include "functions.h"
+
+void clear_watchdog_timer(void){
+	WDTCTL |= WDTCNTCL;
+}
+
+
