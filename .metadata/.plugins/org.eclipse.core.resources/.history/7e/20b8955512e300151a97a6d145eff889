@@ -1,0 +1,24 @@
+/*
+ * ports.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: marybiggs
+ */
+
+#include "msp432.h"
+#include "stdint.h"
+#include "functions.h"
+#include "macros.h"
+
+void Init_Ports(){
+
+    /* GPIO Setup */
+    P6SEL1 |= BIT0;                         // Configure P6.0 for ADC
+    P6SEL0 |= BIT0;
+    P5SEL0 |= BIT6;						    // Configure P5.6 as Timer A PWM output
+    P5SEL1 &= ~BIT6;
+    P5DIR |= BIT6;
+
+}
+
+

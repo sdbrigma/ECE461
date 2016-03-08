@@ -1,0 +1,63 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../msp432p401r.cmd 
+
+C_SRCS += \
+../adc.c \
+../interrupts.c \
+../lab4_adc14_startup_ccs.c \
+../main.c \
+../ports.c \
+../switch.c \
+../timers.c 
+
+C_DEPS += \
+./adc.pp \
+./interrupts.pp \
+./lab4_adc14_startup_ccs.pp \
+./main.pp \
+./ports.pp \
+./switch.pp \
+./timers.pp 
+
+OBJS += \
+./adc.obj \
+./interrupts.obj \
+./lab4_adc14_startup_ccs.obj \
+./main.obj \
+./ports.obj \
+./switch.obj \
+./timers.obj 
+
+OBJS__QUOTED += \
+"adc.obj" \
+"interrupts.obj" \
+"lab4_adc14_startup_ccs.obj" \
+"main.obj" \
+"ports.obj" \
+"switch.obj" \
+"timers.obj" 
+
+C_DEPS__QUOTED += \
+"adc.pp" \
+"interrupts.pp" \
+"lab4_adc14_startup_ccs.pp" \
+"main.pp" \
+"ports.pp" \
+"switch.pp" \
+"timers.pp" 
+
+C_SRCS__QUOTED += \
+"../adc.c" \
+"../interrupts.c" \
+"../lab4_adc14_startup_ccs.c" \
+"../main.c" \
+"../ports.c" \
+"../switch.c" \
+"../timers.c" 
+
+

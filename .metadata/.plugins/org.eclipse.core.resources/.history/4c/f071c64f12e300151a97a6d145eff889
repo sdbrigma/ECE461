@@ -1,0 +1,21 @@
+/*
+ * timers.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: marybiggs
+ */
+
+
+#include "msp432.h"
+#include "stdint.h"
+#include "functions.h"
+#include "macros.h"
+
+void Init_Timers(){
+    /* Configure TimerA */
+
+    TA2CCR0 = PWM_PERIOD;                   // PWM Period
+    TA2CCTL1 = OUTMOD_7;                    // CCR1 reset/set
+    TA2CCR1 = PWM_PERIOD/2;                 // CCR1 PWM duty cycle
+    TA2CTL = TASSEL__SMCLK | MC__UP | TACLR;  // SMCLK, up mode, clear TAR
+}

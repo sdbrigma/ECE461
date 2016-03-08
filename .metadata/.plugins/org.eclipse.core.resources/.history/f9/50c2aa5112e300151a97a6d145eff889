@@ -1,0 +1,16 @@
+/*
+ * functions.h
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: marybiggs
+ */
+
+#ifndef FUNCTIONS_H_
+#define FUNCTIONS_H_
+
+void Init_Ports(void);
+void Init_Timers(void);
+void Init_Adc(void);
+
+
+#endif /* FUNCTIONS_H_ */

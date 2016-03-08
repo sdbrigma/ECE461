@@ -1,0 +1,21 @@
+/*
+ * switch.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: Steffon Brigman
+ */
+
+#include "msp432.h"
+#include "stdint.h"
+#include "functions.h"
+#include "macros.h"
+
+void Switch_Process(){
+	if(!(P5IN && BIT1)){
+		int i = 0;
+		i++;
+	}
+	i=0;
+}
+
+

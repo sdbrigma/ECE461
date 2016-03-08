@@ -1,0 +1,44 @@
+/*
+ * buzzer.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: Steffon Brigman
+ */
+
+void doorbell(){
+	TA0CTL = TIMER_A_UP_MODE;
+	Timer_A_PWMConfig pwmConfig =
+	{
+	        TIMER_A_CLOCKSOURCE_SMCLK,
+	        TIMER_A_CLOCKSOURCE_DIVIDER_1,
+	        DING1,
+	        TIMER_A_CAPTURECOMPARE_REGISTER_4,
+	        TIMER_A_OUTPUTMODE_RESET_SET,
+	        DING1,
+	};
+	delay_200ms();
+
+	Timer_A_PWMConfig pwmConfig =
+	{
+	        TIMER_A_CLOCKSOURCE_SMCLK,
+	        TIMER_A_CLOCKSOURCE_DIVIDER_1,
+	        DING2,
+	        TIMER_A_CAPTURECOMPARE_REGISTER_4,
+	        TIMER_A_OUTPUTMODE_RESET_SET,
+	        DING2,
+	};
+	delay_200ms();
+
+	Timer_A_PWMConfig pwmConfig =
+	{
+	        TIMER_A_CLOCKSOURCE_SMCLK,
+	        TIMER_A_CLOCKSOURCE_DIVIDER_1,
+	        DING2,
+	        TIMER_A_CAPTURECOMPARE_REGISTER_4,
+	        TIMER_A_OUTPUTMODE_RESET_SET,
+	        DING3,
+	};
+	delay_200ms();
+}
+
+

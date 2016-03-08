@@ -1,0 +1,15 @@
+/*
+ * interrupts.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: marybiggs
+ */
+
+void adc14IsrHandler(void)
+{
+    /* Clear ADC14 IFG */
+    ADC14CLRIFGR0 = CLRADC14IFG20;
+
+}
+
+

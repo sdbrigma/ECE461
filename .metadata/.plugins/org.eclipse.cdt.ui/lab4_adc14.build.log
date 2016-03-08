@@ -1,0 +1,23 @@
+
+**** Build of configuration Debug for project lab4_adc14 ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../lab4_adc14_solution.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="lab4_adc14_solution.pp"  "../lab4_adc14_solution.c"
+"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
+Finished building: ../lab4_adc14_solution.c
+ 
+Building file: ../lab4_adc14_startup_ccs.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="lab4_adc14_startup_ccs.pp"  "../lab4_adc14_startup_ccs.c"
+Finished building: ../lab4_adc14_startup_ccs.c
+ 
+Building target: lab4_adc14.out
+Invoking: MSP432 Linker
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off -z -m"lab4_adc14.map" --heap_size=0 --stack_size=512 -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="lab4_adc14_linkInfo.xml" --rom_model -o "lab4_adc14.out" "./lab4_adc14_solution.obj" "./lab4_adc14_startup_ccs.obj" "../msp432p401r.cmd"  -l"libc.a" 
+<Linking>
+Finished building target: lab4_adc14.out
+ 
+
+**** Build Finished ****

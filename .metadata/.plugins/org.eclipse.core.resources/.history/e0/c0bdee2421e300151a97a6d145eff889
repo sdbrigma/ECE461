@@ -1,0 +1,15 @@
+/*
+ * buzzer.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: Steffon Brigman
+ */
+
+void doorbell(){
+	int i = 0;
+	while(i<3){
+		if()
+	}
+}
+
+

@@ -1,0 +1,14 @@
+/*
+ * switch.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: Steffon Brigman
+ */
+
+void Switch_Process(){
+	if(P5IN && BIT1){
+
+	}
+}
+
+
