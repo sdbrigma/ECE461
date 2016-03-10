@@ -1,0 +1,35 @@
+/*
+ * interrupts.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: Steffon Brigman
+ */
+
+#include "msp432.h"
+#include "stdint.h"
+#include "driverlib.h"
+#include "functions.h"
+#include "macros.h"
+
+
+void port5IsrHandler(){
+	doorbell();
+}
+
+void port3IsrHandler(){
+
+}
+
+uint32_t adcResult;
+void adc14IsrHandler(){
+	if(ADC14MEM10 >= BURGLAR){
+		burglar_alarm();
+	    P2OUT &= ~BIT4;
+	    P2OUT |= BIT6;
+		adcResult = ADC14MEM10;
+	}
+	else{
+		adcResult = ADC14MEM10;
+	}
+	ADC14_clearInterruptFlag(ADC_INT10);
+}

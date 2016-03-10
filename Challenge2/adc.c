@@ -16,19 +16,25 @@ void Init_Adc(){
     ADC14_enableModule();
     ADC14_initModule(ADC_CLOCKSOURCE_SYSOSC, ADC_PREDIVIDER_1, ADC_DIVIDER_1, 0);
 
-    ADC14_setSampleHoldTrigger(ADC_TRIGGER_SOURCE1, false);
-
-    /* ADC Memory (ADC_MEM0 A0) in single conversion mode with AVCC reference */
+    /* ADC Memory (ADC_MEM0 A10) in single conversion mode with AVCC reference for mic*/
     ADC14_configureSingleSampleMode(ADC_MEM10, true);
     ADC14_configureConversionMemory(ADC_MEM10, ADC_VREFPOS_AVCC_VREFNEG_VSS,
                ADC_INPUT_A10, false);
 
-    /* Set ADC result format to signed binary */
-    ADC14_setResultFormat(ADC_SIGNED_BINARY);
+    /* ADC Memory (ADC_MEM0 A7) in single conversion mode with AVCC reference for light sensor*/
+    ADC14_configureSingleSampleMode(ADC_MEM7, true);
+    ADC14_configureConversionMemory(ADC_MEM7, ADC_VREFPOS_AVCC_VREFNEG_VSS,
+               ADC_INPUT_A7, false);
+
+    /* Set ADC result format to unsigned binary */
+    ADC14_setResultFormat(ADC_UNSIGNED_BINARY);
+    ADC14MCTL10 = ADC_INPUT_A10; // set ADC10 as input channel
+    ADC14MCTL7 = ADC_INPUT_A7; // set ADC7 as input channel
 
     /* Enabling sample timer in manual mode and interrupts*/
     ADC14_enableSampleTimer(ADC_AUTOMATIC_ITERATION);
     ADC14_enableInterrupt(ADC_INT10);
+    ADC14_enableInterrupt(ADC_INT7);
     ADC14_enableConversion();
 
     /* Enabling Interrupts */

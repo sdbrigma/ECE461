@@ -5,6 +5,9 @@
  *      Author: Steffon Brigman
  */
 
+#include "driverlib.h"
+#include "msp432.h"
+
 #ifndef CHALLENGE2_FUNCTIONS_H_
 #define CHALLENGE2_FUNCTIONS_H_
 
@@ -17,7 +20,6 @@ void Switch_Process(void);
 void Init_Port2(void);
 void Init_Port5(void);
 void Init_Port6(void);
-void Init_Dma(void);
 
 void delay_1sec(void);
 void delay_200ms(void);
@@ -27,6 +29,7 @@ void delay(int time);
 void burglar_alarm(void);
 void fire_alarm(void);
 void doorbell(void);
+void alarm_system_state(bool state);
 
 
 #endif /* CHALLENGE2_FUNCTIONS_H_ */

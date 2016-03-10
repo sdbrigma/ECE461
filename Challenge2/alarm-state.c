@@ -1,0 +1,25 @@
+/*
+ * alarm-state.c
+ *
+ *  Created on: Mar 9, 2016
+ *      Author: Steffon Brigman
+ */
+
+#include "msp432.h"
+#include "stdint.h"
+#include "driverlib.h"
+#include "functions.h"
+#include "macros.h"
+
+void alarm_system_state(bool state){
+	if(state){// activate if true
+	    P2OUT |= BIT4;	// green LED
+	    P2OUT &= ~BIT6;	// red LED
+		TA0CTL = TIMER_A_STOP_MODE; // turn off alarm;
+	}
+	else{
+	    P2OUT &= ~BIT4;	// green LED
+	    P2OUT |= BIT6;	// red LED
+	    TA0CTL = TIMER_A_STOP_MODE; // turn off alarm;
+	}
+}

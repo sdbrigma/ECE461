@@ -66,6 +66,9 @@
 #include "driverlib.h"
 #include "macros.h"
 
+extern bool alarm_state = 1;
+float flux;
+uint32_t adc;
 
 int main(void)
 {
@@ -74,15 +77,12 @@ int main(void)
     Init_Timers();
     Init_Adc();
     Init_Clocks();
-    Init_Dma();
-
-    P2OUT |= BIT4;
-    P2OUT &= ~BIT6;
-
-	//fire_alarm();
+    alarm_system_state(alarm_state); // activate alarm
 
     while (1)
     {
+    		flux = ADC14MEM7;
+    		adc = ADC14MEM10;
     		ADC14_toggleConversionTrigger();        // Trigger the initial conversion
     }
 

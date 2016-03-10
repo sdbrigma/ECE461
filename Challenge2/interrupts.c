@@ -12,19 +12,36 @@
 #include "macros.h"
 
 
-void port5IsrHandler(){
+void port5IsrHandler(){ // SW1
+	//TODO: DEBOUNCE
+
 	doorbell();
 }
 
-void port3IsrHandler(){
-	burglar_alarm();
+void port3IsrHandler(){//SW2
+	//TODO: DEBOUNCE
+
+	if(alarm_state){
+		alarm_system_state(FALSE);
+	}
+	else{
+		alarm_system_state(TRUE);
+	}
 }
 
-volatile uint32_t adcResult;
+uint32_t adcResult;
 void adc14IsrHandler(){
-	adcResult = ADC14_getResult(ADC_MEM10);
-	if(adcResult >= BURGLAR){
-		fire_alarm();
+	if(ADC14IFG10){ // only execute code if interrupt ADC10 is pending
+		if(alarm_state){
+			if(ADC14MEM10 >= BURGLAR){
+				burglar_alarm();
+			}
+		}
+		ADC14_clearInterruptFlag(ADC_INT10);
 	}
-	ADC14_clearInterruptFlag(ADC_INT10);
+
+	if(ADC14IFG7){ // only execute code if interrupt ADC7 is pending
+
+		ADC14_clearInterruptFlag(ADC_INT7);
+	}
 }

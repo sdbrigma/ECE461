@@ -13,6 +13,9 @@
 
 void Init_Ports(){
 	Init_Port2();
+
+	//TODO: Initialize P3.7 to disable LCD backlight
+
 	Init_Port4();
 	Init_Port5();
 	//Init_Port6();
@@ -20,7 +23,6 @@ void Init_Ports(){
 
 void Init_Port2(){
     /* Configure GPIO */
-    /* Configure P2.7 as TA2CCR1 PWM output */
     GPIO_setAsPeripheralModuleFunctionOutputPin(GPIO_PORT_P2, GPIO_PIN7,
             GPIO_PRIMARY_MODULE_FUNCTION);
 
@@ -29,14 +31,18 @@ void Init_Port2(){
 }
 
 void Init_Port4(){
-    /* Configure GPIO */
+    /* Configure GPIO input for ADC channel 10 microphone */
 	GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P4, GPIO_PIN3,
+			GPIO_TERTIARY_MODULE_FUNCTION);
+
+    /* Configure GPIO input for ADC channel 7 light sensor */
+	GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P4, GPIO_PIN6,
 			GPIO_TERTIARY_MODULE_FUNCTION);
 
 }
 
 void Init_Port5(){
-    P5SEL0 |= BIT6;						    // Configure P5.6 as Timer A PWM output
+    P5SEL0 |= BIT6;	// blue LED
     P5SEL1 &= ~BIT6;
     P5DIR |= BIT6;
 

@@ -11,7 +11,6 @@ timers.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmInstr.h
 timers.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmFunc.h
 timers.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmSimd.h
 timers.obj: ../functions.h
-timers.obj: ../macros.h
 timers.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/driverlib.h
 timers.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/adc14.h
 timers.obj: /Applications/ti/ccsv6/ccs_base/arm/include/msp.h
@@ -48,6 +47,7 @@ timers.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/timer32.h
 timers.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/timer_a.h
 timers.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/uart.h
 timers.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/wdt_a.h
+timers.obj: ../macros.h
 
 ../timers.c: 
 /Applications/ti/ccsv6/ccs_base/arm/include/msp432.h: 
@@ -60,7 +60,6 @@ timers.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/wdt_a.h
 /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmFunc.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmSimd.h: 
 ../functions.h: 
-../macros.h: 
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/driverlib.h: 
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/adc14.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/msp.h: 
@@ -97,3 +96,4 @@ timers.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/wdt_a.h
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/timer_a.h: 
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/uart.h: 
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/wdt_a.h: 
+../macros.h: 

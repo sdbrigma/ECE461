@@ -1,0 +1,6 @@
+/GrLib/
+/LcdDriver/
+/driverlib/
+/makefile
+/objects.mk
+/sources.mk

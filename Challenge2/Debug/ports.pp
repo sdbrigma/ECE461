@@ -11,7 +11,6 @@ ports.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmInstr.h
 ports.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmFunc.h
 ports.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmSimd.h
 ports.obj: ../functions.h
-ports.obj: ../macros.h
 ports.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/driverlib.h
 ports.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/adc14.h
 ports.obj: /Applications/ti/ccsv6/ccs_base/arm/include/msp.h
@@ -48,6 +47,7 @@ ports.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/timer32.h
 ports.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/timer_a.h
 ports.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/uart.h
 ports.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/wdt_a.h
+ports.obj: ../macros.h
 
 ../ports.c: 
 /Applications/ti/ccsv6/ccs_base/arm/include/msp432.h: 
@@ -60,7 +60,6 @@ ports.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/wdt_a.h
 /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmFunc.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmSimd.h: 
 ../functions.h: 
-../macros.h: 
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/driverlib.h: 
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/adc14.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/msp.h: 
@@ -97,3 +96,4 @@ ports.obj: /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/wdt_a.h
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/timer_a.h: 
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/uart.h: 
 /Users/marybiggs/Desktop/ECE461/Challenge2/driverlib/wdt_a.h: 
+../macros.h: 

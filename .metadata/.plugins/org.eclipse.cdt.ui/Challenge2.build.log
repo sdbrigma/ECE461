@@ -2,65 +2,6 @@
 **** Build of configuration Debug for project Challenge2 ****
 
 /Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../adc.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge2/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="adc.pp"  "../adc.c"
-"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
-Finished building: ../adc.c
- 
-Building file: ../buzzer.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge2/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="buzzer.pp"  "../buzzer.c"
-"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
-Finished building: ../buzzer.c
- 
-Building file: ../clocks.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge2/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="clocks.pp"  "../clocks.c"
-"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
-Finished building: ../clocks.c
- 
-Building file: ../dma.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge2/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="dma.pp"  "../dma.c"
-"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
-Finished building: ../dma.c
- 
-Building file: ../interrupts.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge2/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="interrupts.pp"  "../interrupts.c"
-"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
-Finished building: ../interrupts.c
- 
-Building file: ../main.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge2/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
-"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
-Finished building: ../main.c
- 
-Building file: ../ports.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge2/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="ports.pp"  "../ports.c"
-"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
-Finished building: ../ports.c
- 
-Building file: ../time-delays.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge2/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="time-delays.pp"  "../time-delays.c"
-"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
-Finished building: ../time-delays.c
- 
-Building file: ../timers.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge2/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="timers.pp"  "../timers.c"
-"/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h", line 69: warning #1181-D: #warning directive: "MSP432 software will be updated to use CMSIS-Core in March 2016. This update will allow your MSP432 software to be CMSIS compliant, but require modification to your existing MSP432 code. A beta release is available if you want to start converting your code today. Refer to http://www.ti.com/MSP432CMSIS for detailed changes, conversion guide and background information."
-Finished building: ../timers.c
- 
-Building target: Challenge2.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off -z -m"Challenge2.map" --heap_size=0 --stack_size=512 -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Challenge2_linkInfo.xml" --rom_model -o "Challenge2.out" "./adc.obj" "./buzzer.obj" "./clocks.obj" "./dma.obj" "./interrupts.obj" "./lab5_software_startup_ccs.obj" "./main.obj" "./ports.obj" "./time-delays.obj" "./timers.obj" "../msp432p401r.cmd" "../msp432p4xx_driverlib.lib"  -l"libc.a" 
-<Linking>
-Finished building target: Challenge2.out
- 
+gmake: Nothing to be done for 'all'.
 
 **** Build Finished ****

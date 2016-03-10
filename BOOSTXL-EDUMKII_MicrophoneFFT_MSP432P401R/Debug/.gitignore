@@ -1,0 +1,8 @@
+/sources.mk
+/driverlib/
+/subdir_rules.mk
+/subdir_vars.mk
+/GrLib/
+/LcdDriver/
+/makefile
+/objects.mk
