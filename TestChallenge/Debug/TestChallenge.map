@@ -1,7 +1,7 @@
 ******************************************************************************
                   TI ARM Linker Unix v5.2.6                    
 ******************************************************************************
->> Linked Wed Mar 16 02:54:59 2016
+>> Linked Wed Mar 16 12:14:21 2016
 
 OUTPUT FILE NAME:   <TestChallenge.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 00000d11
@@ -120,9 +120,10 @@ section   page    origin      length       input sections
                   00001470    00000014     HAL_I2C.obj (.const)
 
 .cinit     0    00001488    00000080     
-                  00001488    00000059     (.cinit..data.load) [load image, compression = rle]
-                  000014e1    00000003     --HOLE-- [fill = 0]
-                  000014e4    0000000c     (__TI_handler_table)
+                  00001488    00000055     (.cinit..data.load) [load image, compression = rle]
+                  000014dd    00000003     --HOLE-- [fill = 0]
+                  000014e0    0000000c     (__TI_handler_table)
+                  000014ec    00000004     --HOLE-- [fill = 0]
                   000014f0    00000008     (.cinit..bss.load) [load image, compression = zero_init]
                   000014f8    00000010     (__TI_cinit_table)
 
@@ -154,13 +155,13 @@ section   page    origin      length       input sections
 LINKER GENERATED COPY TABLES
 
 __TI_cinit_table @ 000014f8 records: 2, size/record: 8, table size: 16
-	.data: load addr=00001488, load size=00000059 bytes, run addr=20000000, run size=00000060 bytes, compression=rle
+	.data: load addr=00001488, load size=00000055 bytes, run addr=20000000, run size=00000060 bytes, compression=rle
 	.bss: load addr=000014f0, load size=00000008 bytes, run addr=20000060, run size=00000008 bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 000014e4 records: 3, size/record: 4, table size: 12
+__TI_handler_table @ 000014e0 records: 3, size/record: 4, table size: 12
 	index: 0, handler: __TI_decompress_rle24
 	index: 1, handler: __TI_decompress_none
 	index: 2, handler: __TI_zero_init
@@ -237,8 +238,8 @@ UNDEFED   SHT$$INIT_ARRAY$$Limit
 00000200  __STACK_SIZE                               
 000014f8  __TI_CINIT_Base                            
 00001508  __TI_CINIT_Limit                           
-000014e4  __TI_Handler_Table_Base                    
-000014f0  __TI_Handler_Table_Limit                   
+000014e0  __TI_Handler_Table_Base                    
+000014ec  __TI_Handler_Table_Limit                   
 00000b75  __TI_auto_init                             
 20000050  __TI_cleanup_ptr                           
 000012f5  __TI_decompress_none                       
@@ -388,8 +389,8 @@ address   name
 0000135f  I2C_setSlaveAddress                        
 00001363  _system_pre_init                           
 00001470  i2cConfig                                  
-000014e4  __TI_Handler_Table_Base                    
-000014f0  __TI_Handler_Table_Limit                   
+000014e0  __TI_Handler_Table_Base                    
+000014ec  __TI_Handler_Table_Limit                   
 000014f8  __TI_CINIT_Base                            
 00001508  __TI_CINIT_Limit                           
 20000030  pwmConfig                                  

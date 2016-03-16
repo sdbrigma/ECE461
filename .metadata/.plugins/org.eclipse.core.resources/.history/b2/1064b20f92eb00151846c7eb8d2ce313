@@ -20,8 +20,10 @@ void alarm_system_state(bool state){
 		fire_signal = 1;
 	}
 	else{
-		P2OUT &= ~BIT0;	// red LED
-		P2OUT |= BIT1;	// green LED
+		//P2DIR &= ~BIT1;
+		P2OUT &= ~BIT1;	// green LED
+		//P2DIR |= BIT0;
+		P2OUT |= BIT0;	// red LED
 	    TA0CTL = TIMER_A_STOP_MODE; // turn off alarm;
 	    alarm_state = 0;
 	    fire_signal = 1;
