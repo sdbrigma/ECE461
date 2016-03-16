@@ -27,30 +27,44 @@ void fire_alarm(){
 }
 
 void doorbell(){
-	TA0CTL = TIMER_A_UP_MODE;
+	TA0CTL = TIMER_A_STOP_MODE;
 	Timer_A_PWMConfig doorbell1 =
 	{
 	        TIMER_A_CLOCKSOURCE_SMCLK,
-	        TIMER_A_CLOCKSOURCE_DIVIDER_1,
+	        TIMER_A_CLOCKSOURCE_DIVIDER_4,
 	        32000,
 	        TIMER_A_CAPTURECOMPARE_REGISTER_4,
 	        TIMER_A_OUTPUTMODE_RESET_SET,
-	        DING1,
+	        3200,
 	};
+	TA0CTL = TIMER_A_UP_MODE;
 	Timer_A_generatePWM(TIMER_A0_BASE,&doorbell1);
+
+	/*Init_SysTick(500);
+	while((SysTick->VAL) != 498);
+	SysTick_disableModule();
+
 
 	Timer_A_PWMConfig doorbell2 =
 	{
 	        TIMER_A_CLOCKSOURCE_SMCLK,
 	        TIMER_A_CLOCKSOURCE_DIVIDER_1,
-	        1000,
+	        300000,
 	        TIMER_A_CAPTURECOMPARE_REGISTER_4,
 	        TIMER_A_OUTPUTMODE_RESET_SET,
-	        50,
+	        DING2,
 	};
-	Timer_A_generatePWM(TIMER_A0_BASE,&doorbell2);
-	TA0CTL = TIMER_A_STOP_MODE;
+	Timer_A_generatePWM(TIMER_A0_BASE,&doorbell2);*/
 
+	Init_SysTick(16777215);
+	bool i = TRUE;
+	while(i){
+		if((SysTick->VAL) == 160){
+			SysTick_disableModule();
+			i = FALSE;
+		}
+	}
+	TA0CTL = TIMER_A_STOP_MODE;
 }
 
 void burglar_alarm(){

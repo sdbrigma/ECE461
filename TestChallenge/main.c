@@ -70,7 +70,7 @@ extern bool alarm_state = TRUE;
 extern bool burglar = FALSE;
 extern bool doorbell_signal = FALSE;
 extern bool fire_signal = FALSE;
-float lux;
+uint32_t lux;
 extern volatile uint32_t adc;
 
 int main(void)
@@ -87,23 +87,32 @@ int main(void)
     /* Initialize OPT3001 digital ambient light sensor */
     OPT3001_init();
 
+    //doorbell();
+
     alarm_system_state(alarm_state); // activate alarm
+
+    WDTCTL = WDTPW |WDTSSEL_3|WDTIS_4|WDTCNTCL;		//start WDT counter with a 1 second expiration
 
     while (1)
     {
+    		MAP_WDT_A_clearTimer();
     		lux = OPT3001_getLux();
     		Switch_Process();
     		if(alarm_state && burglar){
     			burglar_alarm();
     			burglar = 0;
     		}
-    		if(OPT3001_getLux() > FIRE){
+    		if(lux > FIRE){
     			fire_alarm();
-    			fire_signal = 1;
+    			while(!fire_signal){
+    				MAP_WDT_A_clearTimer();
+    				Switch_Process();
+    			}
     		}
     		ADC14_toggleConversionTrigger();        // Trigger the initial conversion
     		if(doorbell_signal){
     			doorbell();
+    			doorbell_signal = 0;
     		}
     }
 
