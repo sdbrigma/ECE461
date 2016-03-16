@@ -1,0 +1,90 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../msp432p401r.cmd 
+
+LIB_SRCS += \
+../msp432p4xx_driverlib.lib 
+
+C_SRCS += \
+../adc.c \
+../alarm-state.c \
+../buzzer.c \
+../clocks.c \
+../eusci.c \
+../interrupts.c \
+../main.c \
+../msp432_startup_ccs.c \
+../ports.c \
+../time-delays.c \
+../timers.c 
+
+C_DEPS += \
+./adc.pp \
+./alarm-state.pp \
+./buzzer.pp \
+./clocks.pp \
+./eusci.pp \
+./interrupts.pp \
+./main.pp \
+./msp432_startup_ccs.pp \
+./ports.pp \
+./time-delays.pp \
+./timers.pp 
+
+OBJS += \
+./adc.obj \
+./alarm-state.obj \
+./buzzer.obj \
+./clocks.obj \
+./eusci.obj \
+./interrupts.obj \
+./main.obj \
+./msp432_startup_ccs.obj \
+./ports.obj \
+./time-delays.obj \
+./timers.obj 
+
+OBJS__QUOTED += \
+"adc.obj" \
+"alarm-state.obj" \
+"buzzer.obj" \
+"clocks.obj" \
+"eusci.obj" \
+"interrupts.obj" \
+"main.obj" \
+"msp432_startup_ccs.obj" \
+"ports.obj" \
+"time-delays.obj" \
+"timers.obj" 
+
+C_DEPS__QUOTED += \
+"adc.pp" \
+"alarm-state.pp" \
+"buzzer.pp" \
+"clocks.pp" \
+"eusci.pp" \
+"interrupts.pp" \
+"main.pp" \
+"msp432_startup_ccs.pp" \
+"ports.pp" \
+"time-delays.pp" \
+"timers.pp" 
+
+C_SRCS__QUOTED += \
+"../adc.c" \
+"../alarm-state.c" \
+"../buzzer.c" \
+"../clocks.c" \
+"../eusci.c" \
+"../interrupts.c" \
+"../main.c" \
+"../msp432_startup_ccs.c" \
+"../ports.c" \
+"../time-delays.c" \
+"../timers.c" 
+
+

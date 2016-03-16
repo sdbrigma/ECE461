@@ -8,10 +8,12 @@ HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/msp.h
 HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h
 HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/msp_compatibility.h
 HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/cmsis_ccs.h
+HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r_classic.h
 HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cm4.h
 HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmInstr.h
 HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmFunc.h
 HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmSimd.h
+HAL_I2C.obj: /Applications/ti/ccsv6/ccs_base/arm/include/system_msp432p401r.h
 HAL_I2C.obj: /Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdbool.h
 HAL_I2C.obj: /Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals.h
 HAL_I2C.obj: /Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdarg.h
@@ -55,10 +57,12 @@ HAL_I2C.obj: /Users/marybiggs/Desktop/ECE461/BOOSTXL-EDUMKII_LightSensor_MSP432P
 /Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/msp_compatibility.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/cmsis_ccs.h: 
+/Applications/ti/ccsv6/ccs_base/arm/include/msp432p401r_classic.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cm4.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmInstr.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmFunc.h: 
 /Applications/ti/ccsv6/ccs_base/arm/include/CMSIS/core_cmSimd.h: 
+/Applications/ti/ccsv6/ccs_base/arm/include/system_msp432p401r.h: 
 /Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdbool.h: 
 /Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/yvals.h: 
 /Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/stdarg.h: 

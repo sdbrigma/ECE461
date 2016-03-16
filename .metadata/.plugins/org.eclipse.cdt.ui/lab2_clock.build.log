@@ -1,0 +1,17 @@
+
+**** Build of configuration Debug for project lab2_clock ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../lab2_clock_system.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --include_path="/Users/marybiggs/Desktop/ECE461/lab2_clock/driverlib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" -g --gcc --define=TARGET_IS_MSP432P4XX --define=ccs --define=__MSP432P401R__ --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="lab2_clock_system.pp"  "../lab2_clock_system.c"
+"../lab2_clock_system.c", line 109: fatal error #35: #error directive: "Insert your code here to invoke MSP432 DriverLib API to initialize MCLK to be sourced by DCO / 1"
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'lab2_clock_system.obj' failed
+1 catastrophic error detected in the compilation of "../lab2_clock_system.c".
+Compilation terminated.
+gmake: *** [lab2_clock_system.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

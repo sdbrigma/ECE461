@@ -1,0 +1,45 @@
+/*
+ * interrupts.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: Steffon Brigman
+ */
+
+#include "msp432.h"
+#include "stdint.h"
+#include "driverlib.h"
+#include "functions.h"
+#include "macros.h"
+
+
+void port5IsrHandler(){ // SW1
+	//TODO: DEBOUNCE
+	if(SysTick_getValue = DEBOUNCE){
+		doorbell();
+	}
+
+}
+
+void port3IsrHandler(){//SW2
+	//TODO: DEBOUNCE
+
+	while(SysTick_getValue != DEBOUNCE);
+
+	if(alarm_state){
+		alarm_system_state(FALSE);
+		alarm_state = 0;
+	}
+	else{
+		alarm_system_state(TRUE);
+		alarm_state = 1;
+	}
+}
+
+void adc14IsrHandler(){
+		if(alarm_state){
+			if(ADC14->MEM[10] >= BURGLAR){
+				burglar_alarm();
+			}
+		ADC14_clearInterruptFlag(ADC_INT10);
+	}
+}

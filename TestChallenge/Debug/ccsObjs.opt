@@ -1,0 +1,1 @@
+"./HAL_I2C.obj" "./HAL_OPT3001.obj" "./adc.obj" "./alarm-state.obj" "./buzzer.obj" "./clocks.obj" "./interrupts.obj" "./main.obj" "./msp432_startup_ccs.obj" "./ports.obj" "./switch.obj" "./timers.obj" "../msp432p401r.cmd" "../msp432p4xx_driverlib.lib" -l"libc.a" 

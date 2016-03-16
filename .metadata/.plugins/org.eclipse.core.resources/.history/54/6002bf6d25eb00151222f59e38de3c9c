@@ -1,0 +1,90 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+CMD_SRCS += \
+../msp432p401r.cmd 
+
+LIB_SRCS += \
+../msp432p4xx_driverlib.lib 
+
+C_SRCS += \
+../HAL_I2C.c \
+../HAL_OPT3001.c \
+../adc.c \
+../alarm-state.c \
+../buzzer.c \
+../clocks.c \
+../interrupts.c \
+../main.c \
+../msp432_startup_ccs.c \
+../ports.c \
+../timers.c 
+
+C_DEPS += \
+./HAL_I2C.pp \
+./HAL_OPT3001.pp \
+./adc.pp \
+./alarm-state.pp \
+./buzzer.pp \
+./clocks.pp \
+./interrupts.pp \
+./main.pp \
+./msp432_startup_ccs.pp \
+./ports.pp \
+./timers.pp 
+
+OBJS += \
+./HAL_I2C.obj \
+./HAL_OPT3001.obj \
+./adc.obj \
+./alarm-state.obj \
+./buzzer.obj \
+./clocks.obj \
+./interrupts.obj \
+./main.obj \
+./msp432_startup_ccs.obj \
+./ports.obj \
+./timers.obj 
+
+OBJS__QUOTED += \
+"HAL_I2C.obj" \
+"HAL_OPT3001.obj" \
+"adc.obj" \
+"alarm-state.obj" \
+"buzzer.obj" \
+"clocks.obj" \
+"interrupts.obj" \
+"main.obj" \
+"msp432_startup_ccs.obj" \
+"ports.obj" \
+"timers.obj" 
+
+C_DEPS__QUOTED += \
+"HAL_I2C.pp" \
+"HAL_OPT3001.pp" \
+"adc.pp" \
+"alarm-state.pp" \
+"buzzer.pp" \
+"clocks.pp" \
+"interrupts.pp" \
+"main.pp" \
+"msp432_startup_ccs.pp" \
+"ports.pp" \
+"timers.pp" 
+
+C_SRCS__QUOTED += \
+"../HAL_I2C.c" \
+"../HAL_OPT3001.c" \
+"../adc.c" \
+"../alarm-state.c" \
+"../buzzer.c" \
+"../clocks.c" \
+"../interrupts.c" \
+"../main.c" \
+"../msp432_startup_ccs.c" \
+"../ports.c" \
+"../timers.c" 
+
+

@@ -1,0 +1,12 @@
+/*
+ * eusci.c
+ *
+ *  Created on: Mar 11, 2016
+ *      Author: Steffon Brigman
+ */
+
+
+
+void Init_Eusci(){
+
+}

@@ -1,0 +1,51 @@
+/*
+ * interrupts.c
+ *
+ *  Created on: Mar 5, 2016
+ *      Author: Steffon Brigman
+ */
+
+#include "msp432.h"
+#include "stdint.h"
+#include "driverlib.h"
+#include "functions.h"
+#include "macros.h"
+
+volatile uint32_t debounce_value;
+void port5IsrHandler(){ // SW1
+	//uint32_t debounce = SysTick_getValue();
+	SysTick->CTRL |= SysTick_CTRL_CLKSOURCE_Msk | SysTick_CTRL_ENABLE_Msk; // SysTick enable module
+	SysTick->LOAD = 9; // SysTick load period for 10
+
+	while(1){
+		if(SysTick->VAL > 4){// if current SysTick value is greater than 4
+			SysTick_disableModule();
+			burglar_alarm();
+			debounce_value = 0;
+		}
+	}
+}
+
+void port3IsrHandler(){//SW2
+	//uint32_t debounce = SysTick_getValue();
+	if(debounce_value > 4){
+		SysTick_disableModule();
+		if(alarm_state){
+			alarm_system_state(FALSE);
+			alarm_state = 0;
+		}
+		else{
+			alarm_system_state(TRUE);
+			alarm_state = 1;
+		}
+		debounce_value = 0;
+		Init_SysTick(DEBOUNCE);
+	}
+}
+
+void adc14IsrHandler(){
+			if((ADC14->MEM[10] >= BURGLAR) && alarm_state){
+				//burglar_alarm();
+			}
+		ADC14_clearInterruptFlag(ADC_INT10);
+}
