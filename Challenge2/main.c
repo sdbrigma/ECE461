@@ -80,29 +80,29 @@ int main(void)
     Init_Ports();
     Init_Adc();
     Init_Timers();
-    //Init_SysTick(DEBOUNCE);
     /* Initialize I2C communication */
     Init_I2C_GPIO();
     I2C_init();
     /* Initialize OPT3001 digital ambient light sensor */
     OPT3001_init();
 
-    //doorbell();
-
     alarm_system_state(alarm_state); // activate alarm
 
     WDTCTL = WDTPW |WDTSSEL_3|WDTIS_4|WDTCNTCL;		//start WDT counter with a 1 second expiration
+
+    //MAP_PCM_gotoLPM0(); // enter low power mode
 
     while (1)
     {
     		MAP_WDT_A_clearTimer();
     		lux = OPT3001_getLux();
     		Switch_Process();
-    		if(alarm_state && burglar){
+    		if(alarm_state && !burglar && !fire_signal){// do not activate burglar alarm if fire alarm is already active
     			burglar_alarm();
-    			burglar = 0;
+    			//burglar = 1;
     		}
     		if(lux > FIRE){
+    			TA0CTL = TIMER_A_STOP_MODE;
     			fire_alarm();
     			fire_signal = TRUE;
     			while(1){

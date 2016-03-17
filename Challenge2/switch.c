@@ -13,11 +13,13 @@
 
 
 void Switch_Process(){
-	while(!(P1IN & BIT1)){// S2 on msp432
-		doorbell_signal = 1;
+	while(!(P1IN & BIT1)){// S1 on msp432
+		if(!fire_signal && !burglar){// only activate doorbell if no alarms are active
+			doorbell_signal = 1;
+		}
 	}
 
-	while(!(P1IN & BIT4)){// S1 on msp432
+	while(!(P1IN & BIT4)){// S2 on msp432
 		TA0CTL = TIMER_A_STOP_MODE;
 
 		// Debouncing

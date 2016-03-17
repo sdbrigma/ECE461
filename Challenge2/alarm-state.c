@@ -16,14 +16,15 @@ void alarm_system_state(bool state){
 		P2OUT &= ~BIT1;	// green LED
 	    P2OUT |= BIT0;	// red LED
 		TA0CTL = TIMER_A_STOP_MODE; // turn off alarm;
-		alarm_state = 1;
+		//alarm_state = 0;
 		fire_signal = 0;
+		burglar = 0;
 	}
 	else{
 		P2OUT &= ~BIT0;	// red LED
 		P2OUT |= BIT1;	// green LED
 	    TA0CTL = TIMER_A_STOP_MODE; // turn off alarm;
-	    alarm_state = 0;
+	    //alarm_state = 1;
 	    fire_signal = 0;
 	}
 }

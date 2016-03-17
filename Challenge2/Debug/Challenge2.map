@@ -1,17 +1,17 @@
 ******************************************************************************
                   TI ARM Linker Unix v5.2.6                    
 ******************************************************************************
->> Linked Wed Mar 16 20:43:34 2016
+>> Linked Wed Mar 16 22:57:16 2016
 
 OUTPUT FILE NAME:   <Challenge2.out>
-ENTRY POINT SYMBOL: "_c_int00"  address: 00000d25
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000d3d
 
 
 MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  MAIN                  00000000   00040000  00001516  0003eaea  R  X
+  MAIN                  00000000   00040000  0000152e  0003ead2  R  X
   INFO                  00200000   00004000  00000000  00004000  R  X
   SRAM_CODE             01000000   00010000  00000000  00010000  RW X
   SRAM_DATA             20000000   00010000  00000268  0000fd98  RW  
@@ -21,11 +21,11 @@ SEGMENT ALLOCATION MAP
 
 run origin  load origin   length   init length attrs members
 ----------  ----------- ---------- ----------- ----- -------
-00000000    00000000    00001518   00001518    r-x
+00000000    00000000    00001530   00001530    r-x
   00000000    00000000    00000140   00000140    r-- .intvecs
-  00000140    00000140    0000123a   0000123a    r-x .text
-  0000137c    0000137c    0000011c   0000011c    r-- .const
-  00001498    00001498    00000080   00000080    r-- .cinit
+  00000140    00000140    00001252   00001252    r-x .text
+  00001394    00001394    0000011c   0000011c    r-- .const
+  000014b0    000014b0    00000080   00000080    r-- .cinit
 20000000    20000000    00000068   00000000    rw-
   20000000    20000000    00000060   00000000    rw- .data
   20000060    20000060    00000008   00000000    rw- .bss
@@ -41,91 +41,91 @@ section   page    origin      length       input sections
 .intvecs   0    00000000    00000140     
                   00000000    00000140     msp432_startup_ccs.obj (.intvecs:retain)
 
-.text      0    00000140    0000123a     
+.text      0    00000140    00001252     
                   00000140    00000154     msp432p4xx_driverlib.lib : adc14.o (.text:_getIndexForMemRegister)
                   00000294    0000013c     HAL_OPT3001.obj (.text)
                   000003d0    00000118     HAL_I2C.obj (.text)
                   000004e8    000000fc     ports.obj (.text)
                   000005e4    000000e0     msp432p4xx_driverlib.lib : cs.o (.text:CS_initClockSignal)
                   000006c4    000000cc     buzzer.obj (.text)
-                  00000790    000000c4     main.obj (.text)
-                  00000854    000000b2     msp432p4xx_driverlib.lib : timer_a.o (.text:privateTimer_AProcessClockSourceDivider)
-                  00000906    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
-                  000009a2    00000002     --HOLE-- [fill = 0]
-                  000009a4    0000008c     switch.obj (.text)
-                  00000a30    0000007a     rtsv7M4_T_le_v4SPD16_eabi.lib : memset_t2.obj (.text)
-                  00000aaa    00000002     --HOLE-- [fill = 0]
-                  00000aac    00000070     alarm-state.obj (.text)
-                  00000b1c    0000006c     msp432p4xx_driverlib.lib : adc14.o (.text:ADC14_configureConversionMemory)
-                  00000b88    0000006c     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.obj (.text)
-                  00000bf4    0000006a                                   : copy_decompress_rle.obj (.text)
-                  00000c5e    00000002     --HOLE-- [fill = 0]
-                  00000c60    00000064     msp432p4xx_driverlib.lib : interrupt.o (.text:Interrupt_enableInterrupt)
-                  00000cc4    00000060     adc.obj (.text)
-                  00000d24    00000050     rtsv7M4_T_le_v4SPD16_eabi.lib : boot.obj (.text)
-                  00000d74    0000004c     msp432p4xx_driverlib.lib : gpio.o (.text:GPIO_setAsPeripheralModuleFunctionOutputPin)
-                  00000dc0    0000004c     rtsv7M4_T_le_v4SPD16_eabi.lib : cpy_tbl.obj (.text)
-                  00000e0c    00000048     msp432p4xx_driverlib.lib : gpio.o (.text:GPIO_setAsPeripheralModuleFunctionInputPin)
-                  00000e54    00000048                              : timer_a.o (.text:Timer_A_generatePWM)
-                  00000e9c    00000044                              : adc14.o (.text:ADC14_configureSingleSampleMode)
-                  00000ee0    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : exit.obj (.text)
-                  00000f24    00000040     msp432p4xx_driverlib.lib : i2c.o (.text:I2C_masterSendMultiByteFinish)
-                  00000f64    0000003e                              : i2c.o (.text:I2C_initMaster)
-                  00000fa2    00000002     --HOLE-- [fill = 0]
-                  00000fa4    00000038                              : adc14.o (.text:ADC14_initModule)
-                  00000fdc    00000038                              : i2c.o (.text:I2C_masterSendMultiByteStart)
-                  00001014    00000034     clocks.obj (.text)
-                  00001048    00000034     interrupts.obj (.text)
-                  0000107c    00000030     msp432p4xx_driverlib.lib : i2c.o (.text:I2C_masterReceiveMultiByteFinish)
-                  000010ac    00000030                              : i2c.o (.text:I2C_masterSendMultiByteStop)
-                  000010dc    0000002c                              : adc14.o (.text:ADC14_enableConversion)
-                  00001108    0000002c     timers.obj (.text)
-                  00001134    00000028     msp432p4xx_driverlib.lib : adc14.o (.text:ADC14_enableSampleTimer)
-                  0000115c    00000028                              : adc14.o (.text:ADC14_setResultFormat)
-                  00001184    00000024                              : cs.o (.text:CS_setDCOCenteredFrequency)
-                  000011a8    00000024                              : i2c.o (.text:I2C_masterSendMultiByteNext)
-                  000011cc    00000020                              : adc14.o (.text:ADC14_clearInterruptFlag)
-                  000011ec    00000020                              : adc14.o (.text:ADC14_enableInterrupt)
-                  0000120c    00000020                              : adc14.o (.text:ADC14_toggleConversionTrigger)
-                  0000122c    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
-                  00001244    00000014     msp432p4xx_driverlib.lib : adc14.o (.text:ADCIsConversionRunning)
-                  00001258    00000014                              : i2c.o (.text:I2C_isBusBusy)
-                  0000126c    00000014                              : interrupt.o (.text:Interrupt_disableSleepOnIsrExit)
-                  00001280    00000014                              : systick.o (.text:SysTick_disableModule)
-                  00001294    00000014                              : systick.o (.text:SysTick_enableModule)
-                  000012a8    00000014     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
-                  000012bc    00000010     msp432p4xx_driverlib.lib : adc14.o (.text:ADC14_enableModule)
-                  000012cc    00000010                              : i2c.o (.text:I2C_masterReceiveStart)
-                  000012dc    00000010                              : interrupt.o (.text:Interrupt_enableMaster)
-                  000012ec    0000000e                              : i2c.o (.text:I2C_clearInterruptFlag)
-                  000012fa    0000000e                              : i2c.o (.text:I2C_setMode)
-                  00001308    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
-                  00001316    0000000c     msp432p4xx_driverlib.lib : cpu.o (.text:CPU_cpsie)
-                  00001322    0000000c                              : i2c.o (.text:I2C_disableModule)
-                  0000132e    0000000c                              : i2c.o (.text:I2C_enableModule)
-                  0000133a    00000002     --HOLE-- [fill = 0]
-                  0000133c    0000000c                              : systick.o (.text:SysTick_setPeriod)
-                  00001348    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.obj (.text:decompress:ZI)
-                  00001354    0000000c     msp432_startup_ccs.obj (.text)
-                  00001360    00000006     msp432p4xx_driverlib.lib : i2c.o (.text:I2C_getInterruptStatus)
-                  00001366    00000006                              : i2c.o (.text:I2C_masterReceiveMultiByteNext)
-                  0000136c    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
-                  00001372    00000004     msp432p4xx_driverlib.lib : i2c.o (.text:I2C_setSlaveAddress)
-                  00001376    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.obj (.text)
+                  00000790    000000cc     main.obj (.text)
+                  0000085c    000000b2     msp432p4xx_driverlib.lib : timer_a.o (.text:privateTimer_AProcessClockSourceDivider)
+                  0000090e    00000002     --HOLE-- [fill = 0]
+                  00000910    000000a0     switch.obj (.text)
+                  000009b0    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  00000a4c    0000007a                                   : memset_t2.obj (.text)
+                  00000ac6    00000002     --HOLE-- [fill = 0]
+                  00000ac8    0000006c     msp432p4xx_driverlib.lib : adc14.o (.text:ADC14_configureConversionMemory)
+                  00000b34    0000006c     alarm-state.obj (.text)
+                  00000ba0    0000006c     rtsv7M4_T_le_v4SPD16_eabi.lib : autoinit.obj (.text)
+                  00000c0c    0000006a                                   : copy_decompress_rle.obj (.text)
+                  00000c76    00000002     --HOLE-- [fill = 0]
+                  00000c78    00000064     msp432p4xx_driverlib.lib : interrupt.o (.text:Interrupt_enableInterrupt)
+                  00000cdc    00000060     adc.obj (.text)
+                  00000d3c    00000050     rtsv7M4_T_le_v4SPD16_eabi.lib : boot.obj (.text)
+                  00000d8c    0000004c     msp432p4xx_driverlib.lib : gpio.o (.text:GPIO_setAsPeripheralModuleFunctionOutputPin)
+                  00000dd8    0000004c     rtsv7M4_T_le_v4SPD16_eabi.lib : cpy_tbl.obj (.text)
+                  00000e24    00000048     msp432p4xx_driverlib.lib : gpio.o (.text:GPIO_setAsPeripheralModuleFunctionInputPin)
+                  00000e6c    00000048                              : timer_a.o (.text:Timer_A_generatePWM)
+                  00000eb4    00000044                              : adc14.o (.text:ADC14_configureSingleSampleMode)
+                  00000ef8    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : exit.obj (.text)
+                  00000f3c    00000040     msp432p4xx_driverlib.lib : i2c.o (.text:I2C_masterSendMultiByteFinish)
+                  00000f7c    0000003e                              : i2c.o (.text:I2C_initMaster)
+                  00000fba    00000002     --HOLE-- [fill = 0]
+                  00000fbc    00000038                              : adc14.o (.text:ADC14_initModule)
+                  00000ff4    00000038                              : i2c.o (.text:I2C_masterSendMultiByteStart)
+                  0000102c    00000034     clocks.obj (.text)
+                  00001060    00000034     interrupts.obj (.text)
+                  00001094    00000030     msp432p4xx_driverlib.lib : i2c.o (.text:I2C_masterReceiveMultiByteFinish)
+                  000010c4    00000030                              : i2c.o (.text:I2C_masterSendMultiByteStop)
+                  000010f4    0000002c                              : adc14.o (.text:ADC14_enableConversion)
+                  00001120    0000002c     timers.obj (.text)
+                  0000114c    00000028     msp432p4xx_driverlib.lib : adc14.o (.text:ADC14_enableSampleTimer)
+                  00001174    00000028                              : adc14.o (.text:ADC14_setResultFormat)
+                  0000119c    00000024                              : cs.o (.text:CS_setDCOCenteredFrequency)
+                  000011c0    00000024                              : i2c.o (.text:I2C_masterSendMultiByteNext)
+                  000011e4    00000020                              : adc14.o (.text:ADC14_clearInterruptFlag)
+                  00001204    00000020                              : adc14.o (.text:ADC14_enableInterrupt)
+                  00001224    00000020                              : adc14.o (.text:ADC14_toggleConversionTrigger)
+                  00001244    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
+                  0000125c    00000014     msp432p4xx_driverlib.lib : adc14.o (.text:ADCIsConversionRunning)
+                  00001270    00000014                              : i2c.o (.text:I2C_isBusBusy)
+                  00001284    00000014                              : interrupt.o (.text:Interrupt_disableSleepOnIsrExit)
+                  00001298    00000014                              : systick.o (.text:SysTick_disableModule)
+                  000012ac    00000014                              : systick.o (.text:SysTick_enableModule)
+                  000012c0    00000014     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.text)
+                  000012d4    00000010     msp432p4xx_driverlib.lib : adc14.o (.text:ADC14_enableModule)
+                  000012e4    00000010                              : i2c.o (.text:I2C_masterReceiveStart)
+                  000012f4    00000010                              : interrupt.o (.text:Interrupt_enableMaster)
+                  00001304    0000000e                              : i2c.o (.text:I2C_clearInterruptFlag)
+                  00001312    0000000e                              : i2c.o (.text:I2C_setMode)
+                  00001320    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  0000132e    0000000c     msp432p4xx_driverlib.lib : cpu.o (.text:CPU_cpsie)
+                  0000133a    0000000c                              : i2c.o (.text:I2C_disableModule)
+                  00001346    0000000c                              : i2c.o (.text:I2C_enableModule)
+                  00001352    00000002     --HOLE-- [fill = 0]
+                  00001354    0000000c                              : systick.o (.text:SysTick_setPeriod)
+                  00001360    0000000c     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_zero_init.obj (.text:decompress:ZI)
+                  0000136c    0000000c     msp432_startup_ccs.obj (.text)
+                  00001378    00000006     msp432p4xx_driverlib.lib : i2c.o (.text:I2C_getInterruptStatus)
+                  0000137e    00000006                              : i2c.o (.text:I2C_masterReceiveMultiByteNext)
+                  00001384    00000006     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_rle.obj (.text:decompress:rle24)
+                  0000138a    00000004     msp432p4xx_driverlib.lib : i2c.o (.text:I2C_setSlaveAddress)
+                  0000138e    00000004     rtsv7M4_T_le_v4SPD16_eabi.lib : pre_init.obj (.text)
 
-.const     0    0000137c    0000011c     
-                  0000137c    00000080     msp432p4xx_driverlib.lib : adc14.o (.const:_ctlRegs)
-                  000013fc    00000048     buzzer.obj (.const)
-                  00001444    00000040     msp432p4xx_driverlib.lib : interrupt.o (.const)
-                  00001484    00000014     HAL_I2C.obj (.const)
+.const     0    00001394    0000011c     
+                  00001394    00000080     msp432p4xx_driverlib.lib : adc14.o (.const:_ctlRegs)
+                  00001414    00000048     buzzer.obj (.const)
+                  0000145c    00000040     msp432p4xx_driverlib.lib : interrupt.o (.const)
+                  0000149c    00000014     HAL_I2C.obj (.const)
 
-.cinit     0    00001498    00000080     
-                  00001498    00000055     (.cinit..data.load) [load image, compression = rle]
-                  000014ed    00000003     --HOLE-- [fill = 0]
-                  000014f0    0000000c     (__TI_handler_table)
-                  000014fc    00000004     --HOLE-- [fill = 0]
-                  00001500    00000008     (.cinit..bss.load) [load image, compression = zero_init]
-                  00001508    00000010     (__TI_cinit_table)
+.cinit     0    000014b0    00000080     
+                  000014b0    00000055     (.cinit..data.load) [load image, compression = rle]
+                  00001505    00000003     --HOLE-- [fill = 0]
+                  00001508    0000000c     (__TI_handler_table)
+                  00001514    00000004     --HOLE-- [fill = 0]
+                  00001518    00000008     (.cinit..bss.load) [load image, compression = zero_init]
+                  00001520    00000010     (__TI_cinit_table)
 
 .init_array 
 *          0    00000000    00000000     UNINITIALIZED
@@ -154,14 +154,14 @@ section   page    origin      length       input sections
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 00001508 records: 2, size/record: 8, table size: 16
-	.data: load addr=00001498, load size=00000055 bytes, run addr=20000000, run size=00000060 bytes, compression=rle
-	.bss: load addr=00001500, load size=00000008 bytes, run addr=20000060, run size=00000008 bytes, compression=zero_init
+__TI_cinit_table @ 00001520 records: 2, size/record: 8, table size: 16
+	.data: load addr=000014b0, load size=00000055 bytes, run addr=20000000, run size=00000060 bytes, compression=rle
+	.bss: load addr=00001518, load size=00000008 bytes, run addr=20000060, run size=00000008 bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 000014f0 records: 3, size/record: 4, table size: 12
+__TI_handler_table @ 00001508 records: 3, size/record: 4, table size: 12
 	index: 0, handler: __TI_decompress_rle24
 	index: 1, handler: __TI_decompress_none
 	index: 2, handler: __TI_zero_init
@@ -171,54 +171,54 @@ GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name
 
 address   name                                       
 -------   ----                                       
-000011cd  ADC14_clearInterruptFlag                   
-00000b1d  ADC14_configureConversionMemory            
-00000e9d  ADC14_configureSingleSampleMode            
-000010dd  ADC14_enableConversion                     
-000011ed  ADC14_enableInterrupt                      
-000012bd  ADC14_enableModule                         
-00001135  ADC14_enableSampleTimer                    
-00000fa5  ADC14_initModule                           
-0000115d  ADC14_setResultFormat                      
-0000120d  ADC14_toggleConversionTrigger              
-00000ee1  C$$EXIT                                    
-00001317  CPU_cpsie                                  
+000011e5  ADC14_clearInterruptFlag                   
+00000ac9  ADC14_configureConversionMemory            
+00000eb5  ADC14_configureSingleSampleMode            
+000010f5  ADC14_enableConversion                     
+00001205  ADC14_enableInterrupt                      
+000012d5  ADC14_enableModule                         
+0000114d  ADC14_enableSampleTimer                    
+00000fbd  ADC14_initModule                           
+00001175  ADC14_setResultFormat                      
+00001225  ADC14_toggleConversionTrigger              
+00000ef9  C$$EXIT                                    
+0000132f  CPU_cpsie                                  
 000005e5  CS_initClockSignal                         
-00001185  CS_setDCOCenteredFrequency                 
-00000e0d  GPIO_setAsPeripheralModuleFunctionInputPin 
-00000d75  GPIO_setAsPeripheralModuleFunctionOutputPin
-000012ed  I2C_clearInterruptFlag                     
-00001323  I2C_disableModule                          
-0000132f  I2C_enableModule                           
-00001361  I2C_getInterruptStatus                     
+0000119d  CS_setDCOCenteredFrequency                 
+00000e25  GPIO_setAsPeripheralModuleFunctionInputPin 
+00000d8d  GPIO_setAsPeripheralModuleFunctionOutputPin
+00001305  I2C_clearInterruptFlag                     
+0000133b  I2C_disableModule                          
+00001347  I2C_enableModule                           
+00001379  I2C_getInterruptStatus                     
 000003e9  I2C_init                                   
-00000f65  I2C_initMaster                             
-00001259  I2C_isBusBusy                              
-0000107d  I2C_masterReceiveMultiByteFinish           
-00001367  I2C_masterReceiveMultiByteNext             
-000012cd  I2C_masterReceiveStart                     
-00000f25  I2C_masterSendMultiByteFinish              
-000011a9  I2C_masterSendMultiByteNext                
-00000fdd  I2C_masterSendMultiByteStart               
-000010ad  I2C_masterSendMultiByteStop                
+00000f7d  I2C_initMaster                             
+00001271  I2C_isBusBusy                              
+00001095  I2C_masterReceiveMultiByteFinish           
+0000137f  I2C_masterReceiveMultiByteNext             
+000012e5  I2C_masterReceiveStart                     
+00000f3d  I2C_masterSendMultiByteFinish              
+000011c1  I2C_masterSendMultiByteNext                
+00000ff5  I2C_masterSendMultiByteStart               
+000010c5  I2C_masterSendMultiByteStop                
 00000401  I2C_read16                                 
-000012fb  I2C_setMode                                
-00001373  I2C_setSlaveAddress                        
+00001313  I2C_setMode                                
+0000138b  I2C_setSlaveAddress                        
 000004cb  I2C_setslave                               
 00000487  I2C_write16                                
-00000cc5  Init_Adc                                   
-00001015  Init_Clocks                                
+00000cdd  Init_Adc                                   
+0000102d  Init_Clocks                                
 000003d1  Init_I2C_GPIO                              
 000004fd  Init_Port1                                 
 00000563  Init_Port2                                 
 00000585  Init_Port4                                 
 00000593  Init_Port5                                 
 000004e9  Init_Ports                                 
-0000111f  Init_SysTick                               
-00001109  Init_Timers                                
-0000126d  Interrupt_disableSleepOnIsrExit            
-00000c61  Interrupt_enableInterrupt                  
-000012dd  Interrupt_enableMaster                     
+00001137  Init_SysTick                               
+00001121  Init_Timers                                
+00001285  Interrupt_disableSleepOnIsrExit            
+00000c79  Interrupt_enableInterrupt                  
+000012f5  Interrupt_enableMaster                     
 000002f9  OPT3001_getLux                             
 00000295  OPT3001_init                               
 000002c9  OPT3001_readConfigReg                      
@@ -228,66 +228,66 @@ address   name
 000002a9  OPT3001_readManufacturerId                 
 UNDEFED   SHT$$INIT_ARRAY$$Base                      
 UNDEFED   SHT$$INIT_ARRAY$$Limit                     
-000009a5  Switch_Process                             
-00001281  SysTick_disableModule                      
-00001295  SysTick_enableModule                       
-0000133d  SysTick_setPeriod                          
-00000e55  Timer_A_generatePWM                        
+00000911  Switch_Process                             
+00001299  SysTick_disableModule                      
+000012ad  SysTick_enableModule                       
+00001355  SysTick_setPeriod                          
+00000e6d  Timer_A_generatePWM                        
 4000480c  WDTCTL_SYM                                 
 20010000  __STACK_END                                
 00000200  __STACK_SIZE                               
-00001508  __TI_CINIT_Base                            
-00001518  __TI_CINIT_Limit                           
-000014f0  __TI_Handler_Table_Base                    
-000014fc  __TI_Handler_Table_Limit                   
-00000b89  __TI_auto_init                             
+00001520  __TI_CINIT_Base                            
+00001530  __TI_CINIT_Limit                           
+00001508  __TI_Handler_Table_Base                    
+00001514  __TI_Handler_Table_Limit                   
+00000ba1  __TI_auto_init                             
 20000050  __TI_cleanup_ptr                           
-00001309  __TI_decompress_none                       
-0000136d  __TI_decompress_rle24                      
+00001321  __TI_decompress_none                       
+00001385  __TI_decompress_rle24                      
 20000054  __TI_dtors_ptr                             
 00000000  __TI_static_base__                         
-00001349  __TI_zero_init                             
-00000a31  __aeabi_memclr                             
-00000a31  __aeabi_memclr4                            
-00000a31  __aeabi_memclr8                            
-00000907  __aeabi_memcpy                             
-00000907  __aeabi_memcpy4                            
-00000907  __aeabi_memcpy8                            
-00000a33  __aeabi_memset                             
-00000a33  __aeabi_memset4                            
-00000a33  __aeabi_memset8                            
+00001361  __TI_zero_init                             
+00000a4d  __aeabi_memclr                             
+00000a4d  __aeabi_memclr4                            
+00000a4d  __aeabi_memclr8                            
+000009b1  __aeabi_memcpy                             
+000009b1  __aeabi_memcpy4                            
+000009b1  __aeabi_memcpy8                            
+00000a4f  __aeabi_memset                             
+00000a4f  __aeabi_memset4                            
+00000a4f  __aeabi_memset8                            
 ffffffff  __binit__                                  
 ffffffff  __c_args__                                 
 2000fe00  __stack                                    
-0000122d  _args_main                                 
-00000d25  _c_int00                                   
+00001245  _args_main                                 
+00000d3d  _c_int00                                   
 20000048  _lock                                      
-000012b7  _nop                                       
-000012af  _register_lock                             
-000012a9  _register_unlock                           
-00001377  _system_pre_init                           
+000012cf  _nop                                       
+000012c7  _register_lock                             
+000012c1  _register_unlock                           
+0000138f  _system_pre_init                           
 2000004c  _unlock                                    
-00000ee5  abort                                      
+00000efd  abort                                      
 20000060  adc                                        
-00001049  adc14IsrHandler                            
+00001061  adc14IsrHandler                            
 20000058  alarm_state                                
-00000aad  alarm_system_state                         
+00000b35  alarm_system_state                         
 ffffffff  binit                                      
 20000059  burglar                                    
 00000757  burglar_alarm                              
-00000dc1  copy_in                                    
+00000dd9  copy_in                                    
 000006ef  doorbell                                   
 2000005a  doorbell_signal                            
-00000eed  exit                                       
+00000f05  exit                                       
 000006c5  fire_alarm                                 
 2000005b  fire_signal                                
-00001484  i2cConfig                                  
+0000149c  i2cConfig                                  
 00000000  interruptVectors                           
 20000064  lux                                        
 00000791  main                                       
 2000005c  main_func_sp                               
-00000907  memcpy                                     
-00000a39  memset                                     
+000009b1  memcpy                                     
+00000a55  memset                                     
 20000030  pwmConfig                                  
 
 
@@ -320,79 +320,79 @@ address   name
 000006ef  doorbell                                   
 00000757  burglar_alarm                              
 00000791  main                                       
-00000907  __aeabi_memcpy                             
-00000907  __aeabi_memcpy4                            
-00000907  __aeabi_memcpy8                            
-00000907  memcpy                                     
-000009a5  Switch_Process                             
-00000a31  __aeabi_memclr                             
-00000a31  __aeabi_memclr4                            
-00000a31  __aeabi_memclr8                            
-00000a33  __aeabi_memset                             
-00000a33  __aeabi_memset4                            
-00000a33  __aeabi_memset8                            
-00000a39  memset                                     
-00000aad  alarm_system_state                         
-00000b1d  ADC14_configureConversionMemory            
-00000b89  __TI_auto_init                             
-00000c61  Interrupt_enableInterrupt                  
-00000cc5  Init_Adc                                   
-00000d25  _c_int00                                   
-00000d75  GPIO_setAsPeripheralModuleFunctionOutputPin
-00000dc1  copy_in                                    
-00000e0d  GPIO_setAsPeripheralModuleFunctionInputPin 
-00000e55  Timer_A_generatePWM                        
-00000e9d  ADC14_configureSingleSampleMode            
-00000ee1  C$$EXIT                                    
-00000ee5  abort                                      
-00000eed  exit                                       
-00000f25  I2C_masterSendMultiByteFinish              
-00000f65  I2C_initMaster                             
-00000fa5  ADC14_initModule                           
-00000fdd  I2C_masterSendMultiByteStart               
-00001015  Init_Clocks                                
-00001049  adc14IsrHandler                            
-0000107d  I2C_masterReceiveMultiByteFinish           
-000010ad  I2C_masterSendMultiByteStop                
-000010dd  ADC14_enableConversion                     
-00001109  Init_Timers                                
-0000111f  Init_SysTick                               
-00001135  ADC14_enableSampleTimer                    
-0000115d  ADC14_setResultFormat                      
-00001185  CS_setDCOCenteredFrequency                 
-000011a9  I2C_masterSendMultiByteNext                
-000011cd  ADC14_clearInterruptFlag                   
-000011ed  ADC14_enableInterrupt                      
-0000120d  ADC14_toggleConversionTrigger              
-0000122d  _args_main                                 
-00001259  I2C_isBusBusy                              
-0000126d  Interrupt_disableSleepOnIsrExit            
-00001281  SysTick_disableModule                      
-00001295  SysTick_enableModule                       
-000012a9  _register_unlock                           
-000012af  _register_lock                             
-000012b7  _nop                                       
-000012bd  ADC14_enableModule                         
-000012cd  I2C_masterReceiveStart                     
-000012dd  Interrupt_enableMaster                     
-000012ed  I2C_clearInterruptFlag                     
-000012fb  I2C_setMode                                
-00001309  __TI_decompress_none                       
-00001317  CPU_cpsie                                  
-00001323  I2C_disableModule                          
-0000132f  I2C_enableModule                           
-0000133d  SysTick_setPeriod                          
-00001349  __TI_zero_init                             
-00001361  I2C_getInterruptStatus                     
-00001367  I2C_masterReceiveMultiByteNext             
-0000136d  __TI_decompress_rle24                      
-00001373  I2C_setSlaveAddress                        
-00001377  _system_pre_init                           
-00001484  i2cConfig                                  
-000014f0  __TI_Handler_Table_Base                    
-000014fc  __TI_Handler_Table_Limit                   
-00001508  __TI_CINIT_Base                            
-00001518  __TI_CINIT_Limit                           
+00000911  Switch_Process                             
+000009b1  __aeabi_memcpy                             
+000009b1  __aeabi_memcpy4                            
+000009b1  __aeabi_memcpy8                            
+000009b1  memcpy                                     
+00000a4d  __aeabi_memclr                             
+00000a4d  __aeabi_memclr4                            
+00000a4d  __aeabi_memclr8                            
+00000a4f  __aeabi_memset                             
+00000a4f  __aeabi_memset4                            
+00000a4f  __aeabi_memset8                            
+00000a55  memset                                     
+00000ac9  ADC14_configureConversionMemory            
+00000b35  alarm_system_state                         
+00000ba1  __TI_auto_init                             
+00000c79  Interrupt_enableInterrupt                  
+00000cdd  Init_Adc                                   
+00000d3d  _c_int00                                   
+00000d8d  GPIO_setAsPeripheralModuleFunctionOutputPin
+00000dd9  copy_in                                    
+00000e25  GPIO_setAsPeripheralModuleFunctionInputPin 
+00000e6d  Timer_A_generatePWM                        
+00000eb5  ADC14_configureSingleSampleMode            
+00000ef9  C$$EXIT                                    
+00000efd  abort                                      
+00000f05  exit                                       
+00000f3d  I2C_masterSendMultiByteFinish              
+00000f7d  I2C_initMaster                             
+00000fbd  ADC14_initModule                           
+00000ff5  I2C_masterSendMultiByteStart               
+0000102d  Init_Clocks                                
+00001061  adc14IsrHandler                            
+00001095  I2C_masterReceiveMultiByteFinish           
+000010c5  I2C_masterSendMultiByteStop                
+000010f5  ADC14_enableConversion                     
+00001121  Init_Timers                                
+00001137  Init_SysTick                               
+0000114d  ADC14_enableSampleTimer                    
+00001175  ADC14_setResultFormat                      
+0000119d  CS_setDCOCenteredFrequency                 
+000011c1  I2C_masterSendMultiByteNext                
+000011e5  ADC14_clearInterruptFlag                   
+00001205  ADC14_enableInterrupt                      
+00001225  ADC14_toggleConversionTrigger              
+00001245  _args_main                                 
+00001271  I2C_isBusBusy                              
+00001285  Interrupt_disableSleepOnIsrExit            
+00001299  SysTick_disableModule                      
+000012ad  SysTick_enableModule                       
+000012c1  _register_unlock                           
+000012c7  _register_lock                             
+000012cf  _nop                                       
+000012d5  ADC14_enableModule                         
+000012e5  I2C_masterReceiveStart                     
+000012f5  Interrupt_enableMaster                     
+00001305  I2C_clearInterruptFlag                     
+00001313  I2C_setMode                                
+00001321  __TI_decompress_none                       
+0000132f  CPU_cpsie                                  
+0000133b  I2C_disableModule                          
+00001347  I2C_enableModule                           
+00001355  SysTick_setPeriod                          
+00001361  __TI_zero_init                             
+00001379  I2C_getInterruptStatus                     
+0000137f  I2C_masterReceiveMultiByteNext             
+00001385  __TI_decompress_rle24                      
+0000138b  I2C_setSlaveAddress                        
+0000138f  _system_pre_init                           
+0000149c  i2cConfig                                  
+00001508  __TI_Handler_Table_Base                    
+00001514  __TI_Handler_Table_Limit                   
+00001520  __TI_CINIT_Base                            
+00001530  __TI_CINIT_Limit                           
 20000030  pwmConfig                                  
 20000048  _lock                                      
 2000004c  _unlock                                    
