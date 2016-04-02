@@ -1,0 +1,221 @@
+******************************************************************************
+                  TI ARM Linker Unix v5.2.6                    
+******************************************************************************
+>> Linked Thu Mar 31 17:26:55 2016
+
+OUTPUT FILE NAME:   <uart_pc_echo_12mhz_brclk.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 00000745
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  MAIN                  00000000   00040000  0000095e  0003f6a2  R  X
+  INFO                  00200000   00004000  00000000  00004000  R  X
+  SRAM_CODE             01000000   00010000  00000000  00010000  RW X
+  SRAM_DATA             20000000   00010000  00000249  0000fdb7  RW  
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000000    00000000    00000964   00000964    r-x
+  00000000    00000000    00000140   00000140    r-- .intvecs
+  00000140    00000140    000007a6   000007a6    r-x .text
+  000008e8    000008e8    00000024   00000024    r-- .const
+  00000910    00000910    00000054   00000054    r-- .cinit
+20000000    20000000    00000049   00000000    rw-
+  20000000    20000000    00000049   00000000    rw- .data
+2000fe00    2000fe00    00000200   00000000    rw-
+  2000fe00    2000fe00    00000200   00000000    rw- .stack
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.intvecs   0    00000000    00000140     
+                  00000000    00000140     startup_msp432p401r_ccs.obj (.intvecs:retain)
+
+.text      0    00000140    000007a6     
+                  00000140    00000348     system_msp432p401r.obj (.text)
+                  00000488    000000cc     uart_pc_echo_12mhz_brclk.obj (.text)
+                  00000554    0000009c     rtsv7M4_T_le_v4SPD16_eabi.lib : memcpy_t2.obj (.text)
+                  000005f0    0000007a                                   : memset_t2.obj (.text)
+                  0000066a    00000002     --HOLE-- [fill = 0]
+                  0000066c    0000006c                                   : autoinit.obj (.text)
+                  000006d8    0000006a                                   : copy_decompress_rle.obj (.text)
+                  00000742    00000002     --HOLE-- [fill = 0]
+                  00000744    00000050                                   : boot.obj (.text)
+                  00000794    0000004c                                   : cpy_tbl.obj (.text)
+                  000007e0    00000048     msp432p4xx_driverlib.lib : gpio.o (.text:GPIO_setAsPeripheralModuleFunctionInputPin)
+                  00000828    00000044     rtsv7M4_T_le_v4SPD16_eabi.lib : exit.obj (.text)
+                  0000086c    00000024     msp432p4xx_driverlib.lib : cs.o (.text:CS_setDCOCenteredFrequency)
+                  00000890    00000018     rtsv7M4_T_le_v4SPD16_eabi.lib : args_main.obj (.text)
+                  000008a8    00000014                                   : _lock.obj (.text)
+                  000008bc    00000012     startup_msp432p401r_ccs.obj (.text)
+                  000008ce    0000000e     rtsv7M4_T_le_v4SPD16_eabi.lib : copy_decompress_none.obj (.text:decompress:none)
+                  000008dc    00000006                                   : copy_decompress_rle.obj (.text:decompress:rle24)
+                  000008e2    00000004                                   : pre_init.obj (.text)
+
+.const     0    000008e8    00000024     
+                  000008e8    00000024     uart_pc_echo_12mhz_brclk.obj (.const:uartConfig)
+
+.cinit     0    00000910    00000054     
+                  00000910    00000042     (.cinit..data.load) [load image, compression = rle]
+                  00000952    00000002     --HOLE-- [fill = 0]
+                  00000954    00000008     (__TI_handler_table)
+                  0000095c    00000008     (__TI_cinit_table)
+
+.init_array 
+*          0    00000000    00000000     UNINITIALIZED
+
+.data      0    20000000    00000049     UNINITIALIZED
+                  20000000    00000030     msp432p4xx_driverlib.lib : gpio.o (.data:GPIO_PORT_TO_BASE)
+                  20000030    00000008     rtsv7M4_T_le_v4SPD16_eabi.lib : _lock.obj (.data)
+                  20000038    00000008                                   : exit.obj (.data)
+                  20000040    00000004                                   : stkdepth_vars.obj (.data)
+                  20000044    00000004     system_msp432p401r.obj (.data)
+                  20000048    00000001     uart_pc_echo_12mhz_brclk.obj (.data)
+
+.stack     0    2000fe00    00000200     UNINITIALIZED
+                  2000fe00    00000200     --HOLE--
+
+.TI.persistent 
+*          0    20000000    00000000     UNINITIALIZED
+
+
+LINKER GENERATED COPY TABLES
+
+__TI_cinit_table @ 0000095c records: 1, size/record: 8, table size: 8
+	.data: load addr=00000910, load size=00000042 bytes, run addr=20000000, run size=00000049 bytes, compression=rle
+
+
+LINKER GENERATED HANDLER TABLE
+
+__TI_handler_table @ 00000954 records: 2, size/record: 4, table size: 8
+	index: 0, handler: __TI_decompress_rle24
+	index: 1, handler: __TI_decompress_none
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address   name                                      
+-------   ----                                      
+00000829  C$$EXIT                                   
+0000086d  CS_setDCOCenteredFrequency                
+000004fb  EUSCIA0_IRQHandler                        
+000007e1  GPIO_setAsPeripheralModuleFunctionInputPin
+UNDEFED   SHT$$INIT_ARRAY$$Base                     
+UNDEFED   SHT$$INIT_ARRAY$$Limit                    
+20000044  SystemCoreClock                           
+00000141  SystemCoreClockUpdate                     
+000003b5  SystemInit                                
+4000480c  WDTCTL_SYM                                
+20010000  __STACK_END                               
+00000200  __STACK_SIZE                              
+0000095c  __TI_CINIT_Base                           
+00000964  __TI_CINIT_Limit                          
+00000954  __TI_Handler_Table_Base                   
+0000095c  __TI_Handler_Table_Limit                  
+0000066d  __TI_auto_init                            
+20000038  __TI_cleanup_ptr                          
+000008cf  __TI_decompress_none                      
+000008dd  __TI_decompress_rle24                     
+2000003c  __TI_dtors_ptr                            
+00000000  __TI_static_base__                        
+000005f1  __aeabi_memclr                            
+000005f1  __aeabi_memclr4                           
+000005f1  __aeabi_memclr8                           
+00000555  __aeabi_memcpy                            
+00000555  __aeabi_memcpy4                           
+00000555  __aeabi_memcpy8                           
+000005f3  __aeabi_memset                            
+000005f3  __aeabi_memset4                           
+000005f3  __aeabi_memset8                           
+ffffffff  __binit__                                 
+ffffffff  __c_args__                                
+2000fe00  __stack                                   
+00000891  _args_main                                
+00000745  _c_int00                                  
+20000030  _lock                                     
+000008b7  _nop                                      
+000008af  _register_lock                            
+000008a9  _register_unlock                          
+000008e3  _system_pre_init                          
+20000034  _unlock                                   
+0000082d  abort                                     
+ffffffff  binit                                     
+00000795  copy_in                                   
+00000835  exit                                      
+00000000  interruptVectors                          
+00000489  main                                      
+20000040  main_func_sp                              
+00000555  memcpy                                    
+000005f9  memset                                    
+20000048  receive                                   
+000008e8  uartConfig                                
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address   name                                      
+-------   ----                                      
+00000000  __TI_static_base__                        
+00000000  interruptVectors                          
+00000141  SystemCoreClockUpdate                     
+00000200  __STACK_SIZE                              
+000003b5  SystemInit                                
+00000489  main                                      
+000004fb  EUSCIA0_IRQHandler                        
+00000555  __aeabi_memcpy                            
+00000555  __aeabi_memcpy4                           
+00000555  __aeabi_memcpy8                           
+00000555  memcpy                                    
+000005f1  __aeabi_memclr                            
+000005f1  __aeabi_memclr4                           
+000005f1  __aeabi_memclr8                           
+000005f3  __aeabi_memset                            
+000005f3  __aeabi_memset4                           
+000005f3  __aeabi_memset8                           
+000005f9  memset                                    
+0000066d  __TI_auto_init                            
+00000745  _c_int00                                  
+00000795  copy_in                                   
+000007e1  GPIO_setAsPeripheralModuleFunctionInputPin
+00000829  C$$EXIT                                   
+0000082d  abort                                     
+00000835  exit                                      
+0000086d  CS_setDCOCenteredFrequency                
+00000891  _args_main                                
+000008a9  _register_unlock                          
+000008af  _register_lock                            
+000008b7  _nop                                      
+000008cf  __TI_decompress_none                      
+000008dd  __TI_decompress_rle24                     
+000008e3  _system_pre_init                          
+000008e8  uartConfig                                
+00000954  __TI_Handler_Table_Base                   
+0000095c  __TI_CINIT_Base                           
+0000095c  __TI_Handler_Table_Limit                  
+00000964  __TI_CINIT_Limit                          
+20000030  _lock                                     
+20000034  _unlock                                   
+20000038  __TI_cleanup_ptr                          
+2000003c  __TI_dtors_ptr                            
+20000040  main_func_sp                              
+20000044  SystemCoreClock                           
+20000048  receive                                   
+2000fe00  __stack                                   
+20010000  __STACK_END                               
+4000480c  WDTCTL_SYM                                
+ffffffff  __binit__                                 
+ffffffff  __c_args__                                
+ffffffff  binit                                     
+UNDEFED   SHT$$INIT_ARRAY$$Base                     
+UNDEFED   SHT$$INIT_ARRAY$$Limit                    
+
+[53 symbols]

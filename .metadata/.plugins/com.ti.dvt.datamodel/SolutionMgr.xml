@@ -14,12 +14,6 @@
  <void id="ArrayList0" method="get">
   <object idref="SolutionManager$PersistState0"/>
   <void method="add">
-   <string>/Applications/ti/ccsv6/ccs_base/dvt_4.1.0.201508191134/AnalysisLibrary/DataProviders/EnergyTrace/null</string>
-  </void>
-  <void method="add">
-   <string>/Applications/ti/ccsv6/ccs_base/dvt_4.1.0.201508191134/AnalysisLibrary/DataProviders/EnergyTrace/null</string>
-  </void>
-  <void method="add">
    <string>/Applications/ti/ccsv6/ccs_base/dvt_4.1.0.201508191134/CodeGen/solutions/CodeGenCoverage</string>
   </void>
  </void>

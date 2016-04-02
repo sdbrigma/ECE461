@@ -1,0 +1,5 @@
+1459530445903	Rename resource 'uart_pc_echo_12mhz_brclk'
+1459531544127	Delete resource 'UartBackchannel'
+1459634615901	Rename resource 'Challenge3'
+1459634637190	Rename resource 'BOOSTXL-EDUMKII_Accelerometer_MSP432P401R'
+1459635172679	Delete resource 'Channel3/macros.h'

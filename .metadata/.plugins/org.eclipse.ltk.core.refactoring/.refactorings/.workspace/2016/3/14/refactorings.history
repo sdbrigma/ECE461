@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;uart_loopback_24mhz_brclk&apos;" deleteContents="true" description="Delete resource &apos;uart_loopback_24mhz_brclk&apos;" element1="/uart_loopback_24mhz_brclk" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1459450741724"/>
+</session>

@@ -1,0 +1,7 @@
+
+**** Build of configuration Debug for project MSP432-Launchpad-Printf-Support ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+makefile:137: *** multiple target patterns.  Stop.
+
+**** Build Finished ****

@@ -1,0 +1,19 @@
+
+**** Build of configuration Debug for project uart_pc_echo_12mhz_brclk ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../uart_pc_echo_12mhz_brclk.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/uart_pc_echo_12mhz_brclk" --include_path="/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/driverlib/MSP432P4xx/" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include/" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="uart_pc_echo_12mhz_brclk.pp"  "../uart_pc_echo_12mhz_brclk.c"
+"../uart_pc_echo_12mhz_brclk.c", line 91: error #80: expected a type specifier
+"../uart_pc_echo_12mhz_brclk.c", line 91: error #80: expected a type specifier
+"../uart_pc_echo_12mhz_brclk.c", line 91: warning #78-D: this declaration has no storage class or type specifier
+"../uart_pc_echo_12mhz_brclk.c", line 91: error #148: declaration is incompatible with "void GPIO_setAsOutputPin(uint_fast8_t, uint_fast16_t)" (declared at line 158 of "/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/driverlib/MSP432P4xx/gpio.h")
+3 errors detected in the compilation of "../uart_pc_echo_12mhz_brclk.c".
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'uart_pc_echo_12mhz_brclk.obj' failed
+gmake: *** [uart_pc_echo_12mhz_brclk.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
