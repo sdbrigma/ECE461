@@ -11,6 +11,8 @@
 
 void drawTitle(void);
 void drawAccelData(void);
+void Init_Timer32(void);
+void Timer32_ISRhandler(void);
 
 
 #endif /* FUNCTIONS_H_ */

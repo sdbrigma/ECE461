@@ -49,6 +49,8 @@
 #include "functions.h"
 #include "macros.h"
 
+uint32_t timer_value = 0;
+
 /*
  * Main function
  */
@@ -119,8 +121,15 @@ void main(void)
     MAP_ADC14_enableConversion();
     MAP_ADC14_toggleConversionTrigger();
 
+    // Initialize Timer32 module
+    Init_Timer32();
+    // Test code for timer32
+    GPIO_setAsOutputPin(GPIO_PORT_P5,GPIO_PIN6); // P5.6 is blue LED on booster pack
+    GPIO_setOutputLowOnPin(GPIO_PORT_P5,GPIO_PIN6);
+
     while(1)
     {
+    		//timer_value = Timer32_getValue(TIMER32_0_BASE);
         MAP_PCM_gotoLPM0();
     }
 }

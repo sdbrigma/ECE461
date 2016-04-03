@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<deviceVariant value="MSP432P401R"/>
+	<deviceFamily value="MSP432"/>
+	<deviceEndianness value="little"/>
+	<codegenToolVersion value="5.2.6"/>
+	<isElfFormat value="true"/>
+	<linkerCommandFile value="timer32_periodic_mode_led_toggle_ccs.cmd"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<ignoreDefaultDeviceSettings value="true"/>
+	<origin value="/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/examples/MSP432P4xx/timer32/timer32_periodic_mode_led_toggle/ccs/timer32_periodic_mode_led_toggle.projectspec"/>
+	<templateProperties value="id=timer32_periodic_mode_led_toggle.projectspec.timer32_periodic_mode_led_toggle,"/>
+</projectOptions>

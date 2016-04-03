@@ -25,27 +25,27 @@ void drawAccelData()
 {
     char string[8];
     sprintf(string, "X: %5d", resultsBuffer[0]);
-    Graphics_drawStringCentered(&g_sContext,
+    Graphics_drawString(&g_sContext,
                                     (int8_t *)string,
                                     8,
-                                    64,
-                                    50,
+                                    20,
+                                    30,
                                     OPAQUE_TEXT);
 
     sprintf(string, "Y: %5d", resultsBuffer[1]);
-    Graphics_drawStringCentered(&g_sContext,
+    Graphics_drawString(&g_sContext,
                                     (int8_t *)string,
                                     8,
-                                    64,
-                                    70,
+                                    20,
+                                    50,
                                     OPAQUE_TEXT);
 
     sprintf(string, "Z: %5d", resultsBuffer[2]);
-    Graphics_drawStringCentered(&g_sContext,
+    Graphics_drawString(&g_sContext,
                                     (int8_t *)string,
                                     8,
-                                    64,
-                                    90,
+                                    20,
+                                    70,
                                     OPAQUE_TEXT);
 
 }
@@ -57,11 +57,17 @@ void drawAccelData()
 void drawTitle()
 {
     Graphics_clearDisplay(&g_sContext);
-    Graphics_drawStringCentered(&g_sContext,
+    Graphics_drawString(&g_sContext,
                                     "Accelerometer:",
                                     AUTO_STRING_LENGTH,
+                                    20,
+                                    10,
+                                    OPAQUE_TEXT);
+    Graphics_drawStringCentered(&g_sContext,
+                                    "Sensor:",
+                                    AUTO_STRING_LENGTH,
                                     64,
-                                    30,
+                                    90,
                                     OPAQUE_TEXT);
     drawAccelData();
 }
