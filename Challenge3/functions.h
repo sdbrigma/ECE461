@@ -5,14 +5,14 @@
  *      Author: Steffon Brigman
  */
 
-#ifndef FUNCTIONS_H_
-#define FUNCTIONS_H_
+#ifndef CHALLENGE3_FUNCTIONS_H_
+#define CHALLENGE3_FUNCTIONS_H_
 
-
+void drawData(void);
 void drawTitle(void);
 void drawAccelData(void);
 void Init_Timer32(void);
 void Timer32_ISRhandler(void);
 
 
-#endif /* FUNCTIONS_H_ */
+#endif /* CHALLENGE3_FUNCTIONS_H_ */

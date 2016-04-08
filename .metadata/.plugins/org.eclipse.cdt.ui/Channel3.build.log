@@ -2,38 +2,451 @@
 **** Build of configuration Debug for project Channel3 ****
 
 /Applications/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../draw.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="draw.pp"  "../draw.c"
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'draw.obj' failed
 Building file: ../interrupts.c
 Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Channel3" --include_path="/Users/marybiggs/Desktop/ECE461/Channel3/driverlib/MSP432P4xx" --include_path="/Users/marybiggs/Desktop/ECE461/Channel3/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/Channel3/GrLib/fonts" --include_path="/Users/marybiggs/Desktop/ECE461/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="interrupts.pp"  "../interrupts.c"
-"../interrupts.c", line 91: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
-"../interrupts.c", line 92: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
-Finished building: ../interrupts.c
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="interrupts.pp"  "../interrupts.c"
+"../draw.c", line 9: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../draw.c".
+Compilation terminated.
+gmake: *** [draw.obj] Error 1
+"../interrupts.c", line 10: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../interrupts.c".
+Compilation terminated.
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'interrupts.obj' failed
+gmake: *** [interrupts.obj] Error 1
+Building file: ../main.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 45: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+gmake: *** [main.obj] Error 1
+Building file: ../startup_msp432p401r_ccs.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="startup_msp432p401r_ccs.pp"  "../startup_msp432p401r_ccs.c"
+Finished building: ../startup_msp432p401r_ccs.c
  
-Building target: Channel3.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off -z -m"Channel3.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Channel3_linkInfo.xml" --rom_model -o "Channel3.out" "./draw.obj" "./interrupts.obj" "./main.obj" "./startup_msp432p401r_ccs.obj" "./system_msp432p401r.obj" "./timer.obj" "./driverlib/MSP432P4xx/adc14.obj" "./driverlib/MSP432P4xx/aes256.obj" "./driverlib/MSP432P4xx/comp_e.obj" "./driverlib/MSP432P4xx/cpu.obj" "./driverlib/MSP432P4xx/crc32.obj" "./driverlib/MSP432P4xx/cs.obj" "./driverlib/MSP432P4xx/dma.obj" "./driverlib/MSP432P4xx/flash.obj" "./driverlib/MSP432P4xx/fpu.obj" "./driverlib/MSP432P4xx/gpio.obj" "./driverlib/MSP432P4xx/i2c.obj" "./driverlib/MSP432P4xx/interrupt.obj" "./driverlib/MSP432P4xx/mpu.obj" "./driverlib/MSP432P4xx/pcm.obj" "./driverlib/MSP432P4xx/pmap.obj" "./driverlib/MSP432P4xx/pss.obj" "./driverlib/MSP432P4xx/ref_a.obj" "./driverlib/MSP432P4xx/reset.obj" "./driverlib/MSP432P4xx/rtc_c.obj" "./driverlib/MSP432P4xx/spi.obj" "./driverlib/MSP432P4xx/sysctl.obj" "./driverlib/MSP432P4xx/systick.obj" "./driverlib/MSP432P4xx/timer32.obj" "./driverlib/MSP432P4xx/timer_a.obj" "./driverlib/MSP432P4xx/uart.obj" "./driverlib/MSP432P4xx/wdt_a.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../msp432p401r.cmd"  -l"libc.a" 
-<Linking>
-remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 5 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 6 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 7 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 8 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 9 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 10 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-Finished building target: Channel3.out
+Building file: ../system_msp432p401r.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="system_msp432p401r.pp"  "../system_msp432p401r.c"
+"../system_msp432p401r.c", line 112: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../system_msp432p401r.c", line 160: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../system_msp432p401r.c", line 193: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+Finished building: ../system_msp432p401r.c
  
-Invoking: MSP432 Hex Utility
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armhex" --memwidth=8 --romwidth=8 -o "Channel3.hex"  "Channel3.out" 
-Translating to Extended Tektronix format...
-   "Channel3.out" .intvecs ==> .intvecs
-   "Channel3.out" .text ==> .text
-   "Channel3.out" .const ==> .const
-   "Channel3.out" .cinit ==> .cinit
-Finished building: Channel3.hex
+Building file: ../timer.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="timer.pp"  "../timer.c"
+"../timer.c", line 10: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../timer.c".
+Compilation terminated.
+
+>> Compilation failure
+subdir_rules.mk:42: recipe for target 'timer.obj' failed
+gmake: *** [timer.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/adc14.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/adc14.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/adc14.c"
+"../driverlib/MSP432P4xx/adc14.c", line 42: fatal error #1965: cannot open source file "adc14.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/adc14.c".
+Compilation terminated.
+
+gmake: *** [driverlib/MSP432P4xx/adc14.obj] Error 1
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:7: recipe for target 'driverlib/MSP432P4xx/adc14.obj' failed
+Building file: ../driverlib/MSP432P4xx/aes256.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/aes256.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/aes256.c"
+"../driverlib/MSP432P4xx/aes256.c", line 37: fatal error #1965: cannot open source file "aes256.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/aes256.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP432P4xx/aes256.obj] Error 1
+driverlib/MSP432P4xx/subdir_rules.mk:14: recipe for target 'driverlib/MSP432P4xx/aes256.obj' failed
+Building file: ../driverlib/MSP432P4xx/comp_e.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/comp_e.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/comp_e.c"
+"../driverlib/MSP432P4xx/comp_e.c", line 37: fatal error #1965: cannot open source file "comp_e.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/comp_e.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/comp_e.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:21: recipe for target 'driverlib/MSP432P4xx/comp_e.obj' failed
+Building file: ../driverlib/MSP432P4xx/cpu.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/cpu.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/cpu.c"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:28: recipe for target 'driverlib/MSP432P4xx/cpu.obj' failed
+"../driverlib/MSP432P4xx/cpu.c", line 37: fatal error #1965: cannot open source file "cpu.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/cpu.c".
+Compilation terminated.
+Building file: ../driverlib/MSP432P4xx/crc32.c
+gmake: *** [driverlib/MSP432P4xx/cpu.obj] Error 1
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/crc32.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/crc32.c"
+"../driverlib/MSP432P4xx/crc32.c", line 39: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/crc32.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP432P4xx/crc32.obj] Error 1
+driverlib/MSP432P4xx/subdir_rules.mk:35: recipe for target 'driverlib/MSP432P4xx/crc32.obj' failed
+Building file: ../driverlib/MSP432P4xx/cs.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/cs.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/cs.c"
+"../driverlib/MSP432P4xx/cs.c", line 41: fatal error #1965: cannot open source file "cs.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/cs.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:42: recipe for target 'driverlib/MSP432P4xx/cs.obj' failed
+gmake: *** [driverlib/MSP432P4xx/cs.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/dma.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/dma.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/dma.c"
+"../driverlib/MSP432P4xx/dma.c", line 39: fatal error #1965: cannot open source file "debug.h"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:49: recipe for target 'driverlib/MSP432P4xx/dma.obj' failed
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/dma.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/dma.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/flash.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/flash.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/flash.c"
+"../driverlib/MSP432P4xx/flash.c", line 41: fatal error #1965: cannot open source file "flash.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/flash.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:56: recipe for target 'driverlib/MSP432P4xx/flash.obj' failed
+gmake: *** [driverlib/MSP432P4xx/flash.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/fpu.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/fpu.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/fpu.c"
+"../driverlib/MSP432P4xx/fpu.c", line 37: fatal error #1965: cannot open source file "fpu.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/fpu.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/fpu.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:63: recipe for target 'driverlib/MSP432P4xx/fpu.obj' failed
+Building file: ../driverlib/MSP432P4xx/gpio.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/gpio.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/gpio.c"
+"../driverlib/MSP432P4xx/gpio.c", line 41: fatal error #1965: cannot open source file "gpio.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/gpio.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/gpio.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:70: recipe for target 'driverlib/MSP432P4xx/gpio.obj' failed
+Building file: ../driverlib/MSP432P4xx/i2c.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/i2c.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/i2c.c"
+"../driverlib/MSP432P4xx/i2c.c", line 37: fatal error #1965: cannot open source file "i2c.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/i2c.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/i2c.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:77: recipe for target 'driverlib/MSP432P4xx/i2c.obj' failed
+Building file: ../driverlib/MSP432P4xx/interrupt.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/interrupt.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/interrupt.c"
+"../driverlib/MSP432P4xx/interrupt.c", line 41: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/interrupt.c".
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:84: recipe for target 'driverlib/MSP432P4xx/interrupt.obj' failed
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/interrupt.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/mpu.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/mpu.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/mpu.c"
+"../driverlib/MSP432P4xx/mpu.c", line 37: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/mpu.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/mpu.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:91: recipe for target 'driverlib/MSP432P4xx/mpu.obj' failed
+Building file: ../driverlib/MSP432P4xx/pcm.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/pcm.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/pcm.c"
+"../driverlib/MSP432P4xx/pcm.c", line 41: fatal error #1965: cannot open source file "pcm.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/pcm.c".
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:98: recipe for target 'driverlib/MSP432P4xx/pcm.obj' failed
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/pcm.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/pmap.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/pmap.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/pmap.c"
+"../driverlib/MSP432P4xx/pmap.c", line 37: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/pmap.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/pmap.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:105: recipe for target 'driverlib/MSP432P4xx/pmap.obj' failed
+Building file: ../driverlib/MSP432P4xx/pss.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/pss.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/pss.c"
+"../driverlib/MSP432P4xx/pss.c", line 41: fatal error #1965: cannot open source file "pss.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/pss.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/pss.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:112: recipe for target 'driverlib/MSP432P4xx/pss.obj' failed
+Building file: ../driverlib/MSP432P4xx/ref_a.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/ref_a.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/ref_a.c"
+"../driverlib/MSP432P4xx/ref_a.c", line 37: fatal error #1965: cannot open source file "ref_a.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/ref_a.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/ref_a.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:119: recipe for target 'driverlib/MSP432P4xx/ref_a.obj' failed
+Building file: ../driverlib/MSP432P4xx/reset.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/reset.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/reset.c"
+"../driverlib/MSP432P4xx/reset.c", line 37: fatal error #1965: cannot open source file "reset.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/reset.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/reset.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:126: recipe for target 'driverlib/MSP432P4xx/reset.obj' failed
+Building file: ../driverlib/MSP432P4xx/rtc_c.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/rtc_c.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/rtc_c.c"
+"../driverlib/MSP432P4xx/rtc_c.c", line 37: fatal error #1965: cannot open source file "rtc_c.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/rtc_c.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/rtc_c.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:133: recipe for target 'driverlib/MSP432P4xx/rtc_c.obj' failed
+Building file: ../driverlib/MSP432P4xx/spi.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/spi.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/spi.c"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:140: recipe for target 'driverlib/MSP432P4xx/spi.obj' failed
+Building file: ../driverlib/MSP432P4xx/sysctl.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/sysctl.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/sysctl.c"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:147: recipe for target 'driverlib/MSP432P4xx/sysctl.obj' failed
+Building file: ../driverlib/MSP432P4xx/systick.c
+"../driverlib/MSP432P4xx/spi.c", line 37: fatal error #1965: cannot open source file "spi.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/spi.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/spi.obj] Error 1
+"../driverlib/MSP432P4xx/sysctl.c", line 42: fatal error #1965: cannot open source file "sysctl.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/sysctl.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/sysctl.obj] Error 1
+"../driverlib/MSP432P4xx/systick.c", line 37: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/systick.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/systick.obj] Error 1
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/systick.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/systick.c"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:154: recipe for target 'driverlib/MSP432P4xx/systick.obj' failed
+Building file: ../driverlib/MSP432P4xx/timer32.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/timer32.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/timer32.c"
+"../driverlib/MSP432P4xx/timer32.c", line 37: fatal error #1965: cannot open source file "timer32.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/timer32.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/timer32.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:161: recipe for target 'driverlib/MSP432P4xx/timer32.obj' failed
+Building file: ../driverlib/MSP432P4xx/timer_a.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/timer_a.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/timer_a.c"
+"../driverlib/MSP432P4xx/timer_a.c", line 37: fatal error #1965: cannot open source file "timer_a.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/timer_a.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/timer_a.obj] Error 1
+"../driverlib/MSP432P4xx/uart.c", line 37: fatal error #1965: cannot open source file "uart.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/uart.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/uart.obj] Error 1
+"../driverlib/MSP432P4xx/wdt_a.c", line 41: fatal error #1965: cannot open source file "wdt_a.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/wdt_a.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/wdt_a.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:168: recipe for target 'driverlib/MSP432P4xx/timer_a.obj' failed
+Building file: ../driverlib/MSP432P4xx/uart.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/uart.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/uart.c"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:175: recipe for target 'driverlib/MSP432P4xx/uart.obj' failed
+Building file: ../driverlib/MSP432P4xx/wdt_a.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/wdt_a.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/wdt_a.c"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:182: recipe for target 'driverlib/MSP432P4xx/wdt_a.obj' failed
+Building file: ../LcdDriver/Crystalfontz128x128_ST7735.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="LcdDriver/Crystalfontz128x128_ST7735.pp" --obj_directory="LcdDriver"  "../LcdDriver/Crystalfontz128x128_ST7735.c"
+"../LcdDriver/Crystalfontz128x128_ST7735.c", line 39: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../LcdDriver/Crystalfontz128x128_ST7735.c".
+Compilation terminated.
+gmake: *** [LcdDriver/Crystalfontz128x128_ST7735.obj] Error 1
+
+>> Compilation failure
+LcdDriver/subdir_rules.mk:7: recipe for target 'LcdDriver/Crystalfontz128x128_ST7735.obj' failed
+Building file: ../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.pp" --obj_directory="LcdDriver"  "../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c"
+
+>> Compilation failure
+LcdDriver/subdir_rules.mk:14: recipe for target 'LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj' failed
+Building file: ../GrLib/grlib/button.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/button.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/button.c"
+"../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c", line 40: fatal error #1965: cannot open source file "HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h"
+1 catastrophic error detected in the compilation of "../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c".
+Compilation terminated.
+gmake: *** [LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj] Error 1
+Finished building: ../GrLib/grlib/button.c
  
+Building file: ../GrLib/grlib/checkbox.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/checkbox.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/checkbox.c"
+"../GrLib/grlib/checkbox.c", line 36: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/checkbox.c", line 67: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/checkbox.c", line 175: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+Finished building: ../GrLib/grlib/checkbox.c
+ 
+Building file: ../GrLib/grlib/circle.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/circle.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/circle.c"
+Finished building: ../GrLib/grlib/circle.c
+ 
+Building file: ../GrLib/grlib/context.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/context.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/context.c"
+Finished building: ../GrLib/grlib/context.c
+ 
+Building file: ../GrLib/grlib/display.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/display.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/display.c"
+Finished building: ../GrLib/grlib/display.c
+ 
+Building file: ../GrLib/grlib/image.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/image.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/image.c"
+"../GrLib/grlib/image.c", line 46: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 89: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 120: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 133: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 137: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 146: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 171: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 182: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 188: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 191: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 208: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 224: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 226: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 240: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 246: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 248: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 267: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 269: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 276: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 278: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 280: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 285: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 287: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 292: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 224: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 226: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 240: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 246: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 248: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 267: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 269: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 276: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 278: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 280: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 285: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 287: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/image.c", line 292: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+Finished building: ../GrLib/grlib/image.c
+ 
+Building file: ../GrLib/grlib/imageButton.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/imageButton.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/imageButton.c"
+Finished building: ../GrLib/grlib/imageButton.c
+ 
+Building file: ../GrLib/grlib/line.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/line.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/line.c"
+Finished building: ../GrLib/grlib/line.c
+ 
+Building file: ../GrLib/grlib/radioButton.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/radioButton.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/radioButton.c"
+"../GrLib/grlib/radioButton.c", line 38: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/radioButton.c", line 47: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/radioButton.c", line 54: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/radioButton.c", line 126: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/radioButton.c", line 127: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/radioButton.c", line 162: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+"../GrLib/grlib/radioButton.c", line 163: remark #2623-D: (ULP 5.4) Detected an assignment to a type with size less than int. To avoid unnecessary sign extension, use int-sized types for local varaibles and convert to smaller types for static storage.
+Finished building: ../GrLib/grlib/radioButton.c
+ 
+Building file: ../GrLib/grlib/rectangle.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/rectangle.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/rectangle.c"
+Finished building: ../GrLib/grlib/rectangle.c
+ 
+Building file: ../GrLib/grlib/string.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/grlib/string.pp" --obj_directory="GrLib/grlib"  "../GrLib/grlib/string.c"
+Finished building: ../GrLib/grlib/string.c
+ 
+Building file: ../GrLib/fonts/fontfixed6x8.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/fonts/fontfixed6x8.pp" --obj_directory="GrLib/fonts"  "../GrLib/fonts/fontfixed6x8.c"
+"../GrLib/fonts/fontfixed6x8.c", line 1: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../GrLib/fonts/fontfixed6x8.c".
+Compilation terminated.
+gmake: *** [GrLib/fonts/fontfixed6x8.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+>> Compilation failure
+GrLib/fonts/subdir_rules.mk:7: recipe for target 'GrLib/fonts/fontfixed6x8.obj' failed
 
 **** Build Finished ****
