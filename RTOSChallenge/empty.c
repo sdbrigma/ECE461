@@ -31,11 +31,23 @@
  */
 
 /*
- *  ======== empty.c ========
+ *  ======== main.c ========
  */
+
+// Usual includes
+#include "msp.h"
+#include <driverlib.h>
+#include "grlib.h"
+#include "Crystalfontz128x128_ST7735.h"
+#include <stdio.h>
+#include "functions.h"
+#include "macros.h"
+
 /* XDCtools Header files */
 #include <xdc/std.h>
+#include <xdc/std.h>
 #include <xdc/runtime/System.h>
+#include <xdc/cfg/global.h>
 
 /* BIOS Header files */
 #include <ti/sysbios/BIOS.h>
@@ -46,205 +58,128 @@
 // #include <ti/drivers/I2C.h>
 // #include <ti/drivers/SDSPI.h>
 // #include <ti/drivers/SPI.h>
- #include <ti/drivers/UART.h>
- #include <ti/drivers/Watchdog.h>
+// #include <ti/drivers/UART.h>
+// #include <ti/drivers/Watchdog.h>
 // #include <ti/drivers/WiFi.h>
 
 /* Board Header file */
 #include "Board.h"
-#include "msp.h"
-#include <driverlib.h>
-#include <grlib.h>
-#include "Crystalfontz128x128_ST7735.h"
-#include <stdio.h>
 #include "functions.h"
 #include "macros.h"
 
-#define TASKSTACKSIZE   512
-
-Task_Struct task0Struct;
-Char task0Stack[TASKSTACKSIZE];
 Graphics_Context g_sContext;
 
+// Mailbox message object for accelerometer data
+/*typedef struct MsgADC {
+	uint16_t xValue;
+	uint16_t yValue;
+	uint16_t zValue;
+} MsgADC, *Msg;*/
+
+// Mailbox message object for sensor data
+/*typedef struct MsgSensor {
+	uint16_t sensorHundreds;
+	uint16_t sensorTens;
+	uint16_t sensorOnes;
+} MsgSensor, *MsgS;*/
+
+int main(void){
+	//Task_Params taskParams;
+
+	/* Call board init functions */
+	Board_initGeneral();
+	Board_initGPIO();
+	init_All();
+	// Board_initI2C();
+	// Board_initSDSPI();
+	// Board_initSPI();
+	 //Board_initUART();
+	// Board_initWatchdog();
+	// Board_initWiFi();
+
+	/* Start BIOS */
+	BIOS_start();
+
+	return (0);
+}
+
+void Idle_fcxn(void){
+	while(1);
+}
+
+
+void ADC_HWI(void){
+	uint64_t status;
+	//MsgADC msg;
+	status = MAP_ADC14_getEnabledInterruptStatus();
+	MAP_ADC14_clearInterruptFlag(status);
+	uint16_t xValue;
+	uint16_t yValue;
+	uint16_t zValue;
+
+	/* ADC_MEM2 conversion completed */
+	if(status & ADC_INT2){
+		/* Store ADC14 conversion results */
+		// Take running average of ADC14 values so they can be updated
+		xValue = ADC14_getResult(ADC_MEM0);
+		yValue = ADC14_getResult(ADC_MEM1);
+		zValue = ADC14_getResult(ADC_MEM2);
+		Mailbox_post(adc_mailbox,&xValue,0);
+		Mailbox_post(adc_mailbox,&yValue,0);
+		Mailbox_post(adc_mailbox,&zValue,0);
+		//drawAccelData(msg.xValue,msg.yValue,msg.zValue);
+		//Swi_post(adc_swi);
+		//adjustOrientation();
+	}
+}
+
+void Timer32_HWI(void){
+	uint16_t xValue;
+	uint16_t yValue;
+	uint16_t zValue;
+	Mailbox_pend(adc_mailbox, &xValue, BIOS_WAIT_FOREVER);
+	Mailbox_pend(adc_mailbox, &yValue, BIOS_WAIT_FOREVER);
+	Mailbox_pend(adc_mailbox, &zValue, BIOS_WAIT_FOREVER);
+	GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
+	drawAccelData(xValue, yValue, zValue);
+}
+
+
+void drawAccelData(uint16_t xData, uint16_t yData, uint16_t zData){
+	char string[8];
+	sprintf(string, "X: %5d", xData);
+	Graphics_drawString(&g_sContext, (int8_t *)string,8,20,30,OPAQUE_TEXT);
+
+	sprintf(string, "Y: %5d", yData);
+	Graphics_drawString(&g_sContext,(int8_t *)string,8,20,50,OPAQUE_TEXT);
+
+	sprintf(string, "Z: %5d", zData);
+	Graphics_drawString(&g_sContext,(int8_t *)string, 8,20,70,OPAQUE_TEXT);
+	//ADC_SWI();
+	//adjustOrientation();
+}
+
+void drawSensorData(char dataSetHundreds, char dataSetTens, char dataSetOnes){
+	char string[3];
+	char data[3];
+
+	dataSetHundreds = '0';
+	dataSetTens = '0';
+	dataSetOnes = '0';
+	data[0] = dataSetHundreds;
+	data[1] = dataSetTens;
+	data[2] = dataSetOnes;
+	sprintf(string, "%s", data); //print all 3 data set values
+	Graphics_drawString(&g_sContext,(int8_t *)string, 8,20,100, OPAQUE_TEXT);
+}
+
+
 /*
- *  ======== heartBeatFxn ========
- *  Toggle the Board_LED0. The Task_sleep is determined by arg0 which
- *  is configured for the heartBeat Task instance.
+ * Clear display and redraw title + accelerometer data
  */
-Void heartBeatFxn(UArg arg0, UArg arg1)
-{
-    while (1) {
-        Task_sleep((UInt)arg0);
-        GPIO_toggle(Board_LED0);
-    }
+void drawTitle(void){
+	Graphics_clearDisplay(&g_sContext);
+	Graphics_drawString(&g_sContext,"Accelerometer:",AUTO_STRING_LENGTH,20, 10, OPAQUE_TEXT);
+	Graphics_drawStringCentered(&g_sContext,"Sensor:", AUTO_STRING_LENGTH,64,90,OPAQUE_TEXT);
 }
 
-/*
- * Redraw accelerometer data
- */
-void drawAccelDataTask() // draw task
-{
-	drawAccelData();
-	drawTitle();
-
-    Task_sleep(ONE_SECOND);
-
-}
-
-/*
- *  ======== main ========
- */
-int main(void)
-{
-    Task_Params taskParams;
-
-    /* Call board init functions */
-    Board_initGeneral();
-    Board_initGPIO();
-    // Board_initI2C();
-    // Board_initSDSPI();
-     Board_initSPI();
-     Board_initUART();
-     Board_initWatchdog();
-    // Board_initWiFi();
-     Init(); // initialize challenge modules
-
-    /* Construct heartBeat Task  thread */
-    Task_Params_init(&taskParams);
-    taskParams.arg0 = 1000;
-    taskParams.stackSize = TASKSTACKSIZE;
-    taskParams.stack = &task0Stack;
-    Task_construct(&task0Struct, (Task_FuncPtr)heartBeatFxn, &taskParams, NULL);
-
-
-    /* Turn on user LED */
-    GPIO_write(Board_LED0, Board_LED_ON);
-
-    System_printf("Starting the example\nSystem provider is set to SysMin. "
-                  "Halt the target to view any SysMin contents in ROV.\n");
-    /* SysMin will only print to the console when you call flush or exit */
-    System_flush();
-
-    /* Start BIOS */
-    BIOS_start();
-
-    return (0);
-}
-
-void UartIsr(){
-	static int dataSetIndex;
-	static char *dataSetASCII;
-	static char *dataSetHundreds;
-	static char *dataSetTens;
-	static char *dataSetOnes;
-	static int receiveData;
-	static int dataCounter = 0;
-	   uint32_t status = MAP_UART_getEnabledInterruptStatus(EUSCI_A2_BASE);
-
-	    MAP_UART_clearInterruptFlag(EUSCI_A2_BASE, status);
-
-	    if(status & EUSCI_A_UART_RECEIVE_INTERRUPT)
-	    {
-	    		receiveData = UCA2RXBUF;				//the value from the receive buffer will be placed into a receiveData variable
-	    		dataSetASCII = (char*)receiveData;	//we cast this value as a char* and place into dataSetASCII
-	    		if(dataSetASCII == "\n"){			//if a new line character is found,
-	    			dataCounter = 3;					//send it to counter 3 location to print the number to the screen
-	    		}
-	    		else if (dataCounter == 0)
-			{
-	    			dataSetOnes = dataSetASCII;		//we save the value into the ones place
-	    			dataCounter++;
-			}
-	    		else if (dataCounter == 1)
-	    		{
-	    			dataSetTens = dataSetOnes;		//we have a tens digit, so we move the first number into the tens place
-	    			dataSetOnes = dataSetASCII;
-	    			dataCounter++;
-	    		}
-	    		else if (dataCounter == 2)
-	    		{
-	    			dataSetHundreds = dataSetTens;	//we have a hundreds digit, so we move the second number into the hundreds place
-	    			dataSetTens = dataSetOnes;
-	    			dataSetOnes = dataSetASCII;
-	    			dataCounter++;
-	    		}
-	    		else if (dataCounter == 3){
-	    			dataCounter = 0;					//clear dataCounter
-	    			drawData();						//write data to the display
-	    			dataSetOnes = '\0';				//clear out all of our old values
-	    			dataSetTens = '\0';
-	    			dataSetHundreds = '\0';
-	    		}
-	    }
-}
-
-void ADC14Isr(){
-	 uint64_t status;
-
-	 static uint16_t resultsBuffer[3];
-
-	    status = MAP_ADC14_getEnabledInterruptStatus();
-	    MAP_ADC14_clearInterruptFlag(status);
-
-	    /* ADC_MEM2 conversion completed */
-	    if(status & ADC_INT2)
-	    {
-	        /* Store ADC14 conversion results */
-	    		// Take running average of ADC14 values so they can be updated
-			resultsBuffer[0] = ADC14_getResult(ADC_MEM0);
-			resultsBuffer[1] = ADC14_getResult(ADC_MEM1);
-			resultsBuffer[2] = ADC14_getResult(ADC_MEM2);
-
-	    		/*if(avg){
-	    			avg = FALSE;
-	    			resultsBuffer[0] = (ADC14_getResult(ADC_MEM0) + resultsBuffer[0]) > 1;
-				resultsBuffer[1] = (ADC14_getResult(ADC_MEM1) + resultsBuffer[1]) > 1;
-				resultsBuffer[2] = (ADC14_getResult(ADC_MEM2) + resultsBuffer[2]) > 1;
-	    		}
-	    		else {
-	    			avg = TRUE;
-	    			resultsBuffer[0] = ADC14_getResult(ADC_MEM0);
-				resultsBuffer[1] = ADC14_getResult(ADC_MEM1);
-				resultsBuffer[2] = ADC14_getResult(ADC_MEM2);
-	    		}*/
-
-	        /*
-	         * Draw accelerometer data on display and determine if orientation
-	         * change thresholds are reached and redraw as necessary
-	         */
-	        if (resultsBuffer[0] < 4900) {
-	            if (Lcd_Orientation != LCD_ORIENTATION_LEFT) {
-	                Crystalfontz128x128_SetOrientation(LCD_ORIENTATION_LEFT);
-	                drawTitle();
-	            }
-	            //else
-	                //drawAccelData();
-	        }
-	        else if (resultsBuffer[0] > 11300) {
-	            if (Lcd_Orientation != LCD_ORIENTATION_RIGHT){
-	                Crystalfontz128x128_SetOrientation(LCD_ORIENTATION_RIGHT);
-	                drawTitle();
-	            }
-	            //else
-	                //drawAccelData();
-	        }
-	        else if (resultsBuffer[1] < 5000) {
-	            if (Lcd_Orientation != LCD_ORIENTATION_UP){
-	                Crystalfontz128x128_SetOrientation(LCD_ORIENTATION_UP);
-	                //drawTitle();
-	            }
-	            //else
-	                //drawAccelData();
-	        }
-	        else if (resultsBuffer[1] > 11300) {
-	            if (Lcd_Orientation != LCD_ORIENTATION_DOWN){
-	                Crystalfontz128x128_SetOrientation(LCD_ORIENTATION_DOWN);
-	                drawTitle();
-	            }
-	            //else
-	                //drawAccelData();
-	        }
-	        //else
-	            //drawAccelData();
-	    }
-}

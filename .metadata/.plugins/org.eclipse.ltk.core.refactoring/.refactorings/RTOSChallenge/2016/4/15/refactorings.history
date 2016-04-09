@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;RTOSChallenge/init.c&apos; to &apos;init_all.c&apos;" description="Rename resource &apos;init.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="init.c" name="init_all.c" stamp="1460160703446" updateReferences="true"/>
+</session>

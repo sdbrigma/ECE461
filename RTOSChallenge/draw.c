@@ -21,11 +21,11 @@ Graphics_Context g_sContext;
 /*
  * Redraw accelerometer data
  */
-void drawAccelData()
+void drawAccelData(uint16_t val1,uint16_t val2,uint16_t val3)
 {
-	static uint16_t resultsBuffer[3];
+	//static uint16_t resultsBuffer[3];
     char string[8];
-    sprintf(string, "X: %5d", resultsBuffer[0]);
+    sprintf(string, "X: %5d", val1);
     Graphics_drawString(&g_sContext,
                                     (int8_t *)string,
                                     8,
@@ -33,7 +33,7 @@ void drawAccelData()
                                     30,
                                     OPAQUE_TEXT);
 
-    sprintf(string, "Y: %5d", resultsBuffer[1]);
+    sprintf(string, "Y: %5d", val2);
     Graphics_drawString(&g_sContext,
                                     (int8_t *)string,
                                     8,
@@ -41,7 +41,7 @@ void drawAccelData()
                                     50,
                                     OPAQUE_TEXT);
 
-    sprintf(string, "Z: %5d", resultsBuffer[2]);
+    sprintf(string, "Z: %5d", val3);
     Graphics_drawString(&g_sContext,
                                     (int8_t *)string,
                                     8,
@@ -70,7 +70,7 @@ void drawTitle()
                                     64,
                                     90,
                                     OPAQUE_TEXT);
-    drawAccelData();
+    //drawAccelData();
 }
 
 void drawData()

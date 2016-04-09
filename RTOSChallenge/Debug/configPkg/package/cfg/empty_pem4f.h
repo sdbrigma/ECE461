@@ -7,14 +7,11 @@
 
 #include <xdc/std.h>
 
-#include <ti/sysbios/family/arm/m3/Hwi.h>
-extern const ti_sysbios_family_arm_m3_Hwi_Handle ADC14Hwi;
+#include <ti/sysbios/hal/Hwi.h>
+extern const ti_sysbios_hal_Hwi_Handle adc_hwi;
 
-#include <ti/sysbios/family/arm/m3/Hwi.h>
-extern const ti_sysbios_family_arm_m3_Hwi_Handle UARTHwi;
-
-#include <ti/sysbios/knl/Task.h>
-extern const ti_sysbios_knl_Task_Handle drawTask;
+#include <ti/sysbios/knl/Mailbox.h>
+extern const ti_sysbios_knl_Mailbox_Handle adc_mailbox;
 
 extern int xdc_runtime_Startup__EXECFXN__C;
 

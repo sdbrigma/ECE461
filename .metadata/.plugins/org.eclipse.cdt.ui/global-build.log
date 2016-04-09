@@ -6,469 +6,15 @@ making ../src/sysbios/sysbios.aem4f ...
 gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
 gmake[1]: Nothing to be done for 'all'.
 gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-Building file: ../empty.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
-"../empty.c", line 56: fatal error #1965: cannot open source file "functions.h"
-1 catastrophic error detected in the compilation of "../empty.c".
-Compilation terminated.
-
->> Compilation failure
-subdir_rules.mk:14: recipe for target 'empty.obj' failed
-gmake: *** [empty.obj] Error 1
-gmake: Target 'all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project Challenge3 ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-gmake: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project RTOSChallenge ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-Building file: ../empty.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
-"../empty.c", line 115: error #20: identifier "g_sContext" is undefined
-"../empty.c", line 119: warning #225-D: function "drawTitle" declared implicitly
-"../empty.c", line 163: warning #225-D: function "Init_Timer32" declared implicitly
-1 error detected in the compilation of "../empty.c".
-
->> Compilation failure
-subdir_rules.mk:14: recipe for target 'empty.obj' failed
-gmake: *** [empty.obj] Error 1
-gmake: Target 'all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project Challenge3 ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-gmake: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project RTOSChallenge ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-Building file: ../empty.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
-Finished building: ../empty.c
- 
-Building target: RTOSChallenge.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"RTOSChallenge.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="RTOSChallenge_linkInfo.xml" --rom_model -o "RTOSChallenge.out" "./MSP_EXP432P401R.obj" "./empty.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
-<Linking>
-Finished building target: RTOSChallenge.out
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project uartecho_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../uartecho.cfg
-Invoking: XDCtools
-"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../uartecho.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring uartecho.xem4f from package/cfg/uartecho_pem4f.cfg ...
-generating custom ti.sysbios library makefile ... 
-Starting build of library sources ...
-making /Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Build of libraries done.
-clem4f package/cfg/uartecho_pem4f.c ...
-Finished building: ../uartecho.cfg
- 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Building file: ../MSP_EXP432P401R.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="MSP_EXP432P401R.pp" --cmd_file="configPkg/compiler.opt" "../MSP_EXP432P401R.c"
-Finished building: ../MSP_EXP432P401R.c
- 
-Building file: ../uartecho.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="uartecho.pp" --cmd_file="configPkg/compiler.opt" "../uartecho.c"
-Finished building: ../uartecho.c
- 
-Building target: uartecho_MSP_EXP432P401R_TI_MSP432P401R.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"uartecho_MSP_EXP432P401R_TI_MSP432P401R.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uartecho_MSP_EXP432P401R_TI_MSP432P401R_linkInfo.xml" --rom_model -o "uartecho_MSP_EXP432P401R_TI_MSP432P401R.out" "./MSP_EXP432P401R.obj" "./uartecho.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
-<Linking>
-Finished building target: uartecho_MSP_EXP432P401R_TI_MSP432P401R.out
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project Challenge3 ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../draw.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/driverlib/MSP432P4xx" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/GrLib/fonts" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="draw.pp"  "../draw.c"
-"../draw.c", line 27: remark #1532-D: (ULP 5.3) Detected sprintf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../draw.c", line 35: remark #1532-D: (ULP 5.3) Detected sprintf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../draw.c", line 43: remark #1532-D: (ULP 5.3) Detected sprintf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-"../draw.c", line 80: warning #169-D: argument of type "char *" is incompatible with parameter of type "int8_t *"
-"../draw.c", line 78: remark #1532-D: (ULP 5.3) Detected sprintf() operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
-Finished building: ../draw.c
- 
-Building file: ../interrupts.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/driverlib/MSP432P4xx" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/GrLib/fonts" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="interrupts.pp"  "../interrupts.c"
-"../interrupts.c", line 100: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
-"../interrupts.c", line 101: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
-Finished building: ../interrupts.c
- 
-Building file: ../main.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/driverlib/MSP432P4xx" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/GrLib/fonts" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
-Finished building: ../main.c
- 
-Building file: ../timer.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/driverlib/MSP432P4xx" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/GrLib/fonts" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="timer.pp"  "../timer.c"
-"../timer.c", line 20: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
-"../timer.c", line 22: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
-"../timer.c", line 25: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
-"../timer.c", line 30: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
-Finished building: ../timer.c
- 
-Building target: Challenge3.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off -z -m"Challenge3.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="Challenge3_linkInfo.xml" --rom_model -o "Challenge3.out" "./draw.obj" "./interrupts.obj" "./main.obj" "./startup_msp432p401r_ccs.obj" "./system_msp432p401r.obj" "./timer.obj" "./driverlib/MSP432P4xx/adc14.obj" "./driverlib/MSP432P4xx/aes256.obj" "./driverlib/MSP432P4xx/comp_e.obj" "./driverlib/MSP432P4xx/cpu.obj" "./driverlib/MSP432P4xx/crc32.obj" "./driverlib/MSP432P4xx/cs.obj" "./driverlib/MSP432P4xx/dma.obj" "./driverlib/MSP432P4xx/flash.obj" "./driverlib/MSP432P4xx/fpu.obj" "./driverlib/MSP432P4xx/gpio.obj" "./driverlib/MSP432P4xx/i2c.obj" "./driverlib/MSP432P4xx/interrupt.obj" "./driverlib/MSP432P4xx/mpu.obj" "./driverlib/MSP432P4xx/pcm.obj" "./driverlib/MSP432P4xx/pmap.obj" "./driverlib/MSP432P4xx/pss.obj" "./driverlib/MSP432P4xx/ref_a.obj" "./driverlib/MSP432P4xx/reset.obj" "./driverlib/MSP432P4xx/rtc_c.obj" "./driverlib/MSP432P4xx/spi.obj" "./driverlib/MSP432P4xx/sysctl.obj" "./driverlib/MSP432P4xx/systick.obj" "./driverlib/MSP432P4xx/timer32.obj" "./driverlib/MSP432P4xx/timer_a.obj" "./driverlib/MSP432P4xx/uart.obj" "./driverlib/MSP432P4xx/wdt_a.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../msp432p401r.cmd"  -l"libc.a" 
-<Linking>
-remark #10371-D: (ULP 1.1) Detected no uses of low power mode state changing instructions
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 1 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 2 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 4 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 5 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 6 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 7 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 8 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 9 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 10 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-Finished building target: Challenge3.out
- 
-Invoking: MSP432 Hex Utility
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armhex" --memwidth=8 --romwidth=8 -o "Challenge3.hex"  "Challenge3.out" 
-Translating to Extended Tektronix format...
-   "Challenge3.out" .intvecs ==> .intvecs
-   "Challenge3.out" .text ==> .text
-   "Challenge3.out" .const ==> .const
-   "Challenge3.out" .cinit ==> .cinit
-Finished building: Challenge3.hex
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project RTOSChallenge ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-Building file: ../draw.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="draw.pp" --cmd_file="configPkg/compiler.opt" "../draw.c"
-"../draw.c", line 14: fatal error #1965: cannot open source file "macros.h"
-1 catastrophic error detected in the compilation of "../draw.c".
-Compilation terminated.
-
->> Compilation failure
-subdir_rules.mk:14: recipe for target 'draw.obj' failed
-gmake: *** [draw.obj] Error 1
-Building file: ../empty.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
-"../empty.c", line 86: error #20: identifier "resultsBuffer" is undefined
-"../empty.c", line 87: error #20: identifier "g_sContext" is undefined
-"../empty.c", line 172: error #20: identifier "receiveData" is undefined
-"../empty.c", line 173: error #20: identifier "dataSetASCII" is undefined
-"../empty.c", line 175: error #20: identifier "dataCounter" is undefined
-"../empty.c", line 177: error #20: identifier "dataCounter" is undefined
-"../empty.c", line 179: error #20: identifier "dataSetOnes" is undefined
-"../empty.c", line 184: error #20: identifier "dataSetTens" is undefined
-"../empty.c", line 184: error #20: identifier "dataSetOnes" is undefined
-"../empty.c", line 190: error #20: identifier "dataSetHundreds" is undefined
-"../empty.c", line 190: error #20: identifier "dataSetTens" is undefined
-"../empty.c", line 191: error #20: identifier "dataSetOnes" is undefined
-"../empty.c", line 198: error #20: identifier "dataSetOnes" is undefined
-"../empty.c", line 199: error #20: identifier "dataSetTens" is undefined
-"../empty.c", line 200: error #20: identifier "dataSetHundreds" is undefined
-"../empty.c", line 216: error #20: identifier "resultsBuffer" is undefined
-16 errors detected in the compilation of "../empty.c".
-
->> Compilation failure
-subdir_rules.mk:21: recipe for target 'empty.obj' failed
-gmake: *** [empty.obj] Error 1
-Building file: ../init.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init.pp" --cmd_file="configPkg/compiler.opt" "../init.c"
-"../init.c", line 16: error #20: identifier "Void" is undefined
-"../init.c", line 35: error #20: identifier "g_sContext" is undefined
-"../init.c", line 83: warning #225-D: function "Init_Timer32" declared implicitly
-2 errors detected in the compilation of "../init.c".
-
->> Compilation failure
-subdir_rules.mk:38: recipe for target 'init.obj' failed
-gmake: *** [init.obj] Error 1
-Building file: ../empty.cfg
-Invoking: XDCtools
-"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../empty.cfg"
-configuring empty.xem4f from package/cfg/empty_pem4f.cfg ...
-generating custom ti.sysbios library makefile ... 
-Starting build of library sources ...
-making /Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-gmake[1]: Nothing to be done for `all'.
-gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-Build of libraries done.
-clem4f package/cfg/empty_pem4f.c ...
-Finished building: ../empty.cfg
- 
-gmake: Target 'all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project clock_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../clock.cfg
-Invoking: XDCtools
-"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../clock.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring clock.xem4f from package/cfg/clock_pem4f.cfg ...
-generating custom ti.sysbios library makefile ... 
-Starting build of library sources ...
-making /Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Build of libraries done.
-clem4f package/cfg/clock_pem4f.c ...
-Finished building: ../clock.cfg
- 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Building file: ../MSP_EXP432P401R.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="MSP_EXP432P401R.pp" --cmd_file="configPkg/compiler.opt" "../MSP_EXP432P401R.c"
-Finished building: ../MSP_EXP432P401R.c
- 
-Building file: ../clock.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="clock.pp" --cmd_file="configPkg/compiler.opt" "../clock.c"
-Finished building: ../clock.c
- 
-Building target: clock_MSP_EXP432P401R_TI_MSP432P401R.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"clock_MSP_EXP432P401R_TI_MSP432P401R.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="clock_MSP_EXP432P401R_TI_MSP432P401R_linkInfo.xml" --rom_model -o "clock_MSP_EXP432P401R_TI_MSP432P401R.out" "./MSP_EXP432P401R.obj" "./clock.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
-<Linking>
-Finished building target: clock_MSP_EXP432P401R_TI_MSP432P401R.out
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project mutex_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../mutex.cfg
-Invoking: XDCtools
-"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../mutex.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring mutex.xem4f from package/cfg/mutex_pem4f.cfg ...
-generating custom ti.sysbios library makefile ... 
-Starting build of library sources ...
-making /Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Build of libraries done.
-clem4f package/cfg/mutex_pem4f.c ...
-Finished building: ../mutex.cfg
- 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Building file: ../MSP_EXP432P401R.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="MSP_EXP432P401R.pp" --cmd_file="configPkg/compiler.opt" "../MSP_EXP432P401R.c"
-Finished building: ../MSP_EXP432P401R.c
- 
-Building file: ../mutex.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="mutex.pp" --cmd_file="configPkg/compiler.opt" "../mutex.c"
-Finished building: ../mutex.c
- 
-Building target: mutex_MSP_EXP432P401R_TI_MSP432P401R.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"mutex_MSP_EXP432P401R_TI_MSP432P401R.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="mutex_MSP_EXP432P401R_TI_MSP432P401R_linkInfo.xml" --rom_model -o "mutex_MSP_EXP432P401R_TI_MSP432P401R.out" "./MSP_EXP432P401R.obj" "./mutex.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
-<Linking>
-Finished building target: mutex_MSP_EXP432P401R_TI_MSP432P401R.out
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project swi_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../swi.cfg
-Invoking: XDCtools
-"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../swi.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring swi.xem4f from package/cfg/swi_pem4f.cfg ...
-generating custom ti.sysbios library makefile ... 
-Starting build of library sources ...
-making /Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Build of libraries done.
-clem4f package/cfg/swi_pem4f.c ...
-Finished building: ../swi.cfg
- 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Building file: ../MSP_EXP432P401R.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="MSP_EXP432P401R.pp" --cmd_file="configPkg/compiler.opt" "../MSP_EXP432P401R.c"
-Finished building: ../MSP_EXP432P401R.c
- 
-Building file: ../swi.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="swi.pp" --cmd_file="configPkg/compiler.opt" "../swi.c"
-Finished building: ../swi.c
- 
-Building target: swi_MSP_EXP432P401R_TI_MSP432P401R.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"swi_MSP_EXP432P401R_TI_MSP432P401R.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="swi_MSP_EXP432P401R_TI_MSP432P401R_linkInfo.xml" --rom_model -o "swi_MSP_EXP432P401R_TI_MSP432P401R.out" "./MSP_EXP432P401R.obj" "./swi.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
-<Linking>
-Finished building target: swi_MSP_EXP432P401R_TI_MSP432P401R.out
- 
-
-**** Build Finished ****
-
-**** Clean-only build of configuration Debug for project uartecho_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k clean 
-cleaning ../src/sysbios ...
-rm -rf  "../src/makefile.libs" "uartecho_MSP_EXP432P401R_TI_MSP432P401R.hex"  "configPkg/linker.cmd" "configPkg/compiler.opt"  "uartecho_MSP_EXP432P401R_TI_MSP432P401R.out" 
-rm -rf  "configPkg/" 
-rm -rf "MSP_EXP432P401R.obj" "uartecho.obj" 
-rm -rf "MSP_EXP432P401R.pp" "uartecho.pp" 
-Finished clean
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project uartecho_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../uartecho.cfg
-Invoking: XDCtools
-"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../uartecho.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring uartecho.xem4f from package/cfg/uartecho_pem4f.cfg ...
-generating custom ti.sysbios library makefile ... 
-Starting build of library sources ...
-making /Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Build of libraries done.
-clem4f package/cfg/uartecho_pem4f.c ...
-Finished building: ../uartecho.cfg
- 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Building file: ../MSP_EXP432P401R.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="MSP_EXP432P401R.pp" --cmd_file="configPkg/compiler.opt" "../MSP_EXP432P401R.c"
-Finished building: ../MSP_EXP432P401R.c
- 
-Building file: ../uartecho.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="uartecho.pp" --cmd_file="configPkg/compiler.opt" "../uartecho.c"
-Finished building: ../uartecho.c
- 
-Building target: uartecho_MSP_EXP432P401R_TI_MSP432P401R.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"uartecho_MSP_EXP432P401R_TI_MSP432P401R.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="uartecho_MSP_EXP432P401R_TI_MSP432P401R_linkInfo.xml" --rom_model -o "uartecho_MSP_EXP432P401R_TI_MSP432P401R.out" "./MSP_EXP432P401R.obj" "./uartecho.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
-<Linking>
-Finished building target: uartecho_MSP_EXP432P401R_TI_MSP432P401R.out
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project RTOSChallenge ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
 Building file: ../MSP_EXP432P401R.c
 Invoking: MSP432 Compiler
 "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="MSP_EXP432P401R.pp" --cmd_file="configPkg/compiler.opt" "../MSP_EXP432P401R.c"
 Finished building: ../MSP_EXP432P401R.c
+ 
+Building file: ../init_all.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init_all.pp" --cmd_file="configPkg/compiler.opt" "../init_all.c"
+Finished building: ../init_all.c
  
 Building file: ../LcdDriver/Crystalfontz128x128_ST7735.c
 Invoking: MSP432 Compiler
@@ -540,36 +86,146 @@ Invoking: MSP432 Compiler
 "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="GrLib/fonts/fontfixed6x8.pp" --obj_directory="GrLib/fonts" --cmd_file="configPkg/compiler.opt" "../GrLib/fonts/fontfixed6x8.c"
 Finished building: ../GrLib/fonts/fontfixed6x8.c
  
-Building file: ../draw.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="draw.pp" --cmd_file="configPkg/compiler.opt" "../draw.c"
-"../draw.c", line 27: error #20: identifier "resultsBuffer" is undefined
-"../draw.c", line 78: error #20: identifier "dataSetHundreds" is undefined
-"../draw.c", line 78: error #20: identifier "dataSetTens" is undefined
-"../draw.c", line 78: error #20: identifier "dataSetOnes" is undefined
-"../draw.c", line 80: warning #169-D: argument of type "char *" is incompatible with parameter of type "int8_t *"
-4 errors detected in the compilation of "../draw.c".
-
->> Compilation failure
-subdir_rules.mk:14: recipe for target 'draw.obj' failed
-gmake: *** [draw.obj] Error 1
 Building file: ../empty.c
 Invoking: MSP432 Compiler
 "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
-"../empty.c", line 135: warning #179-D: variable "dataSetIndex" was declared but never referenced
-"../empty.c", line 137: warning #552-D: variable "dataSetHundreds" was set but never used
 Finished building: ../empty.c
  
-Building file: ../init.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init.pp" --cmd_file="configPkg/compiler.opt" "../init.c"
-"../init.c", line 16: error #20: identifier "Void" is undefined
-"../init.c", line 35: error #20: identifier "g_sContext" is undefined
-2 errors detected in the compilation of "../init.c".
+Building target: RTOSChallenge.out
+Invoking: MSP432 Linker
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"RTOSChallenge.map" --heap_size=1024 --stack_size=1024 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="RTOSChallenge_linkInfo.xml" --rom_model -o "RTOSChallenge.out" "./MSP_EXP432P401R.obj" "./empty.obj" "./init_all.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
+<Linking>
+error #10056: symbol "ti_sysbios_knl_Clock_tick__E" redefined: first defined in "./empty.obj"; redefined in "/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios/sysbios.aem4f<BIOS.obj>"
+warning #10229-D: output section ".data" refers to load symbol "Clock_tick" and hence cannot be compressed; compression "rle" is ignored
+
+ undefined  first referenced                                                                           
+  symbol        in file                                                                                
+ ---------  ----------------                                                                           
+ Clock_tick /Users/marybiggs/Desktop/ECE461/RTOSChallenge/Debug/configPkg/package/cfg/empty_pem4f.oem4f
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "RTOSChallenge.out" not built
 
 >> Compilation failure
-subdir_rules.mk:38: recipe for target 'init.obj' failed
-gmake: *** [init.obj] Error 1
+makefile:158: recipe for target 'RTOSChallenge.out' failed
+gmake: *** [RTOSChallenge.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project RTOSChallenge ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+Building file: ../empty.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
+Finished building: ../empty.c
+ 
+Building file: ../init_all.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init_all.pp" --cmd_file="configPkg/compiler.opt" "../init_all.c"
+Finished building: ../init_all.c
+ 
+Building target: RTOSChallenge.out
+Invoking: MSP432 Linker
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"RTOSChallenge.map" --heap_size=1024 --stack_size=1024 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="RTOSChallenge_linkInfo.xml" --rom_model -o "RTOSChallenge.out" "./MSP_EXP432P401R.obj" "./empty.obj" "./init_all.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
+<Linking>
+warning #10229-D: output section ".data" refers to load symbol "Clock_tick" and hence cannot be compressed; compression "rle" is ignored
+
+ undefined  first referenced                                                                           
+  symbol        in file                                                                                
+ ---------  ----------------                                                                           
+ Clock_tick /Users/marybiggs/Desktop/ECE461/RTOSChallenge/Debug/configPkg/package/cfg/empty_pem4f.oem4f
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "RTOSChallenge.out" not built
+
+>> Compilation failure
+makefile:158: recipe for target 'RTOSChallenge.out' failed
+gmake: *** [RTOSChallenge.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project clock_MSP_EXP432P401R_TI_MSP432P401R ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project RTOSChallenge ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+Building file: ../empty.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
+Finished building: ../empty.c
+ 
+Building file: ../init_all.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init_all.pp" --cmd_file="configPkg/compiler.opt" "../init_all.c"
+Finished building: ../init_all.c
+ 
+Building target: RTOSChallenge.out
+Invoking: MSP432 Linker
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"RTOSChallenge.map" --heap_size=1024 --stack_size=1024 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="RTOSChallenge_linkInfo.xml" --rom_model -o "RTOSChallenge.out" "./MSP_EXP432P401R.obj" "./empty.obj" "./init_all.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
+<Linking>
+warning #10229-D: output section ".data" refers to load symbol "Clock_tick" and hence cannot be compressed; compression "rle" is ignored
+
+ undefined  first referenced                                                                           
+  symbol        in file                                                                                
+ ---------  ----------------                                                                           
+ Clock_tick /Users/marybiggs/Desktop/ECE461/RTOSChallenge/Debug/configPkg/package/cfg/empty_pem4f.oem4f
+
+error #10234-D: unresolved symbols remain
+error #10010: errors encountered during linking; "RTOSChallenge.out" not built
+
+>> Compilation failure
+makefile:158: recipe for target 'RTOSChallenge.out' failed
+gmake: *** [RTOSChallenge.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project clock_MSP_EXP432P401R_TI_MSP432P401R ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project RTOSChallenge ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+Building file: ../empty.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
+Finished building: ../empty.c
+ 
+Building file: ../init_all.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init_all.pp" --cmd_file="configPkg/compiler.opt" "../init_all.c"
+Finished building: ../init_all.c
+ 
 Building file: ../empty.cfg
 Invoking: XDCtools
 "/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../empty.cfg"
@@ -584,262 +240,9 @@ Build of libraries done.
 clem4f package/cfg/empty_pem4f.c ...
 Finished building: ../empty.cfg
  
-gmake: Target 'all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project Challenge3 ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-gmake: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project RTOSChallenge ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-Building file: ../draw.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="draw.pp" --cmd_file="configPkg/compiler.opt" "../draw.c"
-"../draw.c", line 85: warning #169-D: argument of type "char *" is incompatible with parameter of type "int8_t *"
-Finished building: ../draw.c
- 
-Building file: ../empty.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
-"../empty.c", line 135: warning #179-D: variable "dataSetIndex" was declared but never referenced
-"../empty.c", line 137: warning #552-D: variable "dataSetHundreds" was set but never used
-Finished building: ../empty.c
- 
-Building file: ../init.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init.pp" --cmd_file="configPkg/compiler.opt" "../init.c"
-"../init.c", line 19: error #20: identifier "Void" is undefined
-1 error detected in the compilation of "../init.c".
-
->> Compilation failure
-subdir_rules.mk:38: recipe for target 'init.obj' failed
-gmake: *** [init.obj] Error 1
-gmake: Target 'all' not remade because of errors.
-
-**** Build Finished ****
-
-**** Clean-only build of configuration Debug for project clock_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k clean 
-cleaning ../src/sysbios ...
-rm -rf  "../src/makefile.libs" "clock_MSP_EXP432P401R_TI_MSP432P401R.hex"  "configPkg/linker.cmd" "configPkg/compiler.opt"  "clock_MSP_EXP432P401R_TI_MSP432P401R.out" 
-rm -rf  "configPkg/" 
-rm -rf "MSP_EXP432P401R.obj" "clock.obj" 
-rm -rf "MSP_EXP432P401R.pp" "clock.pp" 
-Finished clean
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project clock_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../clock.cfg
-Invoking: XDCtools
-"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../clock.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring clock.xem4f from package/cfg/clock_pem4f.cfg ...
-generating custom ti.sysbios library makefile ... 
-Starting build of library sources ...
-making /Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Build of libraries done.
-clem4f package/cfg/clock_pem4f.c ...
-Finished building: ../clock.cfg
- 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Building file: ../MSP_EXP432P401R.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="MSP_EXP432P401R.pp" --cmd_file="configPkg/compiler.opt" "../MSP_EXP432P401R.c"
-Finished building: ../MSP_EXP432P401R.c
- 
-Building file: ../clock.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="clock.pp" --cmd_file="configPkg/compiler.opt" "../clock.c"
-Finished building: ../clock.c
- 
-Building target: clock_MSP_EXP432P401R_TI_MSP432P401R.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"clock_MSP_EXP432P401R_TI_MSP432P401R.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="clock_MSP_EXP432P401R_TI_MSP432P401R_linkInfo.xml" --rom_model -o "clock_MSP_EXP432P401R_TI_MSP432P401R.out" "./MSP_EXP432P401R.obj" "./clock.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
-<Linking>
-Finished building target: clock_MSP_EXP432P401R_TI_MSP432P401R.out
- 
-
-**** Build Finished ****
-
-**** Clean-only build of configuration Debug for project mutex_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k clean 
-cleaning ../src/sysbios ...
-rm -rf  "../src/makefile.libs" "mutex_MSP_EXP432P401R_TI_MSP432P401R.hex"  "configPkg/linker.cmd" "configPkg/compiler.opt"  "mutex_MSP_EXP432P401R_TI_MSP432P401R.out" 
-rm -rf  "configPkg/" 
-rm -rf "MSP_EXP432P401R.obj" "mutex.obj" 
-rm -rf "MSP_EXP432P401R.pp" "mutex.pp" 
-Finished clean
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project mutex_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../mutex.cfg
-Invoking: XDCtools
-"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../mutex.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring mutex.xem4f from package/cfg/mutex_pem4f.cfg ...
-generating custom ti.sysbios library makefile ... 
-Starting build of library sources ...
-making /Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Build of libraries done.
-clem4f package/cfg/mutex_pem4f.c ...
-Finished building: ../mutex.cfg
- 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Building file: ../MSP_EXP432P401R.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="MSP_EXP432P401R.pp" --cmd_file="configPkg/compiler.opt" "../MSP_EXP432P401R.c"
-Finished building: ../MSP_EXP432P401R.c
- 
-Building file: ../mutex.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="mutex.pp" --cmd_file="configPkg/compiler.opt" "../mutex.c"
-Finished building: ../mutex.c
- 
-Building target: mutex_MSP_EXP432P401R_TI_MSP432P401R.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"mutex_MSP_EXP432P401R_TI_MSP432P401R.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="mutex_MSP_EXP432P401R_TI_MSP432P401R_linkInfo.xml" --rom_model -o "mutex_MSP_EXP432P401R_TI_MSP432P401R.out" "./MSP_EXP432P401R.obj" "./mutex.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
-<Linking>
-Finished building target: mutex_MSP_EXP432P401R_TI_MSP432P401R.out
- 
-
-**** Build Finished ****
-
-**** Clean-only build of configuration Debug for project swi_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k clean 
-cleaning ../src/sysbios ...
-rm -rf  "../src/makefile.libs" "swi_MSP_EXP432P401R_TI_MSP432P401R.hex"  "configPkg/linker.cmd" "configPkg/compiler.opt"  "swi_MSP_EXP432P401R_TI_MSP432P401R.out" 
-rm -rf  "configPkg/" 
-rm -rf "MSP_EXP432P401R.obj" "swi.obj" 
-rm -rf "MSP_EXP432P401R.pp" "swi.pp" 
-Finished clean
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project swi_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-Building file: ../swi.cfg
-Invoking: XDCtools
-"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../swi.cfg"
-making package.mak (because of package.bld) ...
-generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
-configuring swi.xem4f from package/cfg/swi_pem4f.cfg ...
-generating custom ti.sysbios library makefile ... 
-Starting build of library sources ...
-making /Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
-asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
-arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
-gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Build of libraries done.
-clem4f package/cfg/swi_pem4f.c ...
-Finished building: ../swi.cfg
- 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-Building file: ../MSP_EXP432P401R.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="MSP_EXP432P401R.pp" --cmd_file="configPkg/compiler.opt" "../MSP_EXP432P401R.c"
-Finished building: ../MSP_EXP432P401R.c
- 
-Building file: ../swi.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="swi.pp" --cmd_file="configPkg/compiler.opt" "../swi.c"
-Finished building: ../swi.c
- 
-Building target: swi_MSP_EXP432P401R_TI_MSP432P401R.out
-Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"swi_MSP_EXP432P401R_TI_MSP432P401R.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="swi_MSP_EXP432P401R_TI_MSP432P401R_linkInfo.xml" --rom_model -o "swi_MSP_EXP432P401R_TI_MSP432P401R.out" "./MSP_EXP432P401R.obj" "./swi.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
-<Linking>
-Finished building target: swi_MSP_EXP432P401R_TI_MSP432P401R.out
- 
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project uartecho_MSP_EXP432P401R_TI_MSP432P401R ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project Challenge3 ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-gmake: Nothing to be done for 'all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project RTOSChallenge ****
-
-/Applications/ti/ccsv6/utils/bin/gmake -k all 
-making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
-Building file: ../init.c
-Invoking: MSP432 Compiler
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init.pp" --cmd_file="configPkg/compiler.opt" "../init.c"
-Finished building: ../init.c
- 
 Building target: RTOSChallenge.out
 Invoking: MSP432 Linker
-"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"RTOSChallenge.map" --heap_size=1024 --stack_size=512 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="RTOSChallenge_linkInfo.xml" --rom_model -o "RTOSChallenge.out" "./MSP_EXP432P401R.obj" "./draw.obj" "./empty.obj" "./init.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"RTOSChallenge.map" --heap_size=1024 --stack_size=1024 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="RTOSChallenge_linkInfo.xml" --rom_model -o "RTOSChallenge.out" "./MSP_EXP432P401R.obj" "./empty.obj" "./init_all.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
 <Linking>
 Finished building target: RTOSChallenge.out
  
@@ -856,32 +259,101 @@ gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/clock_MSP_EXP432P40
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project mutex_MSP_EXP432P401R_TI_MSP432P401R ****
+**** Build of configuration Debug for project RTOSChallenge ****
 
 /Applications/ti/ccsv6/utils/bin/gmake -k all 
 making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
 gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/mutex_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project swi_MSP_EXP432P401R_TI_MSP432P401R ****
+**** Build of configuration Debug for project RTOSChallenge ****
 
 /Applications/ti/ccsv6/utils/bin/gmake -k all 
 making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
 gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/swi_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+Building file: ../empty.cfg
+Invoking: XDCtools
+"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../empty.cfg"
+configuring empty.xem4f from package/cfg/empty_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making /Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
+asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+Build of libraries done.
+clem4f package/cfg/empty_pem4f.c ...
+"package/cfg/empty_pem4f.c", line 15604: warning #179-D: variable "__args" was declared but never referenced
+"package/cfg/empty_pem4f.c", line 15607: warning #179-D: variable "iStat" was declared but never referenced
+"package/cfg/empty_pem4f.c", line 15623: warning #179-D: variable "iStat" was declared but never referenced
+"package/cfg/empty_pem4f.c", line 15638: warning #179-D: variable "iStat" was declared but never referenced
+Finished building: ../empty.cfg
+ 
+Building target: RTOSChallenge.out
+Invoking: MSP432 Linker
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"RTOSChallenge.map" --heap_size=1024 --stack_size=1024 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="RTOSChallenge_linkInfo.xml" --rom_model -o "RTOSChallenge.out" "./MSP_EXP432P401R.obj" "./empty.obj" "./init_all.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
+<Linking>
+Finished building target: RTOSChallenge.out
+ 
 
 **** Build Finished ****
 
-**** Build of configuration Debug for project uartecho_MSP_EXP432P401R_TI_MSP432P401R ****
+**** Build of configuration Debug for project RTOSChallenge ****
 
 /Applications/ti/ccsv6/utils/bin/gmake -k all 
 making ../src/sysbios/sysbios.aem4f ...
-gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
 gmake[1]: Nothing to be done for 'all'.
-gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/uartecho_MSP_EXP432P401R_TI_MSP432P401R/src/sysbios'
+gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+Building file: ../empty.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
+Finished building: ../empty.c
+ 
+"../init_all.c", line 77: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
+Building file: ../init_all.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/RTOSChallenge" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init_all.pp" --cmd_file="configPkg/compiler.opt" "../init_all.c"
+Finished building: ../init_all.c
+ 
+Building file: ../empty.cfg
+Invoking: XDCtools
+"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/LcdDriver\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib/grlib\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge/GrLib\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSChallenge\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../empty.cfg"
+"../init_all.c", line 79: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
+"../init_all.c", line 82: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
+"../init_all.c", line 87: warning #169-D: argument of type "Timer32_Type *" is incompatible with parameter of type "uint32_t"
+configuring empty.xem4f from package/cfg/empty_pem4f.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making /Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory `/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+clem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.c ...
+asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem4f /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem4f BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `/Users/marybiggs/Desktop/ECE461/RTOSChallenge/src/sysbios'
+Build of libraries done.
+clem4f package/cfg/empty_pem4f.c ...
+Finished building: ../empty.cfg
+ 
+Building target: RTOSChallenge.out
+Invoking: MSP432 Linker
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on -z -m"RTOSChallenge.map" --heap_size=1024 --stack_size=1024 -i"/Applications/ti/ccsv6/ccs_base/arm/include" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/lib" -i"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="RTOSChallenge_linkInfo.xml" --rom_model -o "RTOSChallenge.out" "./MSP_EXP432P401R.obj" "./empty.obj" "./init_all.obj" "./LcdDriver/Crystalfontz128x128_ST7735.obj" "./LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj" "./GrLib/grlib/button.obj" "./GrLib/grlib/checkbox.obj" "./GrLib/grlib/circle.obj" "./GrLib/grlib/context.obj" "./GrLib/grlib/display.obj" "./GrLib/grlib/image.obj" "./GrLib/grlib/imageButton.obj" "./GrLib/grlib/line.obj" "./GrLib/grlib/radioButton.obj" "./GrLib/grlib/rectangle.obj" "./GrLib/grlib/string.obj" "./GrLib/fonts/fontfixed6x8.obj" "../MSP_EXP432P401R.cmd" -l"configPkg/linker.cmd" -l"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx/ccs/msp432p4xx_driverlib.lib" -l"libc.a" 
+<Linking>
+warning #10247-D: creating output section ".vtable" without a SECTIONS specification
+Finished building target: RTOSChallenge.out
+ 
 
 **** Build Finished ****
