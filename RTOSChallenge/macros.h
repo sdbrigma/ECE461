@@ -25,6 +25,6 @@ extern Graphics_Context g_sContext;
 
 #define TRUE 0x01
 #define FALSE 0x00
-#define ONE_SECOND 0x3fffff
+#define ONE_SECOND 0xffffffff
 
 #endif /* MACROS_H_ */

@@ -1,0 +1,20 @@
+
+**** Build of configuration Debug for project RTOSminimalTest ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../empty.cfg
+Invoking: XDCtools
+"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/RTOSminimalTest\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../empty.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring empty.xem4f from package/cfg/empty_pem4f.cfg ...
+js: "/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages/ti/mcu/msp432/driverlib/product/DriverLib.xdt", line 12: xdc.services.global.XDCException: xdc.FILE_NOT_FOUND: can't locate file 'ti/mcu/msp432/driverlib/product/makefile.xdt' along the path: /Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages/ti/mcu/msp432/driverlib/product;/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib;/Applications/ti/ccsv6/ccs_base;/Applications/ti/xdctools_3_31_01_33_core/packages;..;
+    "/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages/ti/mcu/msp432/driverlib/product/DriverLib.xdt", line 15
+gmake: *** [package/cfg/empty_pem4f.xdl] Error 1
+Warning: directory "/Applications/ti/msp/MSPWare_3_20_00_37/driverlib" on package path has a "packages" subdirectory - did you mean this instead?
+js: "/Applications/ti/xdctools_3_31_01_33_core/packages/xdc/tools/Cmdr.xs", line 51: Error: xdc.tools.configuro: configuration failed due to earlier errors (status = 2); 'linker.cmd' deleted.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: *** No rule to make target 'configPkg/linker.cmd', needed by 'configPkg/compiler.opt'.
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

@@ -52,6 +52,8 @@
 /* BIOS Header files */
 #include <ti/sysbios/BIOS.h>
 #include <ti/sysbios/knl/Task.h>
+#include <ti/sysbios/knl/Semaphore.h>
+#include <ti/sysbios/knl/Idle.h>
 
 /* TI-RTOS Header files */
 #include <ti/drivers/GPIO.h>
@@ -88,7 +90,7 @@ int main(void){
 
 	/* Call board init functions */
 	Board_initGeneral();
-	Board_initGPIO();
+	//Board_initGPIO();
 	init_All();
 	// Board_initI2C();
 	// Board_initSDSPI();
@@ -106,27 +108,49 @@ int main(void){
 void Idle_fcxn(void){
 	while(1);
 }
+ void calculateAvg(void){
+	uint16_t xValue;
+	uint16_t yValue;
+	uint16_t zValue;
 
+	xValue = ADC14_getResult(ADC_MEM0);
+	yValue = ADC14_getResult(ADC_MEM1);
+	zValue = ADC14_getResult(ADC_MEM2);
+
+	drawAccelData(xValue, yValue, zValue);
+
+	//Mailbox_post(adc_mailbox,&xValue,0);
+	//Mailbox_post(adc_mailbox,&yValue,0);
+	//Mailbox_post(adc_mailbox,&zValue,0);
+
+	GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
+
+	//Idle_run();
+
+ }
 
 void ADC_HWI(void){
 	uint64_t status;
 	//MsgADC msg;
 	status = MAP_ADC14_getEnabledInterruptStatus();
 	MAP_ADC14_clearInterruptFlag(status);
-	uint16_t xValue;
-	uint16_t yValue;
-	uint16_t zValue;
 
 	/* ADC_MEM2 conversion completed */
 	if(status & ADC_INT2){
-		/* Store ADC14 conversion results */
-		// Take running average of ADC14 values so they can be updated
+		uint16_t xValue;
+		uint16_t yValue;
+		uint16_t zValue;
+
 		xValue = ADC14_getResult(ADC_MEM0);
 		yValue = ADC14_getResult(ADC_MEM1);
 		zValue = ADC14_getResult(ADC_MEM2);
+
 		Mailbox_post(adc_mailbox,&xValue,0);
 		Mailbox_post(adc_mailbox,&yValue,0);
 		Mailbox_post(adc_mailbox,&zValue,0);
+
+		Idle_run();
+
 		//drawAccelData(msg.xValue,msg.yValue,msg.zValue);
 		//Swi_post(adc_swi);
 		//adjustOrientation();
@@ -137,11 +161,11 @@ void Timer32_HWI(void){
 	uint16_t xValue;
 	uint16_t yValue;
 	uint16_t zValue;
-	Mailbox_pend(adc_mailbox, &xValue, BIOS_WAIT_FOREVER);
-	Mailbox_pend(adc_mailbox, &yValue, BIOS_WAIT_FOREVER);
-	Mailbox_pend(adc_mailbox, &zValue, BIOS_WAIT_FOREVER);
+	Mailbox_pend(adc_mailbox, &xValue, 0);
+	Mailbox_pend(adc_mailbox, &yValue, 0);
+	Mailbox_pend(adc_mailbox, &zValue, 0);
 	GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
-	drawAccelData(xValue, yValue, zValue);
+	//drawAccelData(xValue, yValue, zValue);
 }
 
 

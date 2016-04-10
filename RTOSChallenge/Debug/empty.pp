@@ -266,12 +266,16 @@ empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/pa
 empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Clock.h
 empty.obj: /Applications/ti/xdctools_3_31_01_33_core/packages/xdc/runtime/IModule.h
 empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Event.h
-empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Clock.h
-empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/package/Clock_TimerProxy.h
+empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/Hwi.h
+empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Task.h
+empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/package/Task_SupportProxy.h
 empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.h
 empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/package/BIOS_RtsGateProxy.h
 empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Task.h
-empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/package/Task_SupportProxy.h
+empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Semaphore.h
+empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Idle.h
+empty.obj: /Applications/ti/xdctools_3_31_01_33_core/packages/xdc/runtime/Types.h
+empty.obj: /Applications/ti/xdctools_3_31_01_33_core/packages/xdc/runtime/IModule.h
 empty.obj: /Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages/ti/drivers/GPIO.h
 empty.obj: ../Board.h
 empty.obj: ../MSP_EXP432P401R.h
@@ -542,12 +546,16 @@ empty.obj: ../MSP_EXP432P401R.h
 /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Clock.h: 
 /Applications/ti/xdctools_3_31_01_33_core/packages/xdc/runtime/IModule.h: 
 /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Event.h: 
-/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Clock.h: 
-/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/package/Clock_TimerProxy.h: 
+/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/hal/Hwi.h: 
+/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Task.h: 
+/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/package/Task_SupportProxy.h: 
 /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/BIOS.h: 
 /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/package/BIOS_RtsGateProxy.h: 
 /Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Task.h: 
-/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/package/Task_SupportProxy.h: 
+/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Semaphore.h: 
+/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages/ti/sysbios/knl/Idle.h: 
+/Applications/ti/xdctools_3_31_01_33_core/packages/xdc/runtime/Types.h: 
+/Applications/ti/xdctools_3_31_01_33_core/packages/xdc/runtime/IModule.h: 
 /Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages/ti/drivers/GPIO.h: 
 ../Board.h: 
 ../MSP_EXP432P401R.h: 

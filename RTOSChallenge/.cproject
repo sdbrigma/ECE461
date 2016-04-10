@@ -81,7 +81,7 @@
 								<option id="com.ti.ccstudio.buildDefinitions.MSP432_5.2.linkerID.DISPLAY_ERROR_NUMBER.1108730281" name="Emit diagnostic identifier numbers (--display_error_number)" superClass="com.ti.ccstudio.buildDefinitions.MSP432_5.2.linkerID.DISPLAY_ERROR_NUMBER" value="true" valueType="boolean"/>
 								<option id="com.ti.ccstudio.buildDefinitions.MSP432_5.2.linkerID.DIAG_WRAP.985789911" name="Wrap diagnostic messages (--diag_wrap)" superClass="com.ti.ccstudio.buildDefinitions.MSP432_5.2.linkerID.DIAG_WRAP" value="com.ti.ccstudio.buildDefinitions.MSP432_5.2.linkerID.DIAG_WRAP.off" valueType="enumerated"/>
 								<option id="com.ti.ccstudio.buildDefinitions.MSP432_5.2.linkerID.SEARCH_PATH.1719808506" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.MSP432_5.2.linkerID.SEARCH_PATH" valueType="libPaths">
-									<listOptionValue builtIn="false" value="&quot;${CCS_BASE_ROOT}/arm/include&quot;"/>
+									<listOptionValue builtIn="false" value="/Applications/ti/MSP432_DriverLib_3_10_00_09/driverlib/MSP432P4xx"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
 								</option>
