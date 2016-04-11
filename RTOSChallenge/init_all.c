@@ -16,6 +16,19 @@
 Graphics_Context g_sContext;
 
 void init_All(void){
+	const eUSCI_UART_Config uartConfig =
+	{
+	        EUSCI_A_UART_CLOCKSOURCE_SMCLK,          		// SMCLK Clock Source for 2400 Baud @ 48MHz
+	        20000,                                      	// BRDIV = 20000
+	        0,                                       		// UCxBRF = 0
+	        0,                                       		// UCxBRS = 0
+	        EUSCI_A_UART_NO_PARITY,                  		// No Parity
+			EUSCI_A_UART_LSB_FIRST,                		// LSB First
+	        EUSCI_A_UART_ONE_STOP_BIT,               		// One stop bit
+	        EUSCI_A_UART_MODE,                       		// UART mode
+			EUSCI_A_UART_LOW_FREQUENCY_BAUDRATE_GENERATION          // No-Oversampling
+	};
+
 	/* Halting WDT and disabling master interrupts */
 	MAP_WDT_A_holdTimer();
 	MAP_Interrupt_disableMaster();
@@ -59,6 +72,13 @@ void init_All(void){
 	 *  is complete and enabling conversions */
 	MAP_ADC14_enableInterrupt(ADC_INT2);
 
+	/* Configuring UART communication through P3.2 and P3.3 */
+	MAP_GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P3, GPIO_PIN2 | GPIO_PIN3, GPIO_PRIMARY_MODULE_FUNCTION);
+	MAP_UART_initModule(EUSCI_A2_BASE, &uartConfig);
+	MAP_UART_enableModule(EUSCI_A2_BASE);
+	MAP_UART_enableInterrupt(EUSCI_A2_BASE, EUSCI_A_UART_RECEIVE_INTERRUPT);
+	MAP_Interrupt_enableInterrupt(INT_EUSCIA2);
+
 	/* Enabling Interrupts */
 	MAP_Interrupt_enableInterrupt(INT_ADC14);
 	MAP_Interrupt_enableMaster();
@@ -71,20 +91,6 @@ void init_All(void){
 	/* Triggering the start of the sample */
 	MAP_ADC14_enableConversion();
 	MAP_ADC14_toggleConversionTrigger();
-
-	// Initialize Timer32 module
-	// Periodic timer using 16 bit values
-	Timer32_initModule(TIMER32_0_BASE,TIMER32_PRESCALER_16,TIMER32_32BIT,TIMER32_PERIODIC_MODE);
-
-	Timer32_setCount(TIMER32_0_BASE,ONE_SECOND); // set to 1s to update LCD
-
-	// Configure Timer32 interrupt
-	Timer32_enableInterrupt(TIMER32_0_BASE);
-	Timer32_registerInterrupt(TIMER32_0_INTERRUPT,Timer32_HWI);
-
-	// Must be called after setting timer count
-	// Use Timer32_setCountInBackground to update timer values while timer is counting
-	Timer32_startTimer(TIMER32_0_BASE,FALSE);
 
 	// Test code for timer32
 	GPIO_setAsOutputPin(GPIO_PORT_P5,GPIO_PIN6); // P5.6 is blue LED on booster pack

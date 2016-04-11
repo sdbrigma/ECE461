@@ -5,13 +5,14 @@
  *      Author: Steffon Brigman
  */
 
+
 #ifndef FUNCTIONS_H_
 #define FUNCTIONS_H_
 
 // RTOS functions
 void ADC_HWI(void);
 void EUSCIA2_HWI(void);
-void Timer32_HWI(void);
+//void Timer32_HWI(void);
 void Mailbox_Task(void);
 void Idle_fcxn(void);
 

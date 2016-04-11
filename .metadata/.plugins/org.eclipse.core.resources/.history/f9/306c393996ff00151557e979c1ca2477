@@ -1,0 +1,29 @@
+/*
+ * functions.h
+ *
+ *  Created on: Apr 7, 2016
+ *      Author: Steffon Brigman
+ */
+
+
+#ifndef FUNCTIONS_H_
+#define FUNCTIONS_H_
+
+// RTOS functions
+void ADC_HWI(void);
+void EUSCIA2_HWI(void);
+void Timer32_HWI(void);
+void Mailbox_Task(void);
+void Idle_fcxn(void);
+
+// Init and drawing functions
+void init_All(void);
+//void init_Timer32(void);
+void adjustOrientation(void);
+void drawAccelData(uint16_t xData, uint16_t yData, uint16_t zData);
+void drawSensorData(char dataSetHundreds, char dataSetTens, char dataSetOnes);
+void drawTitle(void);
+
+
+
+#endif /* FUNCTIONS_H_ */

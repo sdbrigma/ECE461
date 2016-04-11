@@ -1,0 +1,74 @@
+
+**** Build of configuration Debug for project Challenge3New ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+making ../src/sysbios/sysbios.aem4f ...
+gmake[1]: Entering directory '/Users/marybiggs/Desktop/ECE461/Challenge3New/src/sysbios'
+gmake[1]: Nothing to be done for 'all'.
+gmake[1]: Leaving directory '/Users/marybiggs/Desktop/ECE461/Challenge3New/src/sysbios'
+Building file: ../empty.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3New" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="empty.pp" --cmd_file="configPkg/compiler.opt" "../empty.c"
+"../empty.c", line 40: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../empty.c".
+Compilation terminated.
+
+>> Compilation failure
+subdir_rules.mk:14: recipe for target 'empty.obj' failed
+gmake: *** [empty.obj] Error 1
+Building file: ../init.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3New" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="init.pp" --cmd_file="configPkg/compiler.opt" "../init.c"
+"../init.c", line 10: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../init.c".
+Compilation terminated.
+
+>> Compilation failure
+subdir_rules.mk:31: recipe for target 'init.obj' failed
+gmake: *** [init.obj] Error 1
+Building file: ../LcdDriver/Crystalfontz128x128_ST7735.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3New" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="LcdDriver/Crystalfontz128x128_ST7735.pp" --obj_directory="LcdDriver" --cmd_file="configPkg/compiler.opt" "../LcdDriver/Crystalfontz128x128_ST7735.c"
+"../LcdDriver/Crystalfontz128x128_ST7735.c", line 39: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../LcdDriver/Crystalfontz128x128_ST7735.c".
+Compilation terminated.
+
+>> Compilation failure
+LcdDriver/subdir_rules.mk:7: recipe for target 'LcdDriver/Crystalfontz128x128_ST7735.obj' failed
+gmake: *** [LcdDriver/Crystalfontz128x128_ST7735.obj] Error 1
+Building file: ../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3New" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.pp" --obj_directory="LcdDriver" --cmd_file="configPkg/compiler.opt" "../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c"
+"../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c", line 40: fatal error #1965: cannot open source file "HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h"
+1 catastrophic error detected in the compilation of "../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c".
+Compilation terminated.
+
+>> Compilation failure
+LcdDriver/subdir_rules.mk:14: recipe for target 'LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj' failed
+gmake: *** [LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj] Error 1
+Building file: ../GrLib/fonts/fontfixed6x8.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/marybiggs/Desktop/ECE461/Challenge3New" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc" --include_path="/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on --preproc_with_compile --preproc_dependency="GrLib/fonts/fontfixed6x8.pp" --obj_directory="GrLib/fonts" --cmd_file="configPkg/compiler.opt" "../GrLib/fonts/fontfixed6x8.c"
+"../GrLib/fonts/fontfixed6x8.c", line 1: fatal error #1965: cannot open source file "grlib.h"
+
+>> Compilation failure
+1 catastrophic error detected in the compilation of "../GrLib/fonts/fontfixed6x8.c".
+Compilation terminated.
+GrLib/fonts/subdir_rules.mk:7: recipe for target 'GrLib/fonts/fontfixed6x8.obj' failed
+gmake: *** [GrLib/fonts/fontfixed6x8.obj] Error 1
+Building file: ../empty.cfg
+Invoking: XDCtools
+"/Applications/ti/xdctools_3_31_01_33_core/xs" --xdcpath="/Applications/ti/tirtos_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/bios_6_45_01_29/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/tidrivers_msp43x_2_16_00_08/packages;/Applications/ti/tirtos_msp43x_2_16_00_08/products/uia_2_00_05_50/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib/packages;/Applications/ti/msp/MSPWare_3_20_00_37/driverlib;/Applications/ti/ccsv6/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M4F -p ti.platforms.msp432:MSP432P401R -r release -c "/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6" --compileOptions "-mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include\" --include_path=\"/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS\" --include_path=\"/Users/marybiggs/Desktop/ECE461/Challenge3New\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc/CMSIS\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/inc\" --include_path=\"/Applications/ti/tirtos_msp43x_2_16_00_08/products/msp432_driverlib_3_10_00_09/driverlib/MSP432P4xx\" --include_path=\"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include\" --advice:power_severity=suppress --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --define=MSP432WARE --display_error_number --diag_warning=225 --diag_warning=255 --diag_wrap=off --gen_func_subsections=on  " "../empty.cfg"
+clem4f package/cfg/empty_pem4f.c ...
+"package/cfg/empty_pem4f.c", line 16866: error #148: declaration is incompatible with "void Timer32_IsrHandler(xdc_UArg)" (declared at line 992)
+1 error detected in the compilation of "package/cfg/empty_pem4f.c".
+
+>> Compilation failure
+gmake: *** [package/cfg/empty_pem4f.oem4f] Error 1
+Warning: directory "/Applications/ti/msp/MSPWare_3_20_00_37/driverlib" on package path has a "packages" subdirectory - did you mean this instead?
+js: "/Applications/ti/xdctools_3_31_01_33_core/packages/xdc/tools/Cmdr.xs", line 51: Error: xdc.tools.configuro: configuration failed due to earlier errors (status = 2); 'linker.cmd' deleted.
+subdir_rules.mk:21: recipe for target 'configPkg/linker.cmd' failed
+gmake: *** [configPkg/linker.cmd] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

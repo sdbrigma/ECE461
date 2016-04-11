@@ -36,6 +36,7 @@
 
 // Usual includes
 #include "msp.h"
+#include "math.h"
 #include <driverlib.h>
 #include "grlib.h"
 #include "Crystalfontz128x128_ST7735.h"
@@ -45,7 +46,6 @@
 
 /* XDCtools Header files */
 #include <xdc/std.h>
-#include <xdc/std.h>
 #include <xdc/runtime/System.h>
 #include <xdc/cfg/global.h>
 
@@ -54,6 +54,7 @@
 #include <ti/sysbios/knl/Task.h>
 #include <ti/sysbios/knl/Semaphore.h>
 #include <ti/sysbios/knl/Idle.h>
+#include <ti/sysbios/knl/Clock.h>
 
 /* TI-RTOS Header files */
 #include <ti/drivers/GPIO.h>
@@ -70,23 +71,14 @@
 #include "macros.h"
 
 Graphics_Context g_sContext;
+Void clk0Fxn(UArg arg0);
 
-// Mailbox message object for accelerometer data
-/*typedef struct MsgADC {
-	uint16_t xValue;
-	uint16_t yValue;
-	uint16_t zValue;
-} MsgADC, *Msg;*/
-
-// Mailbox message object for sensor data
-/*typedef struct MsgSensor {
-	uint16_t sensorHundreds;
-	uint16_t sensorTens;
-	uint16_t sensorOnes;
-} MsgSensor, *MsgS;*/
+Clock_Struct clk0Struct;
+Clock_Handle clk2Handle;
 
 int main(void){
-	//Task_Params taskParams;
+	/* Construct BIOS Objects */
+	    Clock_Params clkParams;
 
 	/* Call board init functions */
 	Board_initGeneral();
@@ -99,6 +91,15 @@ int main(void){
 	// Board_initWatchdog();
 	// Board_initWiFi();
 
+	Clock_Params_init(&clkParams);
+	clkParams.period = 1000;
+	clkParams.startFlag = TRUE;
+	/* Construct a periodic Clock Instance with period = 5 system time units */
+	Clock_construct(&clk0Struct, (Clock_FuncPtr)clk0Fxn, 1000, &clkParams);
+
+	clk2Handle = Clock_handle(&clk0Struct);
+	Clock_start(clk2Handle);
+
 	/* Start BIOS */
 	BIOS_start();
 
@@ -109,9 +110,25 @@ void Idle_fcxn(void){
 	while(1);
 }
  void calculateAvg(void){
+
+	//Task_sleep(10);
+	Idle_run();
+
+ }
+
+Void clk0Fxn(UArg arg0){
+	//drawTitle();
 	uint16_t xValue;
 	uint16_t yValue;
 	uint16_t zValue;
+
+	//Mailbox_pend(adc_mailbox,&xValue,0);
+	//Mailbox_pend(adc_mailbox,&yValue,0);
+	//Mailbox_pend(adc_mailbox,&zValue,0);
+
+	//xValue = (ADC14_getResult(ADC_MEM0) - xValue) >> 1;
+	//yValue = (ADC14_getResult(ADC_MEM1) - yValue) >> 1;
+	//zValue = (ADC14_getResult(ADC_MEM2) - zValue) >> 1;
 
 	xValue = ADC14_getResult(ADC_MEM0);
 	yValue = ADC14_getResult(ADC_MEM1);
@@ -119,15 +136,8 @@ void Idle_fcxn(void){
 
 	drawAccelData(xValue, yValue, zValue);
 
-	//Mailbox_post(adc_mailbox,&xValue,0);
-	//Mailbox_post(adc_mailbox,&yValue,0);
-	//Mailbox_post(adc_mailbox,&zValue,0);
-
 	GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
-
-	//Idle_run();
-
- }
+}
 
 void ADC_HWI(void){
 	uint64_t status;
@@ -141,31 +151,16 @@ void ADC_HWI(void){
 		uint16_t yValue;
 		uint16_t zValue;
 
-		xValue = ADC14_getResult(ADC_MEM0);
-		yValue = ADC14_getResult(ADC_MEM1);
-		zValue = ADC14_getResult(ADC_MEM2);
-
 		Mailbox_post(adc_mailbox,&xValue,0);
 		Mailbox_post(adc_mailbox,&yValue,0);
 		Mailbox_post(adc_mailbox,&zValue,0);
 
-		Idle_run();
+		//Idle_run();
 
 		//drawAccelData(msg.xValue,msg.yValue,msg.zValue);
 		//Swi_post(adc_swi);
 		//adjustOrientation();
 	}
-}
-
-void Timer32_HWI(void){
-	uint16_t xValue;
-	uint16_t yValue;
-	uint16_t zValue;
-	Mailbox_pend(adc_mailbox, &xValue, 0);
-	Mailbox_pend(adc_mailbox, &yValue, 0);
-	Mailbox_pend(adc_mailbox, &zValue, 0);
-	GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
-	//drawAccelData(xValue, yValue, zValue);
 }
 
 

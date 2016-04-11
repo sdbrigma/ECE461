@@ -1071,11 +1071,8 @@ ti_sysbios_BIOS_Module_State__ ti_sysbios_BIOS_Module__state__V;
 /* --> ADC_HWI */
 extern xdc_Void ADC_HWI(xdc_UArg);
 
-/* --> Timer32_HWI */
-extern xdc_Void Timer32_HWI(xdc_UArg);
-
 /* Object__table__V */
-ti_sysbios_family_arm_m3_Hwi_Object__ ti_sysbios_family_arm_m3_Hwi_Object__table__V[3];
+ti_sysbios_family_arm_m3_Hwi_Object__ ti_sysbios_family_arm_m3_Hwi_Object__table__V[2];
 
 /* Module_State__ */
 typedef struct ti_sysbios_family_arm_m3_Hwi_Module_State__ {
@@ -1200,7 +1197,7 @@ ti_sysbios_gates_GateMutex_Object__ ti_sysbios_gates_GateMutex_Object__table__V[
  */
 
 /* Object__table__V */
-ti_sysbios_hal_Hwi_Object__ ti_sysbios_hal_Hwi_Object__table__V[2];
+ti_sysbios_hal_Hwi_Object__ ti_sysbios_hal_Hwi_Object__table__V[1];
 
 
 /*
@@ -1631,7 +1628,7 @@ typedef struct xdc_runtime_Text_Module_State__ {
 xdc_runtime_Text_Module_State__ xdc_runtime_Text_Module__state__V;
 
 /* --> xdc_runtime_Text_charTab__A */
-const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6197];
+const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6185];
 
 /* --> xdc_runtime_Text_nodeTab__A */
 const __T1_xdc_runtime_Text_nodeTab xdc_runtime_Text_nodeTab__A[46];
@@ -2725,7 +2722,7 @@ ti_sysbios_family_arm_m3_Hwi_Module__ ti_sysbios_family_arm_m3_Hwi_Module__root_
 };
 
 /* Object__table__V */
-ti_sysbios_family_arm_m3_Hwi_Object__ ti_sysbios_family_arm_m3_Hwi_Object__table__V[3] = {
+ti_sysbios_family_arm_m3_Hwi_Object__ ti_sysbios_family_arm_m3_Hwi_Object__table__V[2] = {
     {/* instance#0 */
         0,
         ((xdc_UArg)(0x0)),  /* arg */
@@ -2736,15 +2733,6 @@ ti_sysbios_family_arm_m3_Hwi_Object__ ti_sysbios_family_arm_m3_Hwi_Object__table
         ((void*)0),  /* hookEnv */
     },
     {/* instance#1 */
-        0,
-        ((xdc_UArg)(0x0)),  /* arg */
-        ((xdc_Void(*)(xdc_UArg))((xdc_Fxn)Timer32_HWI)),  /* fxn */
-        ((xdc_UArg)(0x3)),  /* irp */
-        (xdc_UInt8)0x1,  /* priority */
-        (xdc_Int16)0x29,  /* intNum */
-        ((void*)0),  /* hookEnv */
-    },
-    {/* instance#2 */
         0,
         ((xdc_UArg)(0x0)),  /* arg */
         ((xdc_Void(*)(xdc_UArg))((xdc_Fxn)ti_sysbios_family_arm_msp432_Timer_periodicStub__E)),  /* fxn */
@@ -2860,7 +2848,7 @@ __FAR__ const CT__ti_sysbios_family_arm_m3_Hwi_Module__startupDoneFxn ti_sysbios
 
 /* Object__count__C */
 #pragma DATA_SECTION(ti_sysbios_family_arm_m3_Hwi_Object__count__C, ".const:ti_sysbios_family_arm_m3_Hwi_Object__count__C");
-__FAR__ const CT__ti_sysbios_family_arm_m3_Hwi_Object__count ti_sysbios_family_arm_m3_Hwi_Object__count__C = 3;
+__FAR__ const CT__ti_sysbios_family_arm_m3_Hwi_Object__count ti_sysbios_family_arm_m3_Hwi_Object__count__C = 2;
 
 /* Object__heap__C */
 #pragma DATA_SECTION(ti_sysbios_family_arm_m3_Hwi_Object__heap__C, ".const:ti_sysbios_family_arm_m3_Hwi_Object__heap__C");
@@ -3329,7 +3317,7 @@ ti_sysbios_family_arm_msp432_Timer_Object__ ti_sysbios_family_arm_msp432_Timer_O
         (xdc_UInt)0x100,  /* controlRegInit */
         ti_sysbios_interfaces_ITimer_RunMode_CONTINUOUS,  /* runMode */
         ti_sysbios_interfaces_ITimer_StartMode_AUTO,  /* startMode */
-        (xdc_UInt)0x8000,  /* period */
+        (xdc_UInt)0x20,  /* period */
         ti_sysbios_interfaces_ITimer_PeriodType_COUNTS,  /* periodType */
         (xdc_UInt)0x18,  /* intNum */
         ((xdc_UArg)0),  /* arg */
@@ -3338,7 +3326,7 @@ ti_sysbios_family_arm_msp432_Timer_Object__ ti_sysbios_family_arm_msp432_Timer_O
             (xdc_Bits32)0x0,  /* hi */
             (xdc_Bits32)0x8000,  /* lo */
         },  /* frequency */
-        (ti_sysbios_family_arm_m3_Hwi_Handle)&ti_sysbios_family_arm_m3_Hwi_Object__table__V[2],  /* hwi */
+        (ti_sysbios_family_arm_m3_Hwi_Handle)&ti_sysbios_family_arm_m3_Hwi_Object__table__V[1],  /* hwi */
         (xdc_UInt)0x0,  /* prevThreshold */
         (xdc_UInt)0x0,  /* savedCurrCount */
         (xdc_UInt32)0x0,  /* rollovers */
@@ -3842,14 +3830,10 @@ ti_sysbios_hal_Hwi_Module__ ti_sysbios_hal_Hwi_Module__root__V = {
 };
 
 /* Object__table__V */
-ti_sysbios_hal_Hwi_Object__ ti_sysbios_hal_Hwi_Object__table__V[2] = {
+ti_sysbios_hal_Hwi_Object__ ti_sysbios_hal_Hwi_Object__table__V[1] = {
     {/* instance#0 */
         0,
         (ti_sysbios_hal_Hwi_HwiProxy_Handle)&ti_sysbios_family_arm_m3_Hwi_Object__table__V[0],  /* pi */
-    },
-    {/* instance#1 */
-        0,
-        (ti_sysbios_hal_Hwi_HwiProxy_Handle)&ti_sysbios_family_arm_m3_Hwi_Object__table__V[1],  /* pi */
     },
 };
 
@@ -3911,7 +3895,7 @@ __FAR__ const CT__ti_sysbios_hal_Hwi_Module__startupDoneFxn ti_sysbios_hal_Hwi_M
 
 /* Object__count__C */
 #pragma DATA_SECTION(ti_sysbios_hal_Hwi_Object__count__C, ".const:ti_sysbios_hal_Hwi_Object__count__C");
-__FAR__ const CT__ti_sysbios_hal_Hwi_Object__count ti_sysbios_hal_Hwi_Object__count__C = 2;
+__FAR__ const CT__ti_sysbios_hal_Hwi_Object__count ti_sysbios_hal_Hwi_Object__count__C = 1;
 
 /* Object__heap__C */
 #pragma DATA_SECTION(ti_sysbios_hal_Hwi_Object__heap__C, ".const:ti_sysbios_hal_Hwi_Object__heap__C");
@@ -4274,7 +4258,7 @@ __FAR__ const CT__ti_sysbios_knl_Clock_timerId ti_sysbios_knl_Clock_timerId__C =
 
 /* tickPeriod__C */
 #pragma DATA_SECTION(ti_sysbios_knl_Clock_tickPeriod__C, ".const:ti_sysbios_knl_Clock_tickPeriod__C");
-__FAR__ const CT__ti_sysbios_knl_Clock_tickPeriod ti_sysbios_knl_Clock_tickPeriod__C = (xdc_UInt32)0xf4240;
+__FAR__ const CT__ti_sysbios_knl_Clock_tickPeriod ti_sysbios_knl_Clock_tickPeriod__C = (xdc_UInt32)0x3e8;
 
 /* doTickFunc__C */
 #pragma DATA_SECTION(ti_sysbios_knl_Clock_doTickFunc__C, ".const:ti_sysbios_knl_Clock_doTickFunc__C");
@@ -5335,8 +5319,8 @@ ti_sysbios_knl_Task_Object__ ti_sysbios_knl_Task_Object__table__V[1] = {
             ((ti_sysbios_knl_Queue_Elem*)((void*)&ti_sysbios_knl_Task_Object__table__V[0].qElem)),  /* next */
             ((ti_sysbios_knl_Queue_Elem*)((void*)&ti_sysbios_knl_Task_Object__table__V[0].qElem)),  /* prev */
         },  /* qElem */
-        (xdc_Int)0x3,  /* priority */
-        (xdc_UInt)0x8,  /* mask */
+        (xdc_Int)0x1,  /* priority */
+        (xdc_UInt)0x2,  /* mask */
         ((xdc_Ptr)0),  /* context */
         ti_sysbios_knl_Task_Mode_INACTIVE,  /* mode */
         ((ti_sysbios_knl_Task_PendElem*)0),  /* pendElem */
@@ -7029,7 +7013,7 @@ xdc_runtime_Text_Module_State__ xdc_runtime_Text_Module__state__V = {
 
 /* --> xdc_runtime_Text_charTab__A */
 #pragma DATA_SECTION(xdc_runtime_Text_charTab__A, ".const:xdc_runtime_Text_charTab__A");
-const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6197] = {
+const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6185] = {
     (xdc_Char)0x0,  /* [0] */
     (xdc_Char)0x41,  /* [1] */
     (xdc_Char)0x5f,  /* [2] */
@@ -13215,18 +13199,6 @@ const __T1_xdc_runtime_Text_charTab xdc_runtime_Text_charTab__A[6197] = {
     (xdc_Char)0x77,  /* [6182] */
     (xdc_Char)0x69,  /* [6183] */
     (xdc_Char)0x0,  /* [6184] */
-    (xdc_Char)0x74,  /* [6185] */
-    (xdc_Char)0x69,  /* [6186] */
-    (xdc_Char)0x6d,  /* [6187] */
-    (xdc_Char)0x65,  /* [6188] */
-    (xdc_Char)0x72,  /* [6189] */
-    (xdc_Char)0x33,  /* [6190] */
-    (xdc_Char)0x32,  /* [6191] */
-    (xdc_Char)0x5f,  /* [6192] */
-    (xdc_Char)0x68,  /* [6193] */
-    (xdc_Char)0x77,  /* [6194] */
-    (xdc_Char)0x69,  /* [6195] */
-    (xdc_Char)0x0,  /* [6196] */
 };
 
 /* --> xdc_runtime_Text_nodeTab__A */
@@ -13516,7 +13488,7 @@ __FAR__ const CT__xdc_runtime_Text_nodeTab xdc_runtime_Text_nodeTab__C = ((CT__x
 
 /* charCnt__C */
 #pragma DATA_SECTION(xdc_runtime_Text_charCnt__C, ".const:xdc_runtime_Text_charCnt__C");
-__FAR__ const CT__xdc_runtime_Text_charCnt xdc_runtime_Text_charCnt__C = (xdc_Int16)0x1835;
+__FAR__ const CT__xdc_runtime_Text_charCnt xdc_runtime_Text_charCnt__C = (xdc_Int16)0x1829;
 
 /* nodeCnt__C */
 #pragma DATA_SECTION(xdc_runtime_Text_nodeCnt__C, ".const:xdc_runtime_Text_nodeCnt__C");
@@ -17890,13 +17862,6 @@ const ti_sysbios_hal_Hwi_Handle adc_hwi = (ti_sysbios_hal_Hwi_Handle)((ti_sysbio
 #endif
 #endif
 const ti_sysbios_knl_Mailbox_Handle adc_mailbox = (ti_sysbios_knl_Mailbox_Handle)((ti_sysbios_knl_Mailbox_Handle)&ti_sysbios_knl_Mailbox_Object__table__V[0]);
-
-#ifdef __GNUC__
-#ifndef __TI_COMPILER_VERSION__
-    __attribute__ ((externally_visible))
-#endif
-#endif
-const ti_sysbios_hal_Hwi_Handle timer32_hwi = (ti_sysbios_hal_Hwi_Handle)((ti_sysbios_hal_Hwi_Handle)&ti_sysbios_hal_Hwi_Object__table__V[1]);
 
 #ifdef __GNUC__
 #ifndef __TI_COMPILER_VERSION__
