@@ -49,12 +49,12 @@
 #include "functions.h"
 #include "macros.h"
 
-//uint32_t timer_value = 0;
+uint32_t timer_value = 0;
 
 const eUSCI_UART_Config uartConfig =
 {
-        EUSCI_A_UART_CLOCKSOURCE_SMCLK,          		// SMCLK Clock Source for 9600 Baud @ 48MHz
-        5000,                                      	// BRDIV = 5000
+        EUSCI_A_UART_CLOCKSOURCE_SMCLK,          		// SMCLK Clock Source for 2400 Baud @ 48MHz
+        20000,                                      	// BRDIV = 20000
         0,                                       		// UCxBRF = 0
         0,                                       		// UCxBRS = 0
         EUSCI_A_UART_NO_PARITY,                  		// No Parity
@@ -117,6 +117,13 @@ void main(void)
             ADC_VREFPOS_AVCC_VREFNEG_VSS,
             ADC_INPUT_A11, ADC_NONDIFFERENTIAL_INPUTS);
 
+    /* Configuring UART communication through P3.2 and P3.3 */
+    MAP_GPIO_setAsPeripheralModuleFunctionInputPin(GPIO_PORT_P3, GPIO_PIN2 | GPIO_PIN3, GPIO_PRIMARY_MODULE_FUNCTION);
+    MAP_UART_initModule(EUSCI_A2_BASE, &uartConfig);
+    MAP_UART_enableModule(EUSCI_A2_BASE);
+    MAP_UART_enableInterrupt(EUSCI_A2_BASE, EUSCI_A_UART_RECEIVE_INTERRUPT);
+    MAP_Interrupt_enableInterrupt(INT_EUSCIA2);
+
     /* Enabling the interrupt when a conversion on channel 2 (end of sequence)
      *  is complete and enabling conversions */
     MAP_ADC14_enableInterrupt(ADC_INT2);
@@ -135,7 +142,7 @@ void main(void)
     MAP_ADC14_toggleConversionTrigger();
 
     // Initialize Timer32 module
-    Init_Timer32();
+    //Init_Timer32();
     // Test code for timer32
     GPIO_setAsOutputPin(GPIO_PORT_P5,GPIO_PIN6); // P5.6 is blue LED on booster pack
     GPIO_setOutputLowOnPin(GPIO_PORT_P5,GPIO_PIN6);

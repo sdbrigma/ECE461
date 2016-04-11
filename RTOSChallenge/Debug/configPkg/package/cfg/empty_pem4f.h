@@ -16,6 +16,9 @@ extern const ti_sysbios_knl_Mailbox_Handle adc_mailbox;
 #include <ti/sysbios/knl/Task.h>
 extern const ti_sysbios_knl_Task_Handle AccelDataTask;
 
+#include <ti/sysbios/hal/Hwi.h>
+extern const ti_sysbios_hal_Hwi_Handle uart_hwi;
+
 extern int xdc_runtime_Startup__EXECFXN__C;
 
 extern int xdc_runtime_Startup__RESETFXN__C;

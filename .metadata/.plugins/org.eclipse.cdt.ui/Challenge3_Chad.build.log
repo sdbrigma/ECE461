@@ -1,0 +1,337 @@
+
+**** Build of configuration Debug for project Challenge3_Chad ****
+
+/Applications/ti/ccsv6/utils/bin/gmake -k all 
+Building file: ../draw.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="draw.pp"  "../draw.c"
+"../draw.c", line 9: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../draw.c".
+Compilation terminated.
+
+>> Compilation failure
+subdir_rules.mk:7: recipe for target 'draw.obj' failed
+gmake: *** [draw.obj] Error 1
+Building file: ../interrupts.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="interrupts.pp"  "../interrupts.c"
+"../interrupts.c", line 10: fatal error #1965: cannot open source file "driverlib.h"
+
+>> Compilation failure
+1 catastrophic error detected in the compilation of "../interrupts.c".
+Compilation terminated.
+subdir_rules.mk:14: recipe for target 'interrupts.obj' failed
+gmake: *** [interrupts.obj] Error 1
+Building file: ../main.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
+"../main.c", line 45: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+
+>> Compilation failure
+subdir_rules.mk:21: recipe for target 'main.obj' failed
+Building file: ../timer.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="timer.pp"  "../timer.c"
+"../timer.c", line 10: fatal error #1965: cannot open source file "driverlib.h"
+1 catastrophic error detected in the compilation of "../timer.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [timer.obj] Error 1
+subdir_rules.mk:42: recipe for target 'timer.obj' failed
+Building file: ../driverlib/MSP432P4xx/adc14.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/adc14.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/adc14.c"
+"../driverlib/MSP432P4xx/adc14.c", line 42: fatal error #1965: cannot open source file "adc14.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/adc14.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:7: recipe for target 'driverlib/MSP432P4xx/adc14.obj' failed
+gmake: *** [driverlib/MSP432P4xx/adc14.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/aes256.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/aes256.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/aes256.c"
+"../driverlib/MSP432P4xx/aes256.c", line 37: fatal error #1965: cannot open source file "aes256.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/aes256.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP432P4xx/aes256.obj] Error 1
+driverlib/MSP432P4xx/subdir_rules.mk:14: recipe for target 'driverlib/MSP432P4xx/aes256.obj' failed
+Building file: ../driverlib/MSP432P4xx/comp_e.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/comp_e.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/comp_e.c"
+"../driverlib/MSP432P4xx/comp_e.c", line 37: fatal error #1965: cannot open source file "comp_e.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/comp_e.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:21: recipe for target 'driverlib/MSP432P4xx/comp_e.obj' failed
+gmake: *** [driverlib/MSP432P4xx/comp_e.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/cpu.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/cpu.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/cpu.c"
+"../driverlib/MSP432P4xx/cpu.c", line 37: fatal error #1965: cannot open source file "cpu.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/cpu.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:28: recipe for target 'driverlib/MSP432P4xx/cpu.obj' failed
+gmake: *** [driverlib/MSP432P4xx/cpu.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/crc32.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/crc32.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/crc32.c"
+"../driverlib/MSP432P4xx/crc32.c", line 39: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/crc32.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:35: recipe for target 'driverlib/MSP432P4xx/crc32.obj' failed
+gmake: *** [driverlib/MSP432P4xx/crc32.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/cs.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/cs.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/cs.c"
+"../driverlib/MSP432P4xx/cs.c", line 41: fatal error #1965: cannot open source file "cs.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/cs.c".
+Compilation terminated.
+
+>> Compilation failure
+gmake: *** [driverlib/MSP432P4xx/cs.obj] Error 1
+driverlib/MSP432P4xx/subdir_rules.mk:42: recipe for target 'driverlib/MSP432P4xx/cs.obj' failed
+Building file: ../driverlib/MSP432P4xx/dma.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/dma.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/dma.c"
+"../driverlib/MSP432P4xx/dma.c", line 39: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/dma.c".
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:49: recipe for target 'driverlib/MSP432P4xx/dma.obj' failed
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/dma.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/flash.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/flash.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/flash.c"
+"../driverlib/MSP432P4xx/flash.c", line 41: fatal error #1965: cannot open source file "flash.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/flash.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/flash.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:56: recipe for target 'driverlib/MSP432P4xx/flash.obj' failed
+Building file: ../driverlib/MSP432P4xx/fpu.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/fpu.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/fpu.c"
+"../driverlib/MSP432P4xx/fpu.c", line 37: fatal error #1965: cannot open source file "fpu.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/fpu.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/fpu.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:63: recipe for target 'driverlib/MSP432P4xx/fpu.obj' failed
+Building file: ../driverlib/MSP432P4xx/gpio.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/gpio.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/gpio.c"
+"../driverlib/MSP432P4xx/gpio.c", line 41: fatal error #1965: cannot open source file "gpio.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/gpio.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/gpio.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:70: recipe for target 'driverlib/MSP432P4xx/gpio.obj' failed
+Building file: ../driverlib/MSP432P4xx/i2c.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/i2c.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/i2c.c"
+"../driverlib/MSP432P4xx/i2c.c", line 37: fatal error #1965: cannot open source file "i2c.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/i2c.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:77: recipe for target 'driverlib/MSP432P4xx/i2c.obj' failed
+gmake: *** [driverlib/MSP432P4xx/i2c.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/interrupt.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/interrupt.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/interrupt.c"
+"../driverlib/MSP432P4xx/interrupt.c", line 41: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/interrupt.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/interrupt.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:84: recipe for target 'driverlib/MSP432P4xx/interrupt.obj' failed
+Building file: ../driverlib/MSP432P4xx/mpu.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/mpu.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/mpu.c"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:91: recipe for target 'driverlib/MSP432P4xx/mpu.obj' failed
+Building file: ../driverlib/MSP432P4xx/pcm.c
+"../driverlib/MSP432P4xx/mpu.c", line 37: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/mpu.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/mpu.obj] Error 1
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/pcm.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/pcm.c"
+"../driverlib/MSP432P4xx/pcm.c", line 41: fatal error #1965: cannot open source file "pcm.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/pcm.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:98: recipe for target 'driverlib/MSP432P4xx/pcm.obj' failed
+gmake: *** [driverlib/MSP432P4xx/pcm.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/pmap.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/pmap.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/pmap.c"
+"../driverlib/MSP432P4xx/pmap.c", line 37: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/pmap.c".
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:105: recipe for target 'driverlib/MSP432P4xx/pmap.obj' failed
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/pmap.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/pss.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/pss.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/pss.c"
+"../driverlib/MSP432P4xx/pss.c", line 41: fatal error #1965: cannot open source file "pss.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/pss.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:112: recipe for target 'driverlib/MSP432P4xx/pss.obj' failed
+gmake: *** [driverlib/MSP432P4xx/pss.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/ref_a.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/ref_a.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/ref_a.c"
+"../driverlib/MSP432P4xx/ref_a.c", line 37: fatal error #1965: cannot open source file "ref_a.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/ref_a.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:119: recipe for target 'driverlib/MSP432P4xx/ref_a.obj' failed
+gmake: *** [driverlib/MSP432P4xx/ref_a.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/reset.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/reset.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/reset.c"
+"../driverlib/MSP432P4xx/reset.c", line 37: fatal error #1965: cannot open source file "reset.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/reset.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/reset.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:126: recipe for target 'driverlib/MSP432P4xx/reset.obj' failed
+Building file: ../driverlib/MSP432P4xx/rtc_c.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/rtc_c.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/rtc_c.c"
+"../driverlib/MSP432P4xx/rtc_c.c", line 37: fatal error #1965: cannot open source file "rtc_c.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/rtc_c.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/rtc_c.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:133: recipe for target 'driverlib/MSP432P4xx/rtc_c.obj' failed
+Building file: ../driverlib/MSP432P4xx/spi.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/spi.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/spi.c"
+"../driverlib/MSP432P4xx/spi.c", line 37: fatal error #1965: cannot open source file "spi.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/spi.c".
+Compilation terminated.
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:140: recipe for target 'driverlib/MSP432P4xx/spi.obj' failed
+Building file: ../driverlib/MSP432P4xx/sysctl.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/sysctl.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/sysctl.c"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:147: recipe for target 'driverlib/MSP432P4xx/sysctl.obj' failed
+gmake: *** [driverlib/MSP432P4xx/spi.obj] Error 1
+"../driverlib/MSP432P4xx/sysctl.c", line 42: fatal error #1965: cannot open source file "sysctl.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/sysctl.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/sysctl.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/systick.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/systick.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/systick.c"
+"../driverlib/MSP432P4xx/systick.c", line 37: fatal error #1965: cannot open source file "debug.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/systick.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/systick.obj] Error 1
+"../driverlib/MSP432P4xx/timer32.c", line 37: fatal error #1965: cannot open source file "timer32.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/timer32.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/timer32.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:154: recipe for target 'driverlib/MSP432P4xx/systick.obj' failed
+Building file: ../driverlib/MSP432P4xx/timer32.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/timer32.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/timer32.c"
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:161: recipe for target 'driverlib/MSP432P4xx/timer32.obj' failed
+Building file: ../driverlib/MSP432P4xx/timer_a.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/timer_a.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/timer_a.c"
+"../driverlib/MSP432P4xx/timer_a.c", line 37: fatal error #1965: cannot open source file "timer_a.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/timer_a.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/timer_a.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:168: recipe for target 'driverlib/MSP432P4xx/timer_a.obj' failed
+Building file: ../driverlib/MSP432P4xx/uart.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/uart.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/uart.c"
+"../driverlib/MSP432P4xx/uart.c", line 37: fatal error #1965: cannot open source file "uart.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/uart.c".
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:175: recipe for target 'driverlib/MSP432P4xx/uart.obj' failed
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/uart.obj] Error 1
+Building file: ../driverlib/MSP432P4xx/wdt_a.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="driverlib/MSP432P4xx/wdt_a.pp" --obj_directory="driverlib/MSP432P4xx"  "../driverlib/MSP432P4xx/wdt_a.c"
+"../driverlib/MSP432P4xx/wdt_a.c", line 41: fatal error #1965: cannot open source file "wdt_a.h"
+1 catastrophic error detected in the compilation of "../driverlib/MSP432P4xx/wdt_a.c".
+Compilation terminated.
+gmake: *** [driverlib/MSP432P4xx/wdt_a.obj] Error 1
+
+>> Compilation failure
+driverlib/MSP432P4xx/subdir_rules.mk:182: recipe for target 'driverlib/MSP432P4xx/wdt_a.obj' failed
+Building file: ../LcdDriver/Crystalfontz128x128_ST7735.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="LcdDriver/Crystalfontz128x128_ST7735.pp" --obj_directory="LcdDriver"  "../LcdDriver/Crystalfontz128x128_ST7735.c"
+"../LcdDriver/Crystalfontz128x128_ST7735.c", line 39: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../LcdDriver/Crystalfontz128x128_ST7735.c".
+Compilation terminated.
+gmake: *** [LcdDriver/Crystalfontz128x128_ST7735.obj] Error 1
+
+>> Compilation failure
+LcdDriver/subdir_rules.mk:7: recipe for target 'LcdDriver/Crystalfontz128x128_ST7735.obj' failed
+Building file: ../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.pp" --obj_directory="LcdDriver"  "../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c"
+"../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c", line 40: fatal error #1965: cannot open source file "HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.h"
+1 catastrophic error detected in the compilation of "../LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.c".
+Compilation terminated.
+gmake: *** [LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj] Error 1
+
+>> Compilation failure
+LcdDriver/subdir_rules.mk:14: recipe for target 'LcdDriver/HAL_MSP_EXP432P401R_Crystalfontz128x128_ST7735.obj' failed
+Building file: ../GrLib/fonts/fontfixed6x8.c
+Invoking: MSP432 Compiler
+"/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me --include_path="/Applications/ti/ccsv6/ccs_base/arm/include" --include_path="/Applications/ti/ccsv6/ccs_base/arm/include/CMSIS" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/driverlib/MSP432P4xx" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/grlib" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/GrLib/fonts" --include_path="/Users/Chad/Downloads/ECE461-develop/Channel3/LcdDriver" --include_path="/Applications/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.6/include" --advice:power=all -g --gcc --define=__MSP432P401R__ --define=TARGET_IS_MSP432P4XX --define=ccs --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="GrLib/fonts/fontfixed6x8.pp" --obj_directory="GrLib/fonts"  "../GrLib/fonts/fontfixed6x8.c"
+"../GrLib/fonts/fontfixed6x8.c", line 1: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../GrLib/fonts/fontfixed6x8.c".
+Compilation terminated.
+
+>> Compilation failure
+GrLib/fonts/subdir_rules.mk:7: recipe for target 'GrLib/fonts/fontfixed6x8.obj' failed
+gmake: *** [GrLib/fonts/fontfixed6x8.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

@@ -11,7 +11,7 @@
 
 // RTOS functions
 void ADC_HWI(void);
-void EUSCIA2_HWI(void);
+void EUSCIA2_IRQHandler(void);
 //void Timer32_HWI(void);
 void Mailbox_Task(void);
 void Idle_fcxn(void);
@@ -23,6 +23,7 @@ void adjustOrientation(void);
 void drawAccelData(uint16_t xData, uint16_t yData, uint16_t zData);
 void drawSensorData(char dataSetHundreds, char dataSetTens, char dataSetOnes);
 void drawTitle(void);
+void drawData(void);
 
 
 
