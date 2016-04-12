@@ -79,12 +79,9 @@ typedef struct MsgObj {
 
 Graphics_Context g_sContext;
 Void clk0Fxn(UArg arg0);
-Void clk1Fxn(UArg arg0);
 
 Clock_Struct clk0Struct;
-Clock_Struct clk1Struct;
 Clock_Handle clk0Handle;
-Clock_Handle clk1Handle;
 
 int dataSetIndex;
 char dataSetASCII;
@@ -95,7 +92,6 @@ int receiveData;
 int dataCounter = 0;
 int timerCounter = 0;
 bool ticks0 = 0;
-bool ticks1 = 0;
 
 int main(void){
 	/* Construct BIOS Objects */
@@ -111,23 +107,15 @@ int main(void){
 	 //Board_initUART();
 	// Board_initWatchdog();
 	// Board_initWiFi();
-	drawTitle();
+	drawTitle();		// Set titles for LCD
 
+	// Clock configuration used to create 1s interrupt
 	Clock_Params_init(&clkParams);
-
-	clkParams.period = 1000;
+	clkParams.period = 1000; // period for one second
 	clkParams.startFlag = TRUE;
-	/* Construct a periodic Clock Instance with period = 5 system time units */
 	Clock_construct(&clk0Struct, (Clock_FuncPtr)clk0Fxn, 1000, &clkParams);
 	clk0Handle = Clock_handle(&clk0Struct);
 	Clock_start(clk0Handle);
-
-	clkParams.period = 180;
-	//clkParams.startFlag = TRUE;
-	/* Construct a periodic Clock Instance with period = 5 system time units */
-	Clock_construct(&clk1Struct, (Clock_FuncPtr)clk1Fxn, 200, &clkParams);
-	clk1Handle = Clock_handle(&clk1Struct);
-	Clock_start(clk1Handle);
 
 	/* Start BIOS */
 	BIOS_start();
@@ -136,11 +124,17 @@ int main(void){
 }
 
 void Idle_fcxn(void){
+	// Idle function
 	while(1);
 }
 
  void averageCalcTask(void){
-	 MsgObj msg;
+// This function is used to calculate the absolute average of the accelerometer and displays
+// it to the LCD.
+
+	 MsgObj msg; // message object used by ADC interrupt to send data to mailbox
+
+	 // Utility variables used in calculations
 	 static uint16_t lastX;
 	 static uint16_t lastY;
 	 static uint16_t lastZ;
@@ -148,6 +142,7 @@ void Idle_fcxn(void){
 	 static uint16_t avgY;
 	 static uint16_t avgZ;
 	 while(1){
+		 // use of semaphore to set inital values before taking a running average
 		 if(Semaphore_getCount(LCDsemaphore) == 0){
 			 Mailbox_pend(adc_mailbox, &msg, BIOS_WAIT_FOREVER);
 			 avgX = (lastX - msg.val0) > 1;
@@ -157,7 +152,7 @@ void Idle_fcxn(void){
 			 lastX = msg.val0;
 			 lastY = msg.val1;
 			 lastZ = msg.val2;
-			 if(ticks0 == 1){
+			 if(ticks0 == 1){// flag set by 1 second clock interrupt
 				 drawAccelData(avgX,avgY,avgZ);
 				 ticks0 = 0;
 			 }
@@ -175,31 +170,24 @@ void Idle_fcxn(void){
 
 Void clk0Fxn(UArg arg0){// clock interrupt
 	//GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
-	ticks0 = 1;
-}
-
-Void clk1Fxn(UArg arg0){
-	ticks1 = 1;
+	ticks0 = 1; // clock interrupt flag
 }
 
 void ADC_HWI(void){
+	uint64_t status;
+	MsgObj msg;
+	status = MAP_ADC14_getEnabledInterruptStatus();
+	MAP_ADC14_clearInterruptFlag(status);
 
-	 uint64_t status;
-	    MsgObj msg;
-	    //static uint16_t resultsBuffer[3];
-	    status = MAP_ADC14_getEnabledInterruptStatus();
-	    MAP_ADC14_clearInterruptFlag(status);
-
-	    /* ADC_MEM2 conversion completed */
-	    if(status & ADC_INT2)
-	    {
-	        /* Store ADC14 conversion results */
-	    	msg.val0 = ADC14_getResult(ADC_MEM0);
-	    	msg.val1 = ADC14_getResult(ADC_MEM1);
-	    	msg.val2 = ADC14_getResult(ADC_MEM2);
-	        //Semaphore_post(mailbox_Sem);
-	        Mailbox_post(adc_mailbox,&msg,0); // Send the ADC message using the mailbox
-	    }
+	/* ADC_MEM2 conversion completed */
+	if(status & ADC_INT2)
+	{
+		/* Store ADC14 conversion results */
+		msg.val0 = ADC14_getResult(ADC_MEM0);
+		msg.val1 = ADC14_getResult(ADC_MEM1);
+		msg.val2 = ADC14_getResult(ADC_MEM2);
+		Mailbox_post(adc_mailbox,&msg,0); // Send the ADC message using the mailbox
+	}
 }
 
 /* EUSCI A0 UART ISR - Echoes data back to PC host */
@@ -212,14 +200,13 @@ void EUSCIA2_IRQHandler(void)
     if(status & EUSCI_A_UART_RECEIVE_INTERRUPT)
     {
     		if (timerCounter == 0){
-    			//Init_Timer32();
     			timerCounter = 1;
     		}
     		receiveData = UCA2RXBUF;				//the value from the receive buffer will be placed into a receiveData variable
     		dataSetASCII = (char)receiveData;	//we cast this value as a char* and place into dataSetASCII
 
-    		if(dataSetASCII == 'A'){ BIOS_exit(0); }
-    		//if(getchar() == EOF){BIOS_exit(0);}
+    		if(dataSetASCII == 'A'){ BIOS_exit(0); } // ending character used to signify EOF
+
     		if(dataSetASCII == 0xA || dataSetASCII == 0xD){			//if a new line character is found,
     			dataCounter = 3;					//send it to counter 3 location to print the number to the screen
     		}
@@ -252,6 +239,7 @@ void EUSCIA2_IRQHandler(void)
 }
 
 void drawAccelData(uint16_t xData, uint16_t yData, uint16_t zData){
+	// Function used to update the LCD with data from the accelerometer
 	char string[8];
 	sprintf(string, "X: %5d", xData);
 	Graphics_drawString(&g_sContext, (int8_t *)string,8,20,30,OPAQUE_TEXT);
@@ -261,17 +249,12 @@ void drawAccelData(uint16_t xData, uint16_t yData, uint16_t zData){
 
 	sprintf(string, "Z: %5d", zData);
 	Graphics_drawString(&g_sContext,(int8_t *)string, 8,20,70,OPAQUE_TEXT);
-	//ADC_SWI();
-	//adjustOrientation();
 }
 
 void drawSensorData(char dataSetHundreds, char dataSetTens, char dataSetOnes){
+	// Function used to update LCD with data from the transmitted data set
 	char string[3];
 	char data[3];
-
-	//dataSetHundreds = '0';
-	//dataSetTens = '0';
-	//dataSetOnes = '0';
 	data[0] = dataSetHundreds;
 	data[1] = dataSetTens;
 	data[2] = dataSetOnes;
@@ -290,7 +273,7 @@ void drawTitle(void){
 }
 
 void drawData()
-{
+{// Used by UART HWI to clear part of the LCD before writing new data to it
 	char string[3];
 	char data[3];
 	data[0] = dataSetHundreds;

@@ -92,7 +92,7 @@ void init_All(void){
 	MAP_ADC14_enableConversion();
 	MAP_ADC14_toggleConversionTrigger();
 
-	// Test code for timer32
+	// GPIO configurations used to debug code
 	GPIO_setAsOutputPin(GPIO_PORT_P5,GPIO_PIN6); // P5.6 is blue LED on booster pack
 	GPIO_setOutputLowOnPin(GPIO_PORT_P5,GPIO_PIN6);
 
