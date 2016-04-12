@@ -142,6 +142,7 @@ void Idle_fcxn(void){
 	 static uint16_t avgY;
 	 static uint16_t avgZ;
 	 while(1){
+		 // use semaphore to update accelerometer data once file is being transmitted
 		 if(Semaphore_getCount(UartStartSemaphore) == 0){
 			 // use of semaphore to set inital values before taking a running average
 			 if(Semaphore_getCount(LCDsemaphore) == 0){
@@ -204,11 +205,17 @@ void EUSCIA2_IRQHandler(void)
     		if (timerCounter == 0){
     			Semaphore_pend(UartStartSemaphore,BIOS_WAIT_FOREVER);
     			timerCounter = 1;
+    			P2OUT &= ~BIT0;	// red LED
+    			P2OUT |= BIT1;	// green LED
     		}
     		receiveData = UCA2RXBUF;				//the value from the receive buffer will be placed into a receiveData variable
     		dataSetASCII = (char)receiveData;	//we cast this value as a char* and place into dataSetASCII
 
-    		if(dataSetASCII == 'A'){ BIOS_exit(0); } // ending character used to signify EOF
+    		if(dataSetASCII == 'A'){
+    			P2OUT &= ~BIT1;	// green LED
+    			P2OUT |= BIT0;	// red LED
+    			BIOS_exit(0);
+    		} // ending character used to signify EOF
 
     		if(dataSetASCII == 0xA || dataSetASCII == 0xD){			//if a new line character is found,
     			dataCounter = 3;					//send it to counter 3 location to print the number to the screen

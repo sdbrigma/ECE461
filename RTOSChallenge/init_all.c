@@ -96,5 +96,10 @@ void init_All(void){
 	GPIO_setAsOutputPin(GPIO_PORT_P5,GPIO_PIN6); // P5.6 is blue LED on booster pack
 	GPIO_setOutputLowOnPin(GPIO_PORT_P5,GPIO_PIN6);
 
+	P2DIR |= BIT0;	// red RGB LED output
+	P2DIR |= BIT1;	// green RGB LED output
+	P2OUT &= ~BIT1;	// green LED
+	P2OUT |= BIT0;	// red LED
+
 
 }
