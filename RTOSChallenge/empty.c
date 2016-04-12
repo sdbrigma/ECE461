@@ -36,7 +36,6 @@
 
 // Usual includes
 #include "msp.h"
-#include "math.h"
 #include <driverlib.h>
 #include "grlib.h"
 #include "Crystalfontz128x128_ST7735.h"
@@ -55,6 +54,7 @@
 #include <ti/sysbios/knl/Semaphore.h>
 #include <ti/sysbios/knl/Idle.h>
 #include <ti/sysbios/knl/Clock.h>
+#include <ti/sysbios/knl/Mailbox.h>
 
 /* TI-RTOS Header files */
 #include <ti/drivers/GPIO.h>
@@ -70,11 +70,21 @@
 #include "functions.h"
 #include "macros.h"
 
+typedef struct MsgObj {
+	uint16_t val0;            		// message value
+	uint16_t val1;
+	uint16_t val2;
+} MsgObj, *Msg;
+
+
 Graphics_Context g_sContext;
 Void clk0Fxn(UArg arg0);
+Void clk1Fxn(UArg arg0);
 
 Clock_Struct clk0Struct;
-Clock_Handle clk2Handle;
+Clock_Struct clk1Struct;
+Clock_Handle clk0Handle;
+Clock_Handle clk1Handle;
 
 int dataSetIndex;
 char dataSetASCII;
@@ -84,6 +94,8 @@ char dataSetOnes;
 int receiveData;
 int dataCounter = 0;
 int timerCounter = 0;
+bool ticks0 = 0;
+bool ticks1 = 0;
 
 int main(void){
 	/* Construct BIOS Objects */
@@ -102,13 +114,20 @@ int main(void){
 	drawTitle();
 
 	Clock_Params_init(&clkParams);
+
 	clkParams.period = 1000;
 	clkParams.startFlag = TRUE;
 	/* Construct a periodic Clock Instance with period = 5 system time units */
 	Clock_construct(&clk0Struct, (Clock_FuncPtr)clk0Fxn, 1000, &clkParams);
+	clk0Handle = Clock_handle(&clk0Struct);
+	Clock_start(clk0Handle);
 
-	clk2Handle = Clock_handle(&clk0Struct);
-	Clock_start(clk2Handle);
+	clkParams.period = 180;
+	//clkParams.startFlag = TRUE;
+	/* Construct a periodic Clock Instance with period = 5 system time units */
+	Clock_construct(&clk1Struct, (Clock_FuncPtr)clk1Fxn, 200, &clkParams);
+	clk1Handle = Clock_handle(&clk1Struct);
+	Clock_start(clk1Handle);
 
 	/* Start BIOS */
 	BIOS_start();
@@ -119,58 +138,68 @@ int main(void){
 void Idle_fcxn(void){
 	while(1);
 }
- void calculateAvg(void){
 
-	//Task_sleep(10);
-	Idle_run();
+ void averageCalcTask(void){
+	 MsgObj msg;
+	 static uint16_t lastX;
+	 static uint16_t lastY;
+	 static uint16_t lastZ;
+	 static uint16_t avgX;
+	 static uint16_t avgY;
+	 static uint16_t avgZ;
+	 while(1){
+		 if(Semaphore_getCount(LCDsemaphore) == 0){
+			 Mailbox_pend(adc_mailbox, &msg, BIOS_WAIT_FOREVER);
+			 avgX = (lastX - msg.val0) > 1;
+			 avgY = (lastY - msg.val1) > 1;
+			 avgZ = (lastZ - msg.val2) > 1;
 
+			 lastX = msg.val0;
+			 lastY = msg.val1;
+			 lastZ = msg.val2;
+			 if(ticks0 == 1){
+				 drawAccelData(avgX,avgY,avgZ);
+				 ticks0 = 0;
+			 }
+		 }
+		 else{
+			 // decrements semaphore used to set intial value for absolute average
+			 Semaphore_pend(LCDsemaphore,BIOS_WAIT_FOREVER);
+			 Mailbox_pend(adc_mailbox, &msg, BIOS_WAIT_FOREVER);
+			 lastX = msg.val0;
+			 lastY = msg.val1;
+			 lastZ = msg.val2;
+		 }
+	 }
  }
 
-Void clk0Fxn(UArg arg0){
-	//drawTitle();
-	uint16_t xValue;
-	uint16_t yValue;
-	uint16_t zValue;
+Void clk0Fxn(UArg arg0){// clock interrupt
+	//GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
+	ticks0 = 1;
+}
 
-	//Mailbox_pend(adc_mailbox,&xValue,0);
-	//Mailbox_pend(adc_mailbox,&yValue,0);
-	//Mailbox_pend(adc_mailbox,&zValue,0);
-
-	//xValue = (ADC14_getResult(ADC_MEM0) - xValue) >> 1;
-	//yValue = (ADC14_getResult(ADC_MEM1) - yValue) >> 1;
-	//zValue = (ADC14_getResult(ADC_MEM2) - zValue) >> 1;
-
-	xValue = ADC14_getResult(ADC_MEM0);
-	yValue = ADC14_getResult(ADC_MEM1);
-	zValue = ADC14_getResult(ADC_MEM2);
-
-	drawAccelData(xValue, yValue, zValue);
-
-	GPIO_toggleOutputOnPin(GPIO_PORT_P5,GPIO_PIN6);
+Void clk1Fxn(UArg arg0){
+	ticks1 = 1;
 }
 
 void ADC_HWI(void){
-	uint64_t status;
-	//MsgADC msg;
-	status = MAP_ADC14_getEnabledInterruptStatus();
-	MAP_ADC14_clearInterruptFlag(status);
 
-	/* ADC_MEM2 conversion completed */
-	if(status & ADC_INT2){
-		uint16_t xValue;
-		uint16_t yValue;
-		uint16_t zValue;
+	 uint64_t status;
+	    MsgObj msg;
+	    //static uint16_t resultsBuffer[3];
+	    status = MAP_ADC14_getEnabledInterruptStatus();
+	    MAP_ADC14_clearInterruptFlag(status);
 
-		Mailbox_post(adc_mailbox,&xValue,0);
-		Mailbox_post(adc_mailbox,&yValue,0);
-		Mailbox_post(adc_mailbox,&zValue,0);
-
-		//Idle_run();
-
-		//drawAccelData(msg.xValue,msg.yValue,msg.zValue);
-		//Swi_post(adc_swi);
-		//adjustOrientation();
-	}
+	    /* ADC_MEM2 conversion completed */
+	    if(status & ADC_INT2)
+	    {
+	        /* Store ADC14 conversion results */
+	    	msg.val0 = ADC14_getResult(ADC_MEM0);
+	    	msg.val1 = ADC14_getResult(ADC_MEM1);
+	    	msg.val2 = ADC14_getResult(ADC_MEM2);
+	        //Semaphore_post(mailbox_Sem);
+	        Mailbox_post(adc_mailbox,&msg,0); // Send the ADC message using the mailbox
+	    }
 }
 
 /* EUSCI A0 UART ISR - Echoes data back to PC host */
@@ -188,6 +217,9 @@ void EUSCIA2_IRQHandler(void)
     		}
     		receiveData = UCA2RXBUF;				//the value from the receive buffer will be placed into a receiveData variable
     		dataSetASCII = (char)receiveData;	//we cast this value as a char* and place into dataSetASCII
+
+    		if(dataSetASCII == 'A'){ BIOS_exit(0); }
+    		//if(getchar() == EOF){BIOS_exit(0);}
     		if(dataSetASCII == 0xA || dataSetASCII == 0xD){			//if a new line character is found,
     			dataCounter = 3;					//send it to counter 3 location to print the number to the screen
     		}

@@ -13,11 +13,17 @@ extern const ti_sysbios_hal_Hwi_Handle adc_hwi;
 #include <ti/sysbios/knl/Mailbox.h>
 extern const ti_sysbios_knl_Mailbox_Handle adc_mailbox;
 
-#include <ti/sysbios/knl/Task.h>
-extern const ti_sysbios_knl_Task_Handle AccelDataTask;
-
 #include <ti/sysbios/hal/Hwi.h>
 extern const ti_sysbios_hal_Hwi_Handle uart_hwi;
+
+#include <ti/sysbios/knl/Task.h>
+extern const ti_sysbios_knl_Task_Handle absoluateAvgTask;
+
+#include <ti/sysbios/knl/Mailbox.h>
+extern const ti_sysbios_knl_Mailbox_Handle lcd_mailbox;
+
+#include <ti/sysbios/knl/Semaphore.h>
+extern const ti_sysbios_knl_Semaphore_Handle LCDsemaphore;
 
 extern int xdc_runtime_Startup__EXECFXN__C;
 
