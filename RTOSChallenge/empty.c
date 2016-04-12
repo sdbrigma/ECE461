@@ -142,28 +142,30 @@ void Idle_fcxn(void){
 	 static uint16_t avgY;
 	 static uint16_t avgZ;
 	 while(1){
-		 // use of semaphore to set inital values before taking a running average
-		 if(Semaphore_getCount(LCDsemaphore) == 0){
-			 Mailbox_pend(adc_mailbox, &msg, BIOS_WAIT_FOREVER);
-			 avgX = (lastX - msg.val0) > 1;
-			 avgY = (lastY - msg.val1) > 1;
-			 avgZ = (lastZ - msg.val2) > 1;
+		 if(Semaphore_getCount(UartStartSemaphore) == 0){
+			 // use of semaphore to set inital values before taking a running average
+			 if(Semaphore_getCount(LCDsemaphore) == 0){
+				 Mailbox_pend(adc_mailbox, &msg, BIOS_WAIT_FOREVER);
+				 avgX = (lastX - msg.val0) > 1;
+				 avgY = (lastY - msg.val1) > 1;
+				 avgZ = (lastZ - msg.val2) > 1;
 
-			 lastX = msg.val0;
-			 lastY = msg.val1;
-			 lastZ = msg.val2;
-			 if(ticks0 == 1){// flag set by 1 second clock interrupt
-				 drawAccelData(avgX,avgY,avgZ);
-				 ticks0 = 0;
+				 lastX = msg.val0;
+				 lastY = msg.val1;
+				 lastZ = msg.val2;
+				 if(ticks0 == 1){// flag set by 1 second clock interrupt
+					 drawAccelData(avgX,avgY,avgZ);
+					 ticks0 = 0;
+				 }
 			 }
-		 }
-		 else{
-			 // decrements semaphore used to set intial value for absolute average
-			 Semaphore_pend(LCDsemaphore,BIOS_WAIT_FOREVER);
-			 Mailbox_pend(adc_mailbox, &msg, BIOS_WAIT_FOREVER);
-			 lastX = msg.val0;
-			 lastY = msg.val1;
-			 lastZ = msg.val2;
+			 else{
+				 // decrements semaphore used to set intial value for absolute average
+				 Semaphore_pend(LCDsemaphore,BIOS_WAIT_FOREVER);
+				 Mailbox_pend(adc_mailbox, &msg, BIOS_WAIT_FOREVER);
+				 lastX = msg.val0;
+				 lastY = msg.val1;
+				 lastZ = msg.val2;
+			 }
 		 }
 	 }
  }
@@ -200,6 +202,7 @@ void EUSCIA2_IRQHandler(void)
     if(status & EUSCI_A_UART_RECEIVE_INTERRUPT)
     {
     		if (timerCounter == 0){
+    			Semaphore_pend(UartStartSemaphore,BIOS_WAIT_FOREVER);
     			timerCounter = 1;
     		}
     		receiveData = UCA2RXBUF;				//the value from the receive buffer will be placed into a receiveData variable

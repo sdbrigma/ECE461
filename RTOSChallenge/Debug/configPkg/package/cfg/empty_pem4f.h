@@ -25,6 +25,9 @@ extern const ti_sysbios_knl_Mailbox_Handle lcd_mailbox;
 #include <ti/sysbios/knl/Semaphore.h>
 extern const ti_sysbios_knl_Semaphore_Handle LCDsemaphore;
 
+#include <ti/sysbios/knl/Semaphore.h>
+extern const ti_sysbios_knl_Semaphore_Handle UartStartSemaphore;
+
 extern int xdc_runtime_Startup__EXECFXN__C;
 
 extern int xdc_runtime_Startup__RESETFXN__C;
